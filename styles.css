@@ -1,9 +1,45 @@
+/* ######################  AJUSTES NAVEGADOR  ###################### */
+
 /* Reset de estilos */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Estilos para la barra de desplazamiento horizontal en WebKit */
+::-webkit-scrollbar {
+  height: 12px; /* Altura de la barra de desplazamiento */
+  background-color: #000; /* Color de fondo de la barra de desplazamiento */
+}
+
+/* Estilos para la pista de la barra de desplazamiento en WebKit */
+::-webkit-scrollbar-track {
+  background-color: #000; /* Color de fondo de la pista */
+}
+
+/* Estilos para el pulgar (la parte móvil) de la barra de desplazamiento en WebKit */
+::-webkit-scrollbar-thumb {
+  background-color: #fff; /* Color del pulgar */
+  border-radius: 6px; /* Radio de borde del pulgar */
+  border: 3px solid #000; /* Borde del pulgar */
+}
+
+/* Estilos para el pulgar cuando se está moviendo en WebKit */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #ccc; /* Cambia el color del pulgar cuando se pasa el mouse sobre él */
+}
+
+/* Estilos para la barra de desplazamiento horizontal en Firefox */
+@supports (-moz-appearance:none) {
+  /* Estilos para la pista en Firefox */
+  html {
+    scrollbar-color: white black; /* Define el color de la barra (pulgar) y el color de la pista, respectivamente */
+    scrollbar-width: thin; /* Define el grosor de la barra */
+  }
+}
+
+/* #################################################################### */
 
 h1 {
   display: inline-block; /* Hace que el título ocupe solo el ancho del texto */
@@ -31,7 +67,7 @@ h1 {
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #2c2b2b;
+  background-color: #000000;
 }
 
 .main-page{
@@ -50,6 +86,7 @@ header {
   width: 100%; /* Ancho completo */
   z-index: 1000; /* Asegura que el encabezado esté por encima de otros elementos */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agrega una sombra si es necesario */
+  border-bottom: 1px solid white; /* Agrega una línea blanca en la parte inferior */
 }
 
 /* Estilos para la barra de navegación */
@@ -106,7 +143,7 @@ header {
 .navbar-right {
   flex: 1;
   text-align: right;
-  display: flex;
+  /* display: flex; */
 }
 
 /* Estilos para los botones de registrarse e iniciar sesión */
@@ -114,7 +151,7 @@ header {
   display: inline-block;
   font-size: 1rem;
   padding: 0.4em 0.4em;
-  margin-right: 2px; /* Espacio entre los botones */
+  margin-right: 5px; /* Espacio entre los botones */
   background-color: #000;
   border: 3px solid yellow;
   border-radius: 1em;
