@@ -16,6 +16,7 @@
         <span class="logo">MOVIEIT</span>
       </div>
       <div class="navbar-center">
+        <button id="openBtn">Filtrar</button>
         <div class="search-bar">
           <form action="/buscar" method="get">
             <input type="text" name="q" placeholder="Buscar...">
@@ -30,12 +31,34 @@
     </div>
   </header>
 
-  <div class="main-page">
+  <main class="main-page">
+    <div id="sidebar" class="sidebar">
+      <h2>Filtros</h2>
+      <hr>
+      <div id="genreFilter" class="filter">
+        <h3>Género</h3>
+        <ul>
+          <li><input type="checkbox" value="action"> Acción</li>
+          <li><input type="checkbox" value="comedy"> Comedia</li>
+          <li><input type="checkbox" value="drama"> Drama</li>
+          <!-- Agregar más géneros según sea necesario -->
+        </ul>
+      </div>
+      <div id="yearFilter" class="filter">
+        <h3>Año</h3>
+        <select id="yearSelect">
+          <option value="2022">2022</option>
+          <option value="2021">2021</option>
+          <option value="2020">2020</option>
+          <!-- Agregar más años según sea necesario -->
+        </select>
+      </div>
+    </div>
+    <script src="script.js"></script>
     <div class="main-cover">
       <img src="resources/films_main_covers/Screen-Shot-2018-01-31-at-5.55.24-AM.png" alt="">
     </div>
 
-  
     <section>
       <h1>Tendencia</h1>
       <div class="movies-container">
@@ -57,7 +80,7 @@
                         <span>★</span>
                         <span>★</span>
                         <span>★</span><span>★</span>
-                      </div> 
+                      </div>
                     </div>
                     <p class="card-footer">
                       30 Mins &nbsp;
@@ -86,7 +109,7 @@
                         <span>★</span>
                         <span>★</span>
                         <span>★</span><span>★</span>
-                      </div> 
+                      </div>
                     </div>
                     <p class="card-footer">
                       30 Mins &nbsp;
@@ -115,7 +138,7 @@
                         <span>★</span>
                         <span>★</span>
                         <span>★</span><span>★</span>
-                      </div> 
+                      </div>
                     </div>
                     <p class="card-footer">
                       30 Mins &nbsp;
@@ -144,7 +167,7 @@
                         <span>★</span>
                         <span>★</span>
                         <span>★</span><span>★</span>
-                      </div> 
+                      </div>
                     </div>
                     <p class="card-footer">
                       30 Mins &nbsp;
@@ -173,7 +196,7 @@
                         <span>★</span>
                         <span>★</span>
                         <span>★</span><span>★</span>
-                      </div> 
+                      </div>
                     </div>
                     <p class="card-footer">
                       30 Mins &nbsp;
@@ -206,7 +229,7 @@
                         <span>★</span>
                         <span>★</span>
                         <span>★</span><span>★</span>
-                      </div>                      
+                      </div>
                     </div>
                     <p class="card-footer">
                       30 Mins &nbsp;
@@ -233,7 +256,7 @@
                         <span>★</span>
                         <span>★</span>
                         <span>★</span><span>★</span>
-                      </div>                      
+                      </div>
                     </div>
                     <p class="card-footer">
                       30 Mins &nbsp;
@@ -260,7 +283,7 @@
                         <span>★</span>
                         <span>★</span>
                         <span>★</span><span>★</span>
-                      </div>                      
+                      </div>
                     </div>
                     <p class="card-footer">
                       30 Mins &nbsp;
@@ -287,7 +310,7 @@
                         <span>★</span>
                         <span>★</span>
                         <span>★</span><span>★</span>
-                      </div>                      
+                      </div>
                     </div>
                     <p class="card-footer">
                       30 Mins &nbsp;
@@ -314,7 +337,7 @@
                         <span>★</span>
                         <span>★</span>
                         <span>★</span><span>★</span>
-                      </div>                      
+                      </div>
                     </div>
                     <p class="card-footer">
                       30 Mins &nbsp;
@@ -327,8 +350,32 @@
         </div>
       </div>
     </section>
-  </div>
+  </main>
 
+  <footer>
+    <div class="footer-line"></div>
+
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Enlaces Importantes</h3>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Acerca de Nosotros</a></li>
+          <li><a href="#">Servicios</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contacto</h3>
+        <p>Dirección: Calle Principal, Ciudad, País</p>
+        <p>Teléfono: (123) 456-7890</p>
+        <p>Email: info@example.com</p>
+      </div>
+    </div>
+
+
+    <p class="footer-copyright">© 2024 MOVIEIT. Todos los derechos reservados.</p>
+  </footer>
 </body>
 
 </html>
