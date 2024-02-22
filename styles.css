@@ -196,7 +196,7 @@ header {
   display: block;
   width: 160px;
   height: 160%;
-  background: linear-gradient(90deg, transparent, yellow, yellow, yellow, yellow, transparent);
+  background: linear-gradient(90deg, transparent, rgb(255, 123, 0), rgb(255, 123, 0), yellow, yellow, transparent);
   animation: rotation_481 5000ms infinite linear;
 }
 
