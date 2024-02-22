@@ -41,7 +41,8 @@ h2 {
 }
 table {
     border-collapse: collapse;
-    margin: auto;
+    margin-left: 25px;
+    margin-bottom: 50px;
 }
 
 table,
@@ -132,7 +133,7 @@ td {
 
 .movie-details-container{
     margin-top: 20px;
-    margin-bottom: 200px;
+    margin-bottom: 50px;
 }
 .movie-image {
     float: left;
@@ -143,7 +144,11 @@ td {
 .movie-text{
     text-align: justify;
     line-height: 25px;
-    margin-bottom: 100px;
+    margin-bottom: 25px;
+}
+
+.movie-trailer{
+    text-align: center;
 }
 
 /* Contenedor de peliculas */
