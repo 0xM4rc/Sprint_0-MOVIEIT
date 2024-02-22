@@ -1,0 +1,243 @@
+    .contenedor-usuario {
+    top: 70;
+    left: 0;
+    width: 100%; /* Ancho del 100% del viewport width */
+    height: 200px; /* Altura del 100% del viewport height */
+    overflow: hidden; /* Asegura que la imagen no se salga del contenedor */
+    position: relative;
+}
+
+.rectangulo-con-imagen img {
+    width: 100%; /* Ancho del 100% del contenedor */
+    height: 200px; /* Altura automática para mantener la proporción original */
+    object-fit: cover; /* Ajusta la imagen para cubrir completamente el contenedor */
+}
+
+.imagen-redonda img {
+    overflow: hidden;
+    border-radius: 50%;
+    width: 100px; /* Ajusta el ancho según tus necesidades */
+    height: 100px; /* Ajusta el ancho de la imagen al 100% del contenedor */
+    display: block; /* Elimina el espacio adicional debajo de la imagen */
+    z-index: 1;
+    top: 51px;
+    left: 38px;
+    position: absolute;
+}
+
+.nombre-usuario {
+    margin-left: 20px; /* Ajusta el espacio entre la imagen y el nombre de usuario */
+    font-size: 18px; /* Ajusta el tamaño del texto según tus necesidades */
+    font-weight: bold; /* Puedes ajustar el peso de la fuente según tus preferencias */
+    z-index: 1;
+    top: 70px;
+    left: 170px;
+    position: absolute;
+    color: black;
+}
+
+.btn {
+    border: none; 
+    color: white; 
+    padding: 1px 1px; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    width: 100px;
+    height: 40px;
+    z-index: 1;
+}
+
+.primary {background-color: yellow;
+    color: black;
+    top: 125px;
+    position: absolute;
+    width: 90px;
+    height: 30px;
+    left: 175px;
+    margin-left: 20px;}  
+    
+.primary:hover {background-color: rgb(255, 246, 168); border: 2px solid yellow;}
+
+.clos {background-color: yellow;
+    color: black;
+    top: 110px;
+    right: 159px;
+    position: absolute;
+    width: 90px;
+    height: 25px;} 
+.clos:hover {background: #ff0019;}
+
+.marcadores{
+    width: calc(100%);
+    margin-right: 10px; /* Ajusta el espacio entre las imágenes según sea necesario */
+    z-index: 1;
+    height: 140px;
+    margin-top: 20px;
+    display: flexbox;
+    position: relative;
+}
+
+.siguiendo{
+    font-size: 2rem; /* Tamaño de letra en rem */
+    display:inline;
+    left: 18.7%;
+    position: absolute;
+}
+
+.siguiendo2{
+    font-size: 2rem; /* Tamaño de letra en rem */
+    position: absolute;
+    display:inline;
+    top: 50px;
+    left: 25%;
+    position: absolute;
+}
+
+
+.seguidores{
+    font-size: 2rem; /* Tamaño de letra en rem */
+    right: 18.7%;
+    position: absolute;
+    display:inline;
+}
+
+.seguidores2{
+    font-size: 2rem; /* Tamaño de letra en rem */
+    position: absolute;
+    display:inline;
+    top: 50px;
+    right: 25%;
+    position: absolute;
+}
+
+.favoritas{
+    margin-left: 50px;
+}
+
+.txt{
+    font-size: 18px; /* Ajusta el tamaño del texto según tus necesidades */
+    font-weight: bold; /* Puedes ajustar el peso de la fuente según tus preferencias */
+    z-index: 1;
+    position: absolute;
+}
+
+.prueba{
+    top: 190px;
+    width: calc(100%);
+    margin-right: 10px; /* Ajusta el espacio entre las imágenes según sea necesario */
+    z-index: 1;
+}
+
+
+.favorite{
+    top: 351px;
+    left: 96px;
+    width: calc(100% - 96px);
+}
+
+.watched{
+    top: 780px;
+    left: 96px;
+    width: calc(100% - 96px);
+    z-index: 1;
+}
+
+.enlace{
+    width: 100% ;
+    color:white;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+  /* Track */
+::-webkit-scrollbar-track {
+    background: black;
+}
+
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background: yellow;
+}
+
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(255, 255, 0);
+}
+
+
+
+  /* Estilo para peliculas */
+
+.movie-card {
+    overflow: visible;
+    width: 200px;
+    height: 300px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: black; /* Cambia el color de fondo a negro */
+    color: white; /* Cambia el color del texto a blanco para mayor contraste */
+}
+
+
+
+
+
+.lista-imagenes {
+    list-style: none; /* Elimina los estilos de la lista desordenada */
+    display: flex; /* Utiliza flexbox para crear una lista horizontal */
+    padding: 0; /* Elimina el relleno predeterminado de la lista */
+    height: 10px;
+    z-index: 1;
+    top: 415px;
+    left: 96px;
+    width: 200px;
+    position: absolute;
+    object-fit: cover;
+}
+
+.lista-imagenes li {
+    margin-right: 10px; /* Ajusta el espacio entre las imágenes según sea necesario */
+    top: 500px;
+    
+}
+
+
+.lista-imagenes img {
+    
+    width: 200px; /* Ajusta el ancho de las imágenes según sea necesario */
+    height: auto; /* Mantiene la proporción original de las imágenes */
+    border-radius: 5px; /* Opcional: agrega bordes redondeados a las imágenes */
+}
+
+
+.lista-imagenes2 {
+    list-style: none; /* Elimina los estilos de la lista desordenada */
+    display: flex; /* Utiliza flexbox para crear una lista horizontal */
+    padding: 0; /* Elimina el relleno predeterminado de la lista */
+    height: 10px;
+    z-index: 1;
+    top: 844px;
+    left: 96px;
+    width: 200px;
+    position: absolute;
+    object-fit: cover;
+}
+
+.lista-imagenes2 li {
+    margin-right: 10px; /* Ajusta el espacio entre las imágenes según sea necesario */
+    top: 500px;
+}
+
+.lista-imagenes2 img {
+    
+    width: 200px; /* Ajusta el ancho de las imágenes según sea necesario */
+    height: auto; /* Mantiene la proporción original de las imágenes */
+    border-radius: 5px; /* Opcional: agrega bordes redondeados a las imágenes */
+}
