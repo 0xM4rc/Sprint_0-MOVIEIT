@@ -1,4 +1,4 @@
-    .contenedor-usuario {
+.contenedor-usuario {
     top: 70;
     left: 0;
     width: 100%; /* Ancho del 100% del viewport width */
@@ -67,6 +67,31 @@
     height: 25px;} 
 .clos:hover {background: #ff0019;}
 
+.scoreboard{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    font-size: 2rem;
+}
+
+.scoreboard__name{
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+
+}
+
+.scoreboard__name,
+.scoreboard__score{
+    padding: 10px;
+    text-align: center;
+}
+
+.sections{
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
 .marcadores{
     width: calc(100%);
     margin-right: 10px; /* Ajusta el espacio entre las imágenes según sea necesario */
@@ -75,39 +100,6 @@
     margin-top: 20px;
     display: flexbox;
     position: relative;
-}
-
-.siguiendo{
-    font-size: 2rem; /* Tamaño de letra en rem */
-    display:inline;
-    left: 18.7%;
-    position: absolute;
-}
-
-.siguiendo2{
-    font-size: 2rem; /* Tamaño de letra en rem */
-    position: absolute;
-    display:inline;
-    top: 50px;
-    left: 25%;
-    position: absolute;
-}
-
-
-.seguidores{
-    font-size: 2rem; /* Tamaño de letra en rem */
-    right: 18.7%;
-    position: absolute;
-    display:inline;
-}
-
-.seguidores2{
-    font-size: 2rem; /* Tamaño de letra en rem */
-    position: absolute;
-    display:inline;
-    top: 50px;
-    right: 25%;
-    position: absolute;
 }
 
 .favoritas{
@@ -167,8 +159,6 @@
     background: rgb(255, 255, 0);
 }
 
-
-
   /* Estilo para peliculas */
 
 .movie-card {
@@ -185,59 +175,66 @@ body {
     color: white; /* Cambia el color del texto a blanco para mayor contraste */
 }
 
+section {
+    margin-top: 15px; /* Establece el espacio entre secciones */
+    margin-bottom: 15px;
+}
 
-
-
-
-.lista-imagenes {
-    list-style: none; /* Elimina los estilos de la lista desordenada */
-    display: flex; /* Utiliza flexbox para crear una lista horizontal */
-    padding: 0; /* Elimina el relleno predeterminado de la lista */
-    height: 10px;
-    z-index: 1;
-    top: 415px;
-    left: 96px;
-    width: 200px;
+.round {
+    align-items: center;
+    justify-content: center;
     position: absolute;
-    object-fit: cover;
-}
-
-.lista-imagenes li {
-    margin-right: 10px; /* Ajusta el espacio entre las imágenes según sea necesario */
-    top: 500px;
+    right: 0%;
+    border: 2px solid #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
     
 }
 
-
-.lista-imagenes img {
-    
-    width: 200px; /* Ajusta el ancho de las imágenes según sea necesario */
-    height: auto; /* Mantiene la proporción original de las imágenes */
-    border-radius: 5px; /* Opcional: agrega bordes redondeados a las imágenes */
+#cta{
+    width:100%; cursor: pointer; position: absolute;
 }
 
-
-.lista-imagenes2 {
-    list-style: none; /* Elimina los estilos de la lista desordenada */
-    display: flex; /* Utiliza flexbox para crear una lista horizontal */
-    padding: 0; /* Elimina el relleno predeterminado de la lista */
-    height: 10px;
-    z-index: 1;
-    top: 844px;
-    left: 96px;
-    width: 200px;
-    position: absolute;
-    object-fit: cover;
+#cta .arrow{left: 30%;}
+.arrow {position: absolute;  margin-left:0px; width: 12px; height: 12px; background-size: contain; top:14px;}
+.segunda{margin-left: 8px;}
+.next {
+	background-image: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiI+PHN0eWxlPi5zdDB7ZmlsbDojZmZmfTwvc3R5bGU+PHBhdGggY2xhc3M9InN0MCIgZD0iTTMxOS4xIDIxN2MyMC4yIDIwLjIgMTkuOSA1My4yLS42IDczLjdzLTUzLjUgMjAuOC03My43LjZsLTE5MC0xOTBjLTIwLjEtMjAuMi0xOS44LTUzLjIuNy03My43UzEwOSA2LjggMTI5LjEgMjdsMTkwIDE5MHoiLz48cGF0aCBjbGFzcz0ic3QwIiBkPSJNMzE5LjEgMjkwLjVjMjAuMi0yMC4yIDE5LjktNTMuMi0uNi03My43cy01My41LTIwLjgtNzMuNy0uNmwtMTkwIDE5MGMtMjAuMiAyMC4yLTE5LjkgNTMuMi42IDczLjdzNTMuNSAyMC44IDczLjcuNmwxOTAtMTkweiIvPjwvc3ZnPg==);
 }
 
-.lista-imagenes2 li {
-    margin-right: 10px; /* Ajusta el espacio entre las imágenes según sea necesario */
-    top: 500px;
+@keyframes bounceAlpha {
+  0% {opacity: 1; transform: translateX(0px) scale(1);}
+  25%{opacity: 0; transform:translateX(10px) scale(0.9);}
+  26%{opacity: 0; transform:translateX(-10px) scale(0.9);}
+  55% {opacity: 1; transform: translateX(0px) scale(1);}
 }
 
-.lista-imagenes2 img {
-    
-    width: 200px; /* Ajusta el ancho de las imágenes según sea necesario */
-    height: auto; /* Mantiene la proporción original de las imágenes */
-    border-radius: 5px; /* Opcional: agrega bordes redondeados a las imágenes */
+.bounceAlpha {
+    animation-name: bounceAlpha;
+    animation-duration:1.4s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+}
+
+.arrow.primera.bounceAlpha {
+    animation-name: bounceAlpha;
+    animation-duration:1.4s;
+    animation-delay:0.2s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+}
+
+.round:hover .arrow{
+    animation-name: bounceAlpha;
+    animation-duration:1.4s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+}
+.round:hover .arrow.primera{
+    animation-name: bounceAlpha;
+    animation-duration:1.4s;
+    animation-delay:0.2s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
 }
