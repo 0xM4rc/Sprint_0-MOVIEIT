@@ -255,7 +255,7 @@ textarea {
 body {
   width: 100vw;
   height: 100vh;
-  background: #081b29;
+  background: black;
   display: grid;
   justify-content: center;
   align-content: center;
