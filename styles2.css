@@ -1,4 +1,4 @@
-.contenedor-usuario {
+.header-user {
     top: 70;
     left: 0;
     width: 100%; /* Ancho del 100% del viewport width */
@@ -7,13 +7,13 @@
     position: relative;
 }
 
-.rectangulo-con-imagen img {
+.header-img img {
     width: 100%; /* Ancho del 100% del contenedor */
     height: 200px; /* Altura automática para mantener la proporción original */
     object-fit: cover; /* Ajusta la imagen para cubrir completamente el contenedor */
 }
 
-.imagen-redonda img {
+.user-img img {
     overflow: hidden;
     border-radius: 50%;
     width: 100px; /* Ajusta el ancho según tus necesidades */
@@ -25,7 +25,7 @@
     position: absolute;
 }
 
-.nombre-usuario {
+.user-name {
     margin-left: 20px; /* Ajusta el espacio entre la imagen y el nombre de usuario */
     font-size: 18px; /* Ajusta el tamaño del texto según tus necesidades */
     font-weight: bold; /* Puedes ajustar el peso de la fuente según tus preferencias */
@@ -47,7 +47,7 @@
     z-index: 1;
 }
 
-.primary {background-color: yellow;
+.edit {background-color: yellow;
     color: black;
     top: 125px;
     position: absolute;
@@ -56,16 +56,16 @@
     left: 175px;
     margin-left: 20px;}  
     
-.primary:hover {background-color: rgb(255, 246, 168); border: 2px solid yellow;}
+.edit:hover {background-color: rgb(255, 246, 168); border: 2px solid yellow;}
 
-.clos {background-color: yellow;
+.close {background-color: yellow;
     color: black;
     top: 20px;
     right: 20px;
     position: absolute;
     width: 90px;
-    height: 25px;} 
-.clos:hover {background: #ff0019;}
+    height: 25px;}
+.close:hover {background: #ff0019;}
 
 .scoreboard{
     display: grid;
@@ -79,7 +79,6 @@
     border-bottom: 1px solid #ddd;
 
 }
-
 .scoreboard__name,
 .scoreboard__score{
     padding: 10px;
@@ -91,35 +90,6 @@
     display: flex;
     position: relative;
 }
-
-.marcadores{
-    width: calc(100%);
-    margin-right: 10px; /* Ajusta el espacio entre las imágenes según sea necesario */
-    z-index: 1;
-    height: 140px;
-    margin-top: 20px;
-    display: flexbox;
-    position: relative;
-}
-
-.favoritas{
-    margin-left: 50px;
-}
-
-.txt{
-    font-size: 18px; /* Ajusta el tamaño del texto según tus necesidades */
-    font-weight: bold; /* Puedes ajustar el peso de la fuente según tus preferencias */
-    z-index: 1;
-    position: absolute;
-}
-
-.prueba{
-    top: 190px;
-    width: calc(100%);
-    margin-right: 10px; /* Ajusta el espacio entre las imágenes según sea necesario */
-    z-index: 1;
-}
-
 
 .favorite{
     top: 351px;
@@ -134,32 +104,22 @@
     z-index: 1;
 }
 
-.enlace{
-    width: 100% ;
-    color:white;
-}
-
 ::-webkit-scrollbar {
     width: 10px;
 }
 
-  /* Track */
 ::-webkit-scrollbar-track {
     background: black;
 }
 
-  /* Handle */
 ::-webkit-scrollbar-thumb {
     border-radius: 20px;
     background: yellow;
 }
 
-  /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: rgb(255, 255, 0);
 }
-
-  /* Estilo para peliculas */
 
 .movie-card {
     overflow: visible;
@@ -171,12 +131,12 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: black; /* Cambia el color de fondo a negro */
-    color: white; /* Cambia el color del texto a blanco para mayor contraste */
+    background-color: black;
+    color: white;
 }
 
 section {
-    margin-top: 15px; /* Establece el espacio entre secciones */
+    margin-top: 15px;
     margin-bottom: 15px;
 }
 
@@ -189,7 +149,6 @@ section {
     width: 40px;
     height: 40px;
     border-radius: 100%;
-    
 }
 
 #cta{
