@@ -46,8 +46,6 @@ h2{
 
 .half {
     flex: 1;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
 }
 
 .left-part{
@@ -107,6 +105,7 @@ h2{
     z-index: 1;
     display: inline-block;
     transition: .2s ease-in-out;
+    cursor: pointer;
 }
 
 .user-img3:hover{
@@ -119,7 +118,10 @@ h2{
     text-align: left;
 }
 .prueba2 {
-    display: inline-block;
+    display:grid;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
 }
 
 .prueba2 input[type="text"] {
@@ -139,4 +141,54 @@ h2{
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+}
+.prueba3{
+    display:grid;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+.prueba3 input[type="password"]{
+    padding: 8px;
+    width: 300px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+}
+
+.prueba3 input[type="text"]{
+    padding: 8px;
+    width: 300px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+}
+
+
+.load button{
+    display: inline-block;
+    font-size: 1rem;
+    padding: 0.4em 0.4em;
+    margin-right: 2px; /* Espacio entre los botones */
+    background-color: #000;
+    border: 3px solid yellow;
+    border-radius: 1em;
+    color: #fff;
+    font-weight: bolder;
+    transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.4s;
+    box-shadow: 0px 0px 0px 0px yellow;
+    cursor: pointer;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.botones{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    margin-bottom: 35px;
+}
+
+.load button:hover {
+    box-shadow: 0 0 10px #efd997, 0 0 20px #fff200, 0 0 20px #f6eabb inset;
 }
