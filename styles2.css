@@ -38,11 +38,9 @@
 
 .btn {
     border: none; 
-    color: white; 
-    padding: 1px 1px; 
+    color: white;
     cursor: pointer; 
-    border-radius: 5px; 
-    width: 100px;
+    border-radius: 5px;
     height: 40px;
     z-index: 1;
 }
@@ -58,15 +56,28 @@
     
 .edit:hover {background-color: rgb(255, 246, 168); border: 2px solid yellow;}
 
-.close {background-color: yellow;
-    color: black;
+.close {
     top: 20px;
     right: 20px;
     position: absolute;
-    width: 90px;
-    height: 25px;}
-.close:hover {background: #ff0019;}
+    display: inline-block;
+    font-size: 1rem;
+    padding: 0.4em 0.4em;
+    margin-right: 2px; /* Espacio entre los botones */
+    background-color: #000;
+    border: 3px solid yellow;
+    border-radius: 1em;
+    color: #fff;
+    font-weight: bolder;
+    transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.4s;
+    box-shadow: 0px 0px 0px 0px yellow;
+    cursor: pointer;
+    margin-right: 5px;
 
+}
+.close:hover {
+    box-shadow: 0 0 10px #ef97e8, 0 0 20px #ef97e8, 0 0 20px #fff inset;
+}
 .scoreboard{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
