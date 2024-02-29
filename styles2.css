@@ -1,5 +1,4 @@
 .header-user {
-    top: 70;
     left: 0;
     width: 100%; /* Ancho del 100% del viewport width */
     height: 200px; /* Altura del 100% del viewport height */
@@ -10,7 +9,7 @@
 .header-img img {
     width: 100%; /* Ancho del 100% del contenedor */
     height: 200px; /* Altura automática para mantener la proporción original */
-    object-fit: cover; /* Ajusta la imagen para cubrir completamente el contenedor */
+    object-fit: cover;
 }
 
 .user-img img {
