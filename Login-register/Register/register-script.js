@@ -11,8 +11,8 @@ function init() {
         let inputElement = document.createElement('input')
         inputElement.type = input;
         inputElement.placeholder = placeholders[index];
-        inputElement.className = 'input';
+        inputElement.className = 'register-input';
         df.appendChild(inputElement);
     })
-    form.appendChild(df);
+    form.insertBefore(df, document.querySelector("button"));
 }

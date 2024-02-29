@@ -14,5 +14,5 @@ function init() {
         inputElement.className = 'input';
         df.appendChild(inputElement);
     })
-    form.appendChild(df);
+    form.insertBefore(df, document.querySelector("button"));
 }
