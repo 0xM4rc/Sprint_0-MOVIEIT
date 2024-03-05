@@ -35,23 +35,19 @@
     color: black;
 }
 
-.btn {
-    border: none; 
-    color: white;
-    cursor: pointer; 
-    border-radius: 5px;
-    height: 40px;
-    z-index: 1;
+.edit {
+    background-color: yellow;
+    color: black;
+    position: absolute;
+    height: 30px;
+    width: 100px;
+    top: 125px;
+    left: 175px;
+    margin-left: 20px;
+    padding: 0;
+    border: 1px solid black;
 }
 
-.edit {background-color: yellow;
-    color: black;
-    top: 125px;
-    position: absolute;
-    width: 90px;
-    height: 30px;
-    left: 175px;
-    margin-left: 20px;}  
     
 .edit:hover {background-color: rgb(255, 246, 168); border: 2px solid yellow;}
 
