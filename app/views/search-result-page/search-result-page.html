@@ -1,87 +1,90 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MOVIEIT</title>
+    <title>Search Results</title>
     <link rel="stylesheet" href="/styles/global_styles.css" />
+    <link rel="stylesheet" href="./search-result-page.css" />
   </head>
 
   <body>
     <div id="header"></div>
-
     <main class="main-page">
       <div id="sidebarTemplate"></div>
-
-      <div class="main-cover">
-        <img
-          src="/assets/images/films_main_covers/Screen-Shot-2018-01-31-at-5.55.24-AM.png"
-          alt=""
-        />
-      </div>
-
       <section>
-        <h1>Tendencia</h1>
-        <div class="movies-container">
+        <h1>Resultados</h1>
+        <div class="results-container">
           <div
-            class="highlightedFilmCard"
+            class="simpleFilmCard"
             data-link="/assets/images/films_covers/avatar.jpg"
             data-time="30 Mins"
           ></div>
-
           <div
-            class="highlightedFilmCard"
+            class="simpleFilmCard"
             data-link="/assets/images/films_covers/matrix.jpg"
             data-time="30 Mins"
           ></div>
-
           <div
-            class="highlightedFilmCard"
+            class="simpleFilmCard"
             data-link="/assets/images/films_covers/the_dark_knight.jpg"
             data-time="30 Mins"
           ></div>
-
           <div
-            class="highlightedFilmCard"
+            class="simpleFilmCard"
             data-link="/assets/images/films_covers/the_godfather.jpg"
             data-time="30 Mins"
           ></div>
-
           <div
-            class="highlightedFilmCard"
+            class="simpleFilmCard"
             data-link="/assets/images/films_covers/breaking_bad.jpg"
             data-time="30 Mins"
           ></div>
-        </div>
-      </section>
-
-      <section>
-        <h1>Recientemente vistas</h1>
-        <div class="movies-container">
           <div
             class="simpleFilmCard"
             data-link="/assets/images/films_covers/avatar.jpg"
             data-time="30 Mins"
           ></div>
-
           <div
             class="simpleFilmCard"
             data-link="/assets/images/films_covers/matrix.jpg"
             data-time="30 Mins"
           ></div>
-
           <div
             class="simpleFilmCard"
             data-link="/assets/images/films_covers/the_dark_knight.jpg"
             data-time="30 Mins"
           ></div>
-
           <div
             class="simpleFilmCard"
             data-link="/assets/images/films_covers/the_godfather.jpg"
             data-time="30 Mins"
           ></div>
-
+          <div
+            class="simpleFilmCard"
+            data-link="/assets/images/films_covers/breaking_bad.jpg"
+            data-time="30 Mins"
+          ></div>
+          <div
+            class="simpleFilmCard"
+            data-link="/assets/images/films_covers/avatar.jpg"
+            data-time="30 Mins"
+          ></div>
+          <div
+            class="simpleFilmCard"
+            data-link="/assets/images/films_covers/matrix.jpg"
+            data-time="30 Mins"
+          ></div>
+          <div
+            class="simpleFilmCard"
+            data-link="/assets/images/films_covers/the_dark_knight.jpg"
+            data-time="30 Mins"
+          ></div>
+          <div
+            class="simpleFilmCard"
+            data-link="/assets/images/films_covers/the_godfather.jpg"
+            data-time="30 Mins"
+          ></div>
           <div
             class="simpleFilmCard"
             data-link="/assets/images/films_covers/breaking_bad.jpg"
@@ -90,10 +93,7 @@
         </div>
       </section>
     </main>
-
-  <div id="footer"></div>
-
-    <script src="/app/components/film_card/highlighted_card/h_film_card.js"></script>
+    <div id="footer"></div>
     <script src="/app/components/film_card/simple_card/film_card.js"></script>
     <script src="/app/components/header/header.js"></script>
     <script src="/app/components/sidebar/sidebar.js"></script>
