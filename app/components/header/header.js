@@ -17,7 +17,7 @@ function generateHeader(data) {
         </div>
         <div class="navbar-right">
           <a href="/app/views/register/register.html"><button>Registrarse</button></a>
-          <a href="/app/views/loginv1/login.html"><button>Iniciar sesión</button></a>
+          <a href="/app/views/login/login.html"><button>Iniciar sesión</button></a>
         </div>
       </div>
     </header>
