@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MOVIEIT</title>
+  <link rel="stylesheet" href="/styles/global_styles.css">
+  <link rel="stylesheet" href="/app/views/edit-profile/styles2.css">
+</head>
+
+<body>
+  <div id="header"></div>
+  <div id="sidebarTemplate"></div>
+<!-- TODO: Arreglar las cartas de peliculas -->
+  <div class="main-page">
+    <div class="header-user">
+      <div class="header-img">
+        <img src="" id="imageToChange">
+        <script src="/app/views/edit-profile/script1.js"></script>
+      </div>
+      <div class="user-img">
+        <img src="/assets/images/films_profile_covers/user/Avatar2.jpeg" alt="Descripción de la imagen">
+      </div>
+      <div class="user-name">
+        <div class="etiqueta-bonita" id="name">Nombre de usuario</div>
+      </div>
+      <div class="buttons-mode">
+        <a href="/app/views/edit-profile/edit-profile.html"><button class="btn edit" id="editar">Editar perfil</button></a>
+        <button class="btn close">Cerrar sesión</button>
+      </div>
+    </div>
+    <div class="scoreboard">
+      <div class="scoreboard__name">Seguidores</div>
+      <div class="scoreboard__name">Seguidores</div>
+      <div class="scoreboard__score">0</div>
+      <div class="scoreboard__score">0</div>
+    </div>
+    <section id="favorites-films">
+      <div class="sections">
+        <div class="etiqueta-bonita">Peliculas favoritas</div>
+        <a href="Google.com">
+          <div class="round">
+            <div id="cta">
+              <span class="arrow primera next "></span>
+              <span class="arrow segunda next "></span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="movies-container">
+        <div class="movie">
+          <div class="movie-card">
+            <div class="movie-card-content">
+              <div class="movie-card-back-content">
+                <img src="/assets/images/films_profile_covers/TronLegacy.jpg" alt="">
+              </div>
+              <div class="movie-card-front">
+                <div class="movie-card-front-content">
+                  <small class="badge">Categoría</small>
+                  <div class="description">
+                    <div class="title">
+                      <div class="rating">
+                        <input value="5" name="rate" id="star5" type="radio">
+                        <label title="text" for="star5"></label>
+                        <input value="4" name="rate" id="star4" type="radio">
+                        <label title="text" for="star4"></label>
+                        <input value="3" name="rate" id="star3" type="radio" checked="">
+                        <label title="text" for="star3"></label>
+                        <input value="2" name="rate" id="star2" type="radio">
+                        <label title="text" for="star2"></label>
+                        <input value="1" name="rate" id="star1" type="radio">
+                        <label title="text" for="star1"></label>
+                      </div>
+                    </div>
+                    <p class="card-footer">
+                      30 Mins &nbsp;
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="movie">
+          <div class="movie-card">
+            <div class="movie-card-content">
+              <div class="movie-card-back-content">
+                <img src="/assets/images/films_profile_covers/Avatar2.jpeg" alt="">
+              </div>
+              <div class="movie-card-front">
+                <div class="movie-card-front-content">
+                  <small class="badge">Categoría</small>
+                  <div class="description">
+                    <div class="title">
+                      <div class="rating">
+                        <input value="5" name="rate" id="star5" type="radio">
+                        <label title="text" for="star5"></label>
+                        <input value="4" name="rate" id="star4" type="radio">
+                        <label title="text" for="star4"></label>
+                        <input value="3" name="rate" id="star3" type="radio" checked="">
+                        <label title="text" for="star3"></label>
+                        <input value="2" name="rate" id="star2" type="radio">
+                        <label title="text" for="star2"></label>
+                        <input value="1" name="rate" id="star1" type="radio">
+                        <label title="text" for="star1"></label>
+                      </div>
+                    </div>
+                    <p class="card-footer">
+                      30 Mins &nbsp;
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="movie">
+          <div class="movie-card">
+            <div class="movie-card-content">
+              <div class="movie-card-back-content">
+                <img src="/assets/images/films_profile_covers/TheMarvels.webp" alt="">
+              </div>
+              <div class="movie-card-front">
+                <div class="movie-card-front-content">
+                  <small class="badge">Categoría</small>
+                  <div class="description">
+                    <div class="title">
+                      <div class="rating">
+                        <input value="5" name="rate" id="star5" type="radio">
+                        <label title="text" for="star5"></label>
+                        <input value="4" name="rate" id="star4" type="radio">
+                        <label title="text" for="star4"></label>
+                        <input value="3" name="rate" id="star3" type="radio" checked="">
+                        <label title="text" for="star3"></label>
+                        <input value="2" name="rate" id="star2" type="radio">
+                        <label title="text" for="star2"></label>
+                        <input value="1" name="rate" id="star1" type="radio">
+                        <label title="text" for="star1"></label>
+                      </div>
+                    </div>
+                    <p class="card-footer">
+                      30 Mins &nbsp;
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="movie">
+          <div class="movie-card">
+            <div class="movie-card-content">
+              <div class="movie-card-back-content">
+                <img src="/assets/images/films_profile_covers/ArmyOfDead.webp" alt="">
+              </div>
+              <div class="movie-card-front">
+                <div class="movie-card-front-content">
+                  <small class="badge">Categoría</small>
+                  <div class="description">
+                    <div class="title">
+                      <div class="rating">
+                        <input value="5" name="rate" id="star5" type="radio">
+                        <label title="text" for="star5"></label>
+                        <input value="4" name="rate" id="star4" type="radio">
+                        <label title="text" for="star4"></label>
+                        <input value="3" name="rate" id="star3" type="radio" checked="">
+                        <label title="text" for="star3"></label>
+                        <input value="2" name="rate" id="star2" type="radio">
+                        <label title="text" for="star2"></label>
+                        <input value="1" name="rate" id="star1" type="radio">
+                        <label title="text" for="star1"></label>
+                      </div>
+                    </div>
+                    <p class="card-footer">
+                      30 Mins &nbsp;
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="movie">
+          <div class="movie-card">
+            <div class="movie-card-content">
+              <div class="movie-card-back-content">
+                <img src="/assets/images/films_profile_covers/Queen.webp" alt="">
+              </div>
+              <div class="movie-card-front">
+                <div class="movie-card-front-content">
+                  <small class="badge">Categoría</small>
+                  <div class="description">
+                    <div class="title">
+                      <div class="rating">
+                        <input value="5" name="rate" id="star5" type="radio">
+                        <label title="text" for="star5"></label>
+                        <input value="4" name="rate" id="star4" type="radio">
+                        <label title="text" for="star4"></label>
+                        <input value="3" name="rate" id="star3" type="radio" checked="">
+                        <label title="text" for="star3"></label>
+                        <input value="2" name="rate" id="star2" type="radio">
+                        <label title="text" for="star2"></label>
+                        <input value="1" name="rate" id="star1" type="radio">
+                        <label title="text" for="star1"></label>
+                      </div>
+                    </div>
+                    <p class="card-footer">
+                      30 Mins &nbsp;
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="movie">
+          <div class="movie-card">
+            <div class="movie-card-content">
+              <div class="movie-card-back-content">
+                <img src="/assets/images/films_profile_covers/BabyDriver.jpg" alt="">
+              </div>
+              <div class="movie-card-front">
+                <div class="movie-card-front-content">
+                  <small class="badge">Categoría</small>
+                  <div class="description">
+                    <div class="title">
+                      <div class="rating">
+                        <input value="5" name="rate" id="star5" type="radio">
+                        <label title="text" for="star5"></label>
+                        <input value="4" name="rate" id="star4" type="radio">
+                        <label title="text" for="star4"></label>
+                        <input value="3" name="rate" id="star3" type="radio" checked="">
+                        <label title="text" for="star3"></label>
+                        <input value="2" name="rate" id="star2" type="radio">
+                        <label title="text" for="star2"></label>
+                        <input value="1" name="rate" id="star1" type="radio">
+                        <label title="text" for="star1"></label>
+                      </div>
+                    </div>
+                    <p class="card-footer">
+                      30 Mins &nbsp;
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section id="watched-films">
+      <div class="sections">
+        <div class="etiqueta-bonita">Peliculas vistas</div>
+        <a href="Google.com">
+          <div class="round">
+            <div id="cta">
+              <span class="arrow primera next "></span>
+              <span class="arrow segunda next "></span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="movies-container">
+        <div class="movie">
+          <div class="movie-card">
+            <div class="movie-card-content">
+              <div class="movie-card-back-content">
+                <img src="/assets/images/films_profile_covers/TheIntern.jpg" alt="">
+              </div>
+              <div class="movie-card-front">
+                <div class="movie-card-front-content">
+                  <small class="badge">Categoría</small>
+                  <div class="description">
+                    <div class="title">
+                      <div class="rating">
+                        <input value="5" name="rate" id="star5" type="radio">
+                        <label title="text" for="star5"></label>
+                        <input value="4" name="rate" id="star4" type="radio">
+                        <label title="text" for="star4"></label>
+                        <input value="3" name="rate" id="star3" type="radio" checked="">
+                        <label title="text" for="star3"></label>
+                        <input value="2" name="rate" id="star2" type="radio">
+                        <label title="text" for="star2"></label>
+                        <input value="1" name="rate" id="star1" type="radio">
+                        <label title="text" for="star1"></label>
+                      </div>
+                    </div>
+                    <p class="card-footer">
+                      30 Mins &nbsp;
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="movie">
+          <div class="movie-card">
+            <div class="movie-card-content">
+              <div class="movie-card-back-content">
+                <img src="/assets/images/films_profile_covers/StarWars8.jpg" alt="">
+              </div>
+              <div class="movie-card-front">
+                <div class="movie-card-front-content">
+                  <small class="badge">Categoría</small>
+                  <div class="description">
+                    <div class="title">
+                      <div class="rating">
+                        <input value="5" name="rate" id="star5" type="radio">
+                        <label title="text" for="star5"></label>
+                        <input value="4" name="rate" id="star4" type="radio">
+                        <label title="text" for="star4"></label>
+                        <input value="3" name="rate" id="star3" type="radio" checked="">
+                        <label title="text" for="star3"></label>
+                        <input value="2" name="rate" id="star2" type="radio">
+                        <label title="text" for="star2"></label>
+                        <input value="1" name="rate" id="star1" type="radio">
+                        <label title="text" for="star1"></label>
+                      </div>
+                    </div>
+                    <p class="card-footer">
+                      30 Mins &nbsp;
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="movie">
+          <div class="movie-card">
+            <div class="movie-card-content">
+              <div class="movie-card-back-content">
+                <img src="/assets/images/films_profile_covers/Skyfall.jpg" alt="">
+              </div>
+              <div class="movie-card-front">
+                <div class="movie-card-front-content">
+                  <small class="badge">Categoría</small>
+                  <div class="description">
+                    <div class="title">
+                      <div class="rating">
+                        <input value="5" name="rate" id="star5" type="radio">
+                        <label title="text" for="star5"></label>
+                        <input value="4" name="rate" id="star4" type="radio">
+                        <label title="text" for="star4"></label>
+                        <input value="3" name="rate" id="star3" type="radio" checked="">
+                        <label title="text" for="star3"></label>
+                        <input value="2" name="rate" id="star2" type="radio">
+                        <label title="text" for="star2"></label>
+                        <input value="1" name="rate" id="star1" type="radio">
+                        <label title="text" for="star1"></label>
+                      </div>
+                    </div>
+                    <p class="card-footer">
+                      30 Mins &nbsp;
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="movie">
+          <div class="movie-card">
+            <div class="movie-card-content">
+              <div class="movie-card-back-content">
+                <img src="/assets/images/films_profile_covers/FordvFerrari.jpg" alt="">
+              </div>
+              <div class="movie-card-front">
+                <div class="movie-card-front-content">
+                  <small class="badge">Categoría</small>
+                  <div class="description">
+                    <div class="title">
+                      <div class="rating">
+                        <input value="5" name="rate" id="star5" type="radio">
+                        <label title="text" for="star5"></label>
+                        <input value="4" name="rate" id="star4" type="radio">
+                        <label title="text" for="star4"></label>
+                        <input value="3" name="rate" id="star3" type="radio" checked="">
+                        <label title="text" for="star3"></label>
+                        <input value="2" name="rate" id="star2" type="radio">
+                        <label title="text" for="star2"></label>
+                        <input value="1" name="rate" id="star1" type="radio">
+                        <label title="text" for="star1"></label>
+                      </div>
+                    </div>
+                    <p class="card-footer">
+                      30 Mins &nbsp;
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="movie">
+          <div class="movie-card">
+            <div class="movie-card-content">
+
+              <div class="movie-card-back-content">
+                <img src="/assets/images/films_profile_covers/AliciaInWonderwall.webp" alt="">
+              </div>
+
+              <div class="movie-card-front">
+                <div class="movie-card-front-content">
+                  <small class="badge">Categoría</small>
+                  <div class="description">
+                    <div class="title">
+                      <div class="rating">
+                        <input value="5" name="rate" id="star5" type="radio">
+                        <label title="text" for="star5"></label>
+                        <input value="4" name="rate" id="star4" type="radio">
+                        <label title="text" for="star4"></label>
+                        <input value="3" name="rate" id="star3" type="radio" checked="">
+                        <label title="text" for="star3"></label>
+                        <input value="2" name="rate" id="star2" type="radio">
+                        <label title="text" for="star2"></label>
+                        <input value="1" name="rate" id="star1" type="radio">
+                        <label title="text" for="star1"></label>
+                      </div>
+                    </div>
+                    <p class="card-footer">
+                      30 Mins &nbsp;
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="movie">
+          <div class="movie-card">
+            <div class="movie-card-content">
+
+              <div class="movie-card-back-content">
+                <img src="/assets/images/films_profile_covers/AboutTime.jpg" alt="">
+              </div>
+              <div class="movie-card-front">
+                <div class="movie-card-front-content">
+                  <small class="badge">Categoría</small>
+                  <div class="description">
+                    <div class="title">
+                      <div class="rating">
+                        <input value="5" name="rate" id="star5" type="radio">
+                        <label title="text" for="star5"></label>
+                        <input value="4" name="rate" id="star4" type="radio">
+                        <label title="text" for="star4"></label>
+                        <input value="3" name="rate" id="star3" type="radio" checked="">
+                        <label title="text" for="star3"></label>
+                        <input value="2" name="rate" id="star2" type="radio">
+                        <label title="text" for="star2"></label>
+                        <input value="1" name="rate" id="star1" type="radio">
+                        <label title="text" for="star1"></label>
+                      </div>
+                    </div>
+                    <p class="card-footer">
+                      30 Mins &nbsp;
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="waiting-to-see-films">
+      <div class="sections">
+        <div class="etiqueta-bonita">Peliculas pendientes</div>
+        <a href="Google.com">
+          <div class="round">
+            <div id="cta">
+              <span class="arrow primera next "></span>
+              <span class="arrow segunda next "></span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="movies-container">
+        <div class="movie">
+          <div class="movie-card">
+            <div class="movie-card-content">
+              <div class="movie-card-back-content">
+                <img src="/assets/images/films_profile_covers/OperacionUncle.jpg" alt="">
+              </div>
+              <div class="movie-card-front">
+                <div class="movie-card-front-content">
+                  <small class="badge">Categoría</small>
+                  <div class="description">
+                    <div class="title">
+                      <div class="rating">
+                        <input value="5" name="rate" id="star5" type="radio">
+                        <label title="text" for="star5"></label>
+                        <input value="4" name="rate" id="star4" type="radio">
+                        <label title="text" for="star4"></label>
+                        <input value="3" name="rate" id="star3" type="radio" checked="">
+                        <label title="text" for="star3"></label>
+                        <input value="2" name="rate" id="star2" type="radio">
+                        <label title="text" for="star2"></label>
+                        <input value="1" name="rate" id="star1" type="radio">
+                        <label title="text" for="star1"></label>
+                      </div>
+                    </div>
+                    <p class="card-footer">
+                      30 Mins &nbsp;
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="movie">
+          <div class="movie-card">
+            <div class="movie-card-content">
+              <div class="movie-card-back-content">
+                <img src="/assets/images/films_profile_covers/TheMenu.jpg" alt="">
+              </div>
+              <div class="movie-card-front">
+                <div class="movie-card-front-content">
+                  <small class="badge">Categoría</small>
+                  <div class="description">
+                    <div class="title">
+                      <div class="rating">
+                        <input value="5" name="rate" id="star5" type="radio">
+                        <label title="text" for="star5"></label>
+                        <input value="4" name="rate" id="star4" type="radio">
+                        <label title="text" for="star4"></label>
+                        <input value="3" name="rate" id="star3" type="radio" checked="">
+                        <label title="text" for="star3"></label>
+                        <input value="2" name="rate" id="star2" type="radio">
+                        <label title="text" for="star2"></label>
+                        <input value="1" name="rate" id="star1" type="radio">
+                        <label title="text" for="star1"></label>
+                      </div>
+                    </div>
+                    <p class="card-footer">
+                      30 Mins &nbsp;
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="movie">
+          <div class="movie-card">
+            <div class="movie-card-content">
+
+              <div class="movie-card-back-content">
+                <img src="/assets/images/films_profile_covers/DoctorStrange2.jpg" alt="">
+              </div>
+
+              <div class="movie-card-front">
+                <div class="movie-card-front-content">
+                  <small class="badge">Categoría</small>
+                  <div class="description">
+                    <div class="title">
+                      <div class="rating">
+                        <input value="5" name="rate" id="star5" type="radio">
+                        <label title="text" for="star5"></label>
+                        <input value="4" name="rate" id="star4" type="radio">
+                        <label title="text" for="star4"></label>
+                        <input value="3" name="rate" id="star3" type="radio" checked="">
+                        <label title="text" for="star3"></label>
+                        <input value="2" name="rate" id="star2" type="radio">
+                        <label title="text" for="star2"></label>
+                        <input value="1" name="rate" id="star1" type="radio">
+                        <label title="text" for="star1"></label>
+                      </div>
+                    </div>
+                    <p class="card-footer">
+                      30 Mins &nbsp;
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="movie">
+          <div class="movie-card">
+            <div class="movie-card-content">
+
+              <div class="movie-card-back-content">
+                <img src="/assets/images/films_profile_covers/Ghostbusters.jpg" alt="">
+              </div>
+
+              <div class="movie-card-front">
+                <div class="movie-card-front-content">
+                  <small class="badge">Categoría</small>
+                  <div class="description">
+                    <div class="title">
+                      <div class="rating">
+                        <input value="5" name="rate" id="star5" type="radio">
+                        <label title="text" for="star5"></label>
+                        <input value="4" name="rate" id="star4" type="radio">
+                        <label title="text" for="star4"></label>
+                        <input value="3" name="rate" id="star3" type="radio" checked="">
+                        <label title="text" for="star3"></label>
+                        <input value="2" name="rate" id="star2" type="radio">
+                        <label title="text" for="star2"></label>
+                        <input value="1" name="rate" id="star1" type="radio">
+                        <label title="text" for="star1"></label>
+                      </div>
+                    </div>
+                    <p class="card-footer">
+                      30 Mins &nbsp;
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="movie">
+          <div class="movie-card">
+            <div class="movie-card-content">
+
+              <div class="movie-card-back-content">
+                <img src="/assets/images/films_profile_covers/ShawshankRedemption.jpg" alt="">
+              </div>
+
+              <div class="movie-card-front">
+                <div class="movie-card-front-content">
+                  <small class="badge">Categoría</small>
+                  <div class="description">
+                    <div class="title">
+                      <div class="rating">
+                        <input value="5" name="rate" id="star5" type="radio">
+                        <label title="text" for="star5"></label>
+                        <input value="4" name="rate" id="star4" type="radio">
+                        <label title="text" for="star4"></label>
+                        <input value="3" name="rate" id="star3" type="radio" checked="">
+                        <label title="text" for="star3"></label>
+                        <input value="2" name="rate" id="star2" type="radio">
+                        <label title="text" for="star2"></label>
+                        <input value="1" name="rate" id="star1" type="radio">
+                        <label title="text" for="star1"></label>
+                      </div>
+                    </div>
+                    <p class="card-footer">
+                      30 Mins &nbsp;
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="movie">
+          <div class="movie-card">
+            <div class="movie-card-content">
+
+              <div class="movie-card-back-content">
+                <img src="/assets/images/films_profile_covers/TheGoonies.jpg" alt="">
+              </div>
+
+              <div class="movie-card-front">
+                <div class="movie-card-front-content">
+                  <small class="badge">Categoría</small>
+                  <div class="description">
+                    <div class="title">
+                      <div class="rating">
+                        <input value="5" name="rate" id="star5" type="radio">
+                        <label title="text" for="star5"></label>
+                        <input value="4" name="rate" id="star4" type="radio">
+                        <label title="text" for="star4"></label>
+                        <input value="3" name="rate" id="star3" type="radio" checked="">
+                        <label title="text" for="star3"></label>
+                        <input value="2" name="rate" id="star2" type="radio">
+                        <label title="text" for="star2"></label>
+                        <input value="1" name="rate" id="star1" type="radio">
+                        <label title="text" for="star1"></label>
+                      </div>
+                    </div>
+                    <p class="card-footer">
+                      30 Mins &nbsp;
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div id="footer"></div>
+</body>
+<script src="/app/components/header/header.js"></script>
+<script src="/app/components/sidebar/sidebar.js"></script>
+<script src="/app/components/footer/footer.js"></script>
+
+</html>

@@ -16,8 +16,8 @@ function generateHeader(data) {
           </div>
         </div>
         <div class="navbar-right">
-          <button>${data.registerButtonText}</button>
-          <button>${data.loginButtonText}</button>
+          <a href="app/views/register/register.html"><button>Registrarse</button></a>
+          <a href="app/views/loginv1/login.html"><button>Iniciar sesión</button></a>
         </div>
       </div>
     </header>
@@ -33,7 +33,7 @@ let headerData = {
   searchPlaceholder: "Buscar...",
   searchButtonText: "Buscar",
   registerButtonText: "Registrarse",
-  loginButtonText: "Iniciar sesión"
+  loginButtonText: "Iniciar sesión",
 };
 
 // Generate header HTML and insert into the page
