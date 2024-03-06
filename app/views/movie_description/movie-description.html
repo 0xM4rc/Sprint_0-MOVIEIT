@@ -3,30 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="movie-description-style.css">
-    <title>MOVIEIT</title>
+    <link rel="stylesheet" href="/app/views/movie_description/movie-description-style.css">
+    <link rel="stylesheet" href="/styles/global_styles.css">
+    <title>Movie Description</title>
 </head>
 
 <body>
-    <header>
-        <div class="navbar">
-            <div class="navbar-left">
-                <span class="logo">MOVIEIT</span>
-            </div>
-            <div class="navbar-center">
-                <div class="search-bar">
-                    <form action="/buscar" method="get">
-                        <input type="text" name="q" placeholder="Buscar...">
-                        <button type="submit">Buscar</button>
-                    </form>
-                </div>
-            </div>
-            <div class="navbar-right">
-                <button>Registrarse</button>
-                <button>Iniciar sesión</button>
-            </div>
-        </div>
-    </header>
+    <!-- TODO: Ajustar estetica de la páquina -->
+    <div id="header"></div>
     <div class="movie-details-container">
         <div class="movie-image">
             <img src="/assets/images/films_covers/avatar.jpg" />
@@ -256,6 +240,13 @@
             </div>
         </div>
     </section>
+
+    <div id="footer"></div>
+
+    <script src="/app/components/film_card/simple_card/film_card.js"></script>
+    <script src="/app/components/header/header.js"></script>
+    <script src="/app/components/sidebar/sidebar.js"></script>
+    <script src="/app/components/footer/footer.js"></script>
 </body>
 
 </html>
