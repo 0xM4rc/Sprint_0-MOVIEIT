@@ -3,250 +3,128 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/app/views/movie_description/movie-description-style.css">
     <link rel="stylesheet" href="/styles/global_styles.css">
+    <link rel="stylesheet" href="/app/views/movie_description/movie-description-style.css">
     <title>Movie Description</title>
 </head>
 
 <body>
     <!-- TODO: Ajustar estetica de la páquina -->
     <div id="header"></div>
-    <div class="movie-details-container">
-        <div class="movie-image">
-            <img src="/assets/images/films_covers/avatar.jpg" />
-            <div class="rating">
-                <span>★</span>
-                <span>★</span>
-                <span>★</span>
-                <span>★</span><span>★</span>
-            </div>
-        </div>
+
+    <main class="movie-details-container">
         <div class="movie-description">
-            <h1>Avatar</h1>
-            <p class="movie-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum
-                cursus erat. Aliquam dolor nibh, convallis in massa nec, pellentesque
-                ultricies velit. Nam interdum efficitur felis eget tincidunt. Mauris et
-                odio sed ex pharetra vestibulum quis sit amet tellus. Praesent non
-                consectetur felis. Class aptent taciti sociosqu ad litora torquent per
-                conubia nostra, per inceptos himenaeos. Morbi volutpat tortor nec ligula
-                semper rutrum. Sed egestas risus quam, quis facilisis mi feugiat eget.
-                Integer id scelerisque massa. In in enim eu dolor ultricies efficitur.
-                Nam fermentum luctus luctus. Nulla sed lacus et dolor iaculis posuere eu
-                sed massa. Phasellus ipsum leo, elementum eget pretium eget, tempor
-                egestas elit.</p>
-            <div class="movie-trailer">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/CpXJHWSXJW0?si=VEC6oNjDwqpNKK68"
-                    title="YouTube video player" frameborder="0" allow="accelerometer;
-                autoplay;
-                clipboard-write;
-                encrypted-media;
-                gyroscope;
-                picture-in-picture;
-                web-share" allowfullscreen></iframe>
+            <div class="movie-image">
+                <img src="/assets/images/films_covers/avatar.jpg" alt="Avatar" />
+                <div class="rating">
+                    <span>★</span>
+                    <span>★</span>
+                    <span>★</span>
+                    <span>★</span>
+                    <span>★</span>
+                </div>
+            </div>
+            <div>
+                <h1>Avatar</h1>
+                <p class="movie-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum cursus
+                    erat. Aliquam dolor nibh, convallis in massa nec, pellentesque ultricies velit. Nam interdum
+                    efficitur felis eget tincidunt. Mauris et odio sed ex pharetra vestibulum quis sit amet tellus.
+                    Praesent non consectetur felis. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+                    per inceptos himenaeos. Morbi volutpat tortor nec ligula semper rutrum. Sed egestas risus quam, quis
+                    facilisis mi feugiat eget. Integer id scelerisque massa. In in enim eu dolor ultricies efficitur.
+                    Nam fermentum luctus luctus. Nulla sed lacus et dolor iaculis posuere eu sed massa. Phasellus ipsum
+                    leo, elementum eget pretium eget, tempor egestas elit.</p>
+                <div class="movie-trailer">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/CpXJHWSXJW0?si=VEC6oNjDwqpNKK68"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
             </div>
         </div>
-    </div>
 
-    <table>
-        <tbody>
-            <tr>
-                <td>Lorem ipsum</td>
-                <td>dolor sit amet, consectetur adipiscing elit</td>
-            </tr>
-            <tr>
-                <td>Lorem ipsum</td>
-                <td>dolor sit amet, consectetur adipiscing elit</td>
-            </tr>
-            <tr>
-                <td>Lorem ipsum</td>
-                <td>dolor sit amet, consectetur adipiscing elit</td>
-            </tr>
-            <tr>
-                <td>Lorem ipsum</td>
-                <td>dolor sit amet, consectetur adipiscing elit</td>
-            </tr>
-        </tbody>
-    </table>
-    <h2>Comentarios</h2>
-    <section class="comment-section">
-        <div class="comments">
-            <img alt="profile" src="/assets/images/profile_photos/Profile-photo.jpg" class="film-image" />
-            <div class="comment-text">
-                <strong class="user-name">
-                    <span>John Doe</span>
-                    <br />
-                </strong>
-                <span class="comment">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                    elementum cursus erat. Aliquam dolor nibh, convallis in massa nec,
-                    pellentesque ultricies velit. Nam interdum efficitur felis eget
-                    tincidunt..
-                </span>
-            </div>
-        </div>
-        <div class="comments">
-            <img alt="profile" src="/assets/images/profile_photos/Profile-photo1.jpg" class="film-image" />
-            <div class="comment-text">
-                <strong class="user-name">
-                    <span>Jane Doe</span>
-                    <br />
-                </strong>
-                <span class="coment">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                    elementum cursus erat. Aliquam dolor nibh, convallis in massa nec,
-                    pellentesque ultricies velit. Nam interdum efficitur felis eget
-                    tincidunt..
-                </span>
-            </div>
-        </div>
-    </section>
-    <h2>Películas relacionadas</h2>
-    <section class="related-movies">
-        <div class="movies-container">
-            <div class="movie">
-                <div class="movie-card">
-                    <div class="movie-card-content">
-                        <div class="movie-card-back-content">
-                            <img src="/assets/images/films_covers/avatar.jpg" alt="">
-                        </div>
-                        <div class="movie-card-front">
-                            <div class="movie-card-front-content">
-                                <small class="badge">Categoría</small>
-                                <div class="description">
-                                    <div class="title">
-                                        <div class="rating">
-                                            <span>★</span>
-                                            <span>★</span>
-                                            <span>★</span>
-                                            <span>★</span><span>★</span>
-                                        </div>
-                                    </div>
-                                    <p class="card-footer">
-                                        30 Mins &nbsp;
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <table>
+            <tbody>
+                <tr>
+                    <td>Lorem ipsum</td>
+                    <td>dolor sit amet, consectetur adipiscing elit</td>
+                </tr>
+                <tr>
+                    <td>Lorem ipsum</td>
+                    <td>dolor sit amet, consectetur adipiscing elit</td>
+                </tr>
+                <tr>
+                    <td>Lorem ipsum</td>
+                    <td>dolor sit amet, consectetur adipiscing elit</td>
+                </tr>
+                <tr>
+                    <td>Lorem ipsum</td>
+                    <td>dolor sit amet, consectetur adipiscing elit</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Comentarios</h2>
+        <br>
+        <section class="comment-section">
+            <div class="comments">
+                <img alt="profile" src="/assets/images/profile_photos/Profile-photo.jpg" class="film-image" />
+                <div class="comment-text">
+                    <strong class="user-name">
+                        <span>John Doe</span>
+                        <br />
+                    </strong>
+                    <span class="comment">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                        elementum cursus erat. Aliquam dolor nibh, convallis in massa nec,
+                        pellentesque ultricies velit. Nam interdum efficitur felis eget
+                        tincidunt..
+                    </span>
                 </div>
             </div>
-            <div class="movie">
-                <div class="movie-card">
-                    <div class="movie-card-content">
-                        <div class="movie-card-back-content">
-                            <img src="/assets/images/films_covers/breaking_bad.jpg" alt="">
-                        </div>
-                        <div class="movie-card-front">
-                            <div class="movie-card-front-content">
-                                <small class="badge">Categoría</small>
-                                <div class="description">
-                                    <div class="title">
-                                        <div class="rating">
-                                            <span>★</span>
-                                            <span>★</span>
-                                            <span>★</span>
-                                            <span>★</span><span>★</span>
-                                        </div>
-                                    </div>
-                                    <p class="card-footer">
-                                        30 Mins &nbsp;
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="comments">
+                <img alt="profile" src="/assets/images/profile_photos/Profile-photo1.jpg" class="film-image" />
+                <div class="comment-text">
+                    <strong class="user-name">
+                        <span>Jane Doe</span>
+                        <br />
+                    </strong>
+                    <span class="coment">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                        elementum cursus erat. Aliquam dolor nibh, convallis in massa nec,
+                        pellentesque ultricies velit. Nam interdum efficitur felis eget
+                        tincidunt..
+                    </span>
                 </div>
             </div>
-            <div class="movie">
-                <div class="movie-card">
-                    <div class="movie-card-content">
-                        <div class="movie-card-back-content">
-                            <img src="/assets/images/films_covers/matrix.jpg" alt="">
-                        </div>
-                        <div class="movie-card-front">
-                            <div class="movie-card-front-content">
-                                <small class="badge">Categoría</small>
-                                <div class="description">
-                                    <div class="title">
-                                        <div class="rating">
-                                            <span>★</span>
-                                            <span>★</span>
-                                            <span>★</span>
-                                            <span>★</span><span>★</span>
-                                        </div>
-                                    </div>
-                                    <p class="card-footer">
-                                        30 Mins &nbsp;
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        </section>
+        <h2>Películas relacionadas</h2>
+        <br>
+        <section>
+            <div class="movies-container">
+                <div class="simpleFilmCard" data-link="/assets/images/films_covers/avatar.jpg" data-time="30 Mins">
                 </div>
-            </div>
-            <div class="movie">
-                <div class="movie-card">
-                    <div class="movie-card-content">
-                        <div class="movie-card-back-content">
-                            <img src="/assets/images/films_covers/the_dark_knight.jpg" alt="">
-                        </div>
-                        <div class="movie-card-front">
-                            <div class="movie-card-front-content">
-                                <small class="badge">Categoría</small>
-                                <div class="description">
-                                    <div class="title">
-                                        <div class="rating">
-                                            <span>★</span>
-                                            <span>★</span>
-                                            <span>★</span>
-                                            <span>★</span><span>★</span>
-                                        </div>
-                                    </div>
-                                    <p class="card-footer">
-                                        30 Mins &nbsp;
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="movie">
-                <div class="movie-card">
-                    <div class="movie-card-content">
-                        <div class="movie-card-back-content">
-                            <img src="/assets/images/films_covers/the_godfather.jpg" alt="">
-                        </div>
-                        <div class="movie-card-front">
-                            <div class="movie-card-front-content">
-                                <small class="badge">Categoría</small>
-                                <div class="description">
-                                    <div class="title">
-                                        <div class="rating">
-                                            <span>★</span>
-                                            <span>★</span>
-                                            <span>★</span>
-                                            <span>★</span><span>★</span>
-                                        </div>
-                                    </div>
-                                    <p class="card-footer">
-                                        30 Mins &nbsp;
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <div id="footer"></div>
+                <div class="simpleFilmCard" data-link="/assets/images/films_covers/matrix.jpg" data-time="30 Mins">
+                </div>
 
-    <script src="/app/components/film_card/simple_card/film_card.js"></script>
-    <script src="/app/components/header/header.js"></script>
-    <script src="/app/components/sidebar/sidebar.js"></script>
-    <script src="/app/components/footer/footer.js"></script>
+                <div class="simpleFilmCard" data-link="/assets/images/films_covers/the_dark_knight.jpg"
+                    data-time="30 Mins"></div>
+
+                <div class="simpleFilmCard" data-link="/assets/images/films_covers/the_godfather.jpg"
+                    data-time="30 Mins"></div>
+
+                <div class="simpleFilmCard" data-link="/assets/images/films_covers/breaking_bad.jpg"
+                    data-time="30 Mins"></div>
+            </div>
+        </section>
+
+
+        <div id="footer"></div>
+
+        <script src="/app/components/film_card/simple_card/film_card.js"></script>
+        <script src="/app/components/header/header.js"></script>
+        <script src="/app/components/sidebar/sidebar.js"></script>
+        <script src="/app/components/footer/footer.js"></script>
 </body>
 
 </html>

@@ -20,22 +20,23 @@
 
 /* Estilos para el pulgar (la parte móvil) de la barra de desplazamiento en WebKit */
 ::-webkit-scrollbar-thumb {
-  background-color: #fff; /* Color del pulgar */
+  background-color: yellow; /* Color del pulgar */
   border-radius: 6px; /* Radio de borde del pulgar */
   border: 3px solid #000; /* Borde del pulgar */
 }
 
 /* Estilos para el pulgar cuando se está moviendo en WebKit */
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #ccc; /* Cambia el color del pulgar cuando se pasa el mouse sobre él */
+  background-color: #bdb003; /* Cambia el color del pulgar cuando se pasa el mouse sobre él */
 }
 
 /* Estilos para la barra de desplazamiento horizontal en Firefox */
 @supports (-moz-appearance:none) {
   /* Estilos para la pista en Firefox */
   html {
-    scrollbar-color: white black; /* Define el color de la barra (pulgar) y el color de la pista, respectivamente */
-    scrollbar-width: thin; /* Define el grosor de la barra */
+    scrollbar-color: yellow black; /* Define el color de la barra (pulgar) y el color de la pista, respectivamente */
+    scrollbar-width: auto; /* Define el grosor de la barra */
+
   }
 }
 
@@ -174,7 +175,6 @@ button:hover {
 .navbar-right {
   flex: 1;
   text-align: right;
-  /* display: flex; */
 }
 
 /* Estilos para los botones de registrarse e iniciar sesión */
