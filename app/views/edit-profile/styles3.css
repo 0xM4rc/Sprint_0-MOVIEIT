@@ -73,7 +73,6 @@ h2{
     align-items: center;
     justify-content: center;
     align-self: center;
-    display: flex;
     width: 100%;
 }
 
@@ -117,14 +116,14 @@ h2{
     flex: 2;
     text-align: left;
 }
-.prueba2 {
+.formulario2 {
     display:grid;
     align-items: center;
     justify-content: center;
     align-self: center;
 }
 
-.prueba2 input[type="text"] {
+.formulario2 input[type="text"] {
     padding: 8px;
     width: 300px;
     border-radius: 5px;
@@ -133,7 +132,7 @@ h2{
     margin-top: 15px;
 }
 
-.prueba2 button {
+.formulario2 button {
     padding: 8px 16px;
     background-color: yellow;
     color: rgb(0, 0, 0);
@@ -142,13 +141,13 @@ h2{
     cursor: pointer;
     font-size: 16px;
 }
-.prueba3{
+.formulario3{
     display:grid;
     align-items: center;
     justify-content: center;
     align-self: center;
 }
-.prueba3 input[type="password"]{
+.formulario3 input[type="password"]{
     padding: 8px;
     width: 300px;
     border-radius: 5px;
@@ -157,7 +156,7 @@ h2{
     margin: 5px;
 }
 
-.prueba3 input[type="text"]{
+.formulario3 input[type="text"]{
     padding: 8px;
     width: 300px;
     border-radius: 5px;
@@ -170,7 +169,6 @@ h2{
     display: inline-block;
     font-size: 1rem;
     padding: 0.4em 0.4em;
-    margin-right: 2px; /* Espacio entre los botones */
     background-color: #000;
     border: 3px solid yellow;
     border-radius: 1em;

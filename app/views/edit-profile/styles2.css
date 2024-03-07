@@ -110,23 +110,6 @@
     z-index: 1;
 }
 
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background: black;
-}
-
-::-webkit-scrollbar-thumb {
-    border-radius: 20px;
-    background: yellow;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: rgb(255, 255, 0);
-}
-
 .movie-card {
     overflow: visible;
     width: 200px;
