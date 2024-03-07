@@ -157,11 +157,11 @@ section {
     border-radius: 100%;
 }
 
-#cta{
+#cta-favorites,#cta-watched,#cta-toSee,#cta-lists{
     width:100%; cursor: pointer; position: absolute;
 }
 
-#cta .arrow{left: 30%;}
+#cta-favorites,#cta-watched,#cta-toSee,#cta-lists .arrow{left: 30%;}
 .arrow {position: absolute;  margin-left:0px; width: 12px; height: 12px; background-size: contain; top:14px;}
 .segunda{margin-left: 8px;}
 .next {
