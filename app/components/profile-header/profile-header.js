@@ -4,16 +4,16 @@ function generateProfileHeader(data) {
     <div class="header-user">
       <div class="header-img">
         <img src="" id="imageToChange" alt="header"/>
-        <script src="/app/components/profile-header/script1.js"></script>
+        <script src="../../components/profile-header/script1.js"></script>
       </div>
       <div class="user-img">
-        <img src="/assets/images/films_profile_covers/user/Avatar2.jpeg" alt="Descripción de la imagen"/>
+        <img src="../../../assets/images/films_profile_covers/user/Avatar2.jpeg" alt="Descripción de la imagen"/>
       </div>
       <div class="user-name">
         <div class="etiqueta-bonita" id="name">${data.userName}</div>
       </div>
       <div class="buttons-mode">
-        <a href="/app/views/edit-profile/edit-profile.html">
+        <a href="../edit-profile/edit-profile.html">
           <button class="btn edit" id="editar">${data.editarBtn}</button>
         </a>
         <button class="btn close">${data.cerrarBtn}</button>

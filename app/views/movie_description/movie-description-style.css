@@ -1,6 +1,5 @@
 * {
     font-family: Arial, sans-serif;
-    color: white;
 }
 
 .movie-description {
@@ -49,8 +48,7 @@ td {
 }
 
 .movie-details-container{
-    margin-top: 20px;
-    margin-bottom: 50px;
+    margin: 20px;
 }
 .movie-image {
     float: left;

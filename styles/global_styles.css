@@ -7,6 +7,7 @@
   box-sizing: border-box;
 }
 
+
 /* Estilos para la barra de desplazamiento horizontal en WebKit */
 ::-webkit-scrollbar {
   height: 12px; /* Altura de la barra de desplazamiento */
@@ -105,8 +106,8 @@ header {
 
 /* Barra lateral */
 .sidebar {
+  z-index: 9999;
   position: fixed;
-  top: 0;
   width: 250px;
   height: 100%;
   color: #000; /* Texto negro */
