@@ -39,12 +39,10 @@ class SimpleFilmCard {
 
 var containers = document.querySelectorAll(".simpleFilmCard");
 
-// Iterar sobre cada contenedor y generar la tarjeta de película destacada para cada uno
 containers.forEach(function(container) {
   var link = container.getAttribute("data-link");
   var time = container.getAttribute("data-time");
 
-  // Crear una nueva instancia de HighlightedFilmCard y generar el HTML
   var card = new SimpleFilmCard(link, time);
   container.innerHTML = card.generateHTML();
 });

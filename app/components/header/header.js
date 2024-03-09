@@ -27,7 +27,7 @@ function generateHeader(data) {
 let headerData = {
   siteName: "MOVIEIT",
   filterButtonText: "Filtrar",
-  searchAction: "/buscar",
+  searchAction: "../search-result-page/search-result-page.html",
   searchMethod: "get",
   searchName: "q",
   searchPlaceholder: "Buscar...",
