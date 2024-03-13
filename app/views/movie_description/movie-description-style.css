@@ -6,6 +6,7 @@
     .movie-description {
         flex-wrap: wrap;
         justify-content: flex-start;
+        margin-bottom: 1.25em;
     }
     .movie-description h1 {
         all: initial; /* Restablece todas las propiedades */
