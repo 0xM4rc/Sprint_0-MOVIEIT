@@ -9,7 +9,6 @@ document.addEventListener("DOMContentLoaded", function () {
             alert("Las contraseñas deben de coincidir");
             return false;
         } else {
-            alert("Todo esta correcto");
             form.submit();
             return true;
         }
