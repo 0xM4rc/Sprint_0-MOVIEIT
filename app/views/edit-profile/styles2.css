@@ -48,7 +48,7 @@
     border: 1px solid black;
 }
 
-    
+
 .edit:hover {background-color: rgb(255, 246, 168); border: 2px solid yellow;}
 
 .close {
@@ -149,7 +149,7 @@ section {
     align-items: center;
     justify-content: center;
     position: absolute;
-    right: 0%;
+    right: 0;
     border: 2px solid #fff;
     width: 40px;
     height: 40px;
@@ -161,7 +161,7 @@ section {
 }
 
 #cta-favorites,#cta-watched,#cta-toSee,#cta-lists .arrow{left: 30%;}
-.arrow {position: absolute;  margin-left:0px; width: 12px; height: 12px; background-size: contain; top:14px;}
+.arrow {position: absolute;  margin-left:0; width: 12px; height: 12px; background-size: contain; top:14px;}
 .segunda{margin-left: 8px;}
 .next {
 	background-image: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiI+PHN0eWxlPi5zdDB7ZmlsbDojZmZmfTwvc3R5bGU+PHBhdGggY2xhc3M9InN0MCIgZD0iTTMxOS4xIDIxN2MyMC4yIDIwLjIgMTkuOSA1My4yLS42IDczLjdzLTUzLjUgMjAuOC03My43LjZsLTE5MC0xOTBjLTIwLjEtMjAuMi0xOS44LTUzLjIuNy03My43UzEwOSA2LjggMTI5LjEgMjdsMTkwIDE5MHoiLz48cGF0aCBjbGFzcz0ic3QwIiBkPSJNMzE5LjEgMjkwLjVjMjAuMi0yMC4yIDE5LjktNTMuMi0uNi03My43cy01My41LTIwLjgtNzMuNy0uNmwtMTkwIDE5MGMtMjAuMiAyMC4yLTE5LjkgNTMuMi42IDczLjdzNTMuNSAyMC44IDczLjcuNmwxOTAtMTkweiIvPjwvc3ZnPg==);
@@ -209,7 +209,7 @@ section {
     background-color: yellow;
     border: none;
     color: #000;
-    font-size: 1rem;
+    font-size: 0.7rem;
     font-weight: bold;
     padding: 0.5rem 1rem;
     text-transform: uppercase;
@@ -218,4 +218,74 @@ section {
     overflow: hidden;
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
     border-radius: 10px; /* Redondea las esquinas */
+}
+
+
+
+@media(max-width: 431px){
+    body{
+        background-color: black;
+    }
+    .main-page{
+        margin: 15px;
+    }
+    .scoreboard{
+        font-size: 1rem;
+    }
+    .header-img img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+    }
+    .header-user {
+        height: 150px;
+    }
+
+    .user-img img{
+        overflow: hidden;
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+        display: block;
+        z-index: 1;
+        top: 51px;
+        left: 38px;
+        position: absolute;
+    }
+    .user-name {
+        font-size: 18px;
+        font-weight: bold;
+        z-index: 1;
+        top: 27%;
+        left: 30%;
+    }
+    .edit {
+        font-size: 0.7rem;
+        height: 22px;
+        width: 80px;
+        top: 100px;
+        left: 30%;
+    }
+    .close {
+        font-size: 0.7rem;
+    }
+    .movies-container {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 10px;
+        -webkit-overflow-scrolling: touch;
+    }
+    .movie img {
+        width: 100px;
+        height: 200px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .movie-card {
+        overflow: visible;
+        width: 100px;
+        height: 200px;
+    }
+
 }

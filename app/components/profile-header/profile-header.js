@@ -38,3 +38,14 @@ if (window.location.pathname.includes('edit-profile.html')) {
   // Si la URL contiene "pagina1.html", elimina el botón
   editarBtn.remove();
 }
+
+window.onload = function() {
+  let anchoPantalla = window.innerWidth;
+  if(anchoPantalla<431){
+    editarBtn.remove();
+
+
+  }else{
+    changeImage(images);
+  }
+}
