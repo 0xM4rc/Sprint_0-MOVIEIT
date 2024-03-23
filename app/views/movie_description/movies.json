@@ -1,0 +1,92 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "attributes": {
+        "Title": "Avatar",
+        "Description": "Año 2154. Jake Sully (Sam Worthington), un ex-marine condenado a vivir en una silla de ruedas, sigue siendo, a pesar de ello, un auténtico guerrero. Precisamente por ello ha sido designado para ir a Pandora, donde algunas empresas están extrayendo un mineral extraño que podría resolver la crisis energética de la Tierra. Para contrarrestar la toxicidad de la atmósfera de Pandora, se ha creado el programa Avatar, gracias al cual los seres humanos mantienen sus conciencias unidas a un avatar: un cuerpo biológico controlado de forma remota que puede sobrevivir en el aire letal. Esos cuerpos han sido creados con ADN humano, mezclado con ADN de los nativos de Pandora, los Na'vi. Convertido en avatar, Jake puede caminar otra vez. Su misión consiste en infiltrarse entre los Na'vi, que se han convertido en el mayor obstáculo para la extracción del mineral. Pero cuando Neytiri, una bella Na'vi (Zoe Saldana), salva la vida de Jake, todo cambia: Jake, tras superar ciertas pruebas, es admitido en su clan. Mientras tanto, los hombres esperan los resultados de la misión de Jake",
+        "Director": "James Cameron",
+        "Producers": "James Cameron, Jon Landau",
+        "Cast": "Sam Worthington, Zoe Saldaña, Stephen Lang, Sigourney Weaver, Michelle Rodriguez ",
+        "Genres": "Ciencia ficción, Aventuras, Bélico, Acción, Fantástico, Romance ",
+        "Length": "161 min",
+        "StreamingPlatforms": "Disney+",
+        "createdAt": "2024-03-18T12:24:18.206Z",
+        "updatedAt": "2024-03-18T19:39:54.669Z",
+        "publishedAt": "2024-03-18T19:46:46.892Z"
+      }
+    },
+    {
+      "id": 2,
+      "attributes": {
+        "Title": "The Matrix",
+        "Description": "Thomas Anderson es un brillante programador de una respetable compañía de software. Pero fuera del trabajo es Neo, un hacker que un día recibe una misteriosa visita...",
+        "Director": "Lilly Wachowski, Lana Wachowski",
+        "Producers": "Joel Silver, Aiko Otani",
+        "Cast": "Keanu Reeves, Carrie-Anne Moss, Laurence Fishburne, Hugo Weaving, Joe Pantoliano ",
+        "Genres": "Ciencia ficción, Fantástico, Acción, Thriller",
+        "Length": "131 min",
+        "StreamingPlatforms": "HBO Max, Prime Video",
+        "createdAt": "2024-03-18T19:32:58.171Z",
+        "updatedAt": "2024-03-18T19:40:36.768Z",
+        "publishedAt": "2024-03-18T19:46:46.892Z"
+      }
+    },
+    {
+      "id": 3,
+      "attributes": {
+        "Title": "The Dark Knight",
+        "Description": "Batman/Bruce Wayne (Christian Bale) regresa para continuar su guerra contra el crimen. Con la ayuda del teniente Jim Gordon (Gary Oldman) y del Fiscal del Distrito Harvey Dent (Aaron Eckhart), Batman se propone destruir el crimen organizado en la ciudad de Gotham. El triunvirato demuestra su eficacia, pero, de repente, aparece Joker (Heath Ledger), un nuevo criminal que desencadena el caos y tiene aterrados a los ciudadanos.",
+        "Director": "Christopher Nolan",
+        "Producers": "Emma Thomas, Charles Roven, Christopher Nolan",
+        "Cast": "Christian Bale, Heath Ledger, Michael Caine, Gary Oldman, Aaron Eckhart",
+        "Genres": "Thriller, Acción, Drama ",
+        "Length": "152 min",
+        "StreamingPlatforms": "HBO Max",
+        "createdAt": "2024-03-20T19:11:50.329Z",
+        "updatedAt": "2024-03-20T19:11:50.329Z",
+        "publishedAt": "2024-03-21T08:58:22.807Z"
+      }
+    },
+    {
+      "id": 4,
+      "attributes": {
+        "Title": "The Godfather",
+        "Description": "América, años 40. Don Vito Corleone (Marlon Brando) es el respetado y temido jefe de una de las cinco familias de la mafia de Nueva York. Tiene cuatro hijos: Connie (Talia Shire), el impulsivo Sonny (James Caan), el pusilánime Fredo (John Cazale) y Michael (Al Pacino), que no quiere saber nada de los negocios de su padre. Cuando Corleone, en contra de los consejos de 'Il consigliere' Tom Hagen (Robert Duvall), se niega a participar en el negocio de las drogas, el jefe de otra banda ordena su asesinato. Empieza entonces una violenta y cruenta guerra entre las familias mafiosas.",
+        "Director": "Francis Ford Coppola",
+        "Producers": "Albert S. Ruddy",
+        "Cast": "Marlon Brando, Al Pacino, Robert Duvall, James Caan, Richard Castellano ",
+        "Genres": "Drama, Crimen",
+        "Length": "175 min",
+        "StreamingPlatforms": "Amazon Prime Video, Netflix",
+        "createdAt": "2024-03-20T19:16:46.917Z",
+        "updatedAt": "2024-03-20T19:16:46.917Z",
+        "publishedAt": "2024-03-21T08:58:22.807Z"
+      }
+    },
+    {
+      "id": 20,
+      "attributes": {
+        "Title": "Breaking Bad",
+        "Description": "Tras cumplir 50 años, Walter White (Bryan Cranston), un profesor de química de un instituto de Albuquerque, Nuevo México, se entera de que tiene un cáncer de pulmón incurable. Casado con Skyler (Anna Gunn) y con un hijo discapacitado (RJ Mitte), la brutal noticia lo impulsa a dar un drástico cambio a su vida: decide, con la ayuda de un antiguo alumno (Aaron Paul), fabricar anfetaminas y ponerlas a la venta. Lo que pretende es liberar a su familia de problemas económicos cuando se produzca el fatal desenlace.",
+        "Director": "Vince Gilligan",
+        "Producers": "Stewart A. Lyons, Sam Catlin, John Shiban, Peter Gould, George Mastras, Thomas Schnauz, Melissa Bernstein, Diane Mercer, Bryan Cranston, Moira Walley-Beckett, Karen Moore, Patty Lin",
+        "Cast": "Bryan Cranston, Anna Gunn, Aaron Paul, Dean Norris, Betsy Brandt",
+        "Genres": "Thriller, Drama, Neo-Wéstern, Humor negro",
+        "Length": "45 min/cap",
+        "StreamingPlatforms": "Netflix",
+        "createdAt": "2024-03-21T08:57:46.591Z",
+        "updatedAt": "2024-03-21T08:57:46.591Z",
+        "publishedAt": "2024-03-21T08:58:22.807Z"
+      }
+    }
+  ],
+  "meta": {
+    "pagination": {
+      "page": 1,
+      "pageSize": 25,
+      "pageCount": 1,
+      "total": 5
+    }
+  }
+}

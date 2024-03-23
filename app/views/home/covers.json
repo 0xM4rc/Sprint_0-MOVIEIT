@@ -1,0 +1,62 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "attributes": {
+        "createdAt": "2024-03-18T19:42:02.183Z",
+        "updatedAt": "2024-03-21T10:03:18.579Z",
+        "publishedAt": "2024-03-18T19:46:57.490Z",
+        "Title": "Avatar",
+        "Url": "../../../assets/images/films_covers/avatar.jpg"
+      }
+    },
+    {
+      "id": 2,
+      "attributes": {
+        "createdAt": "2024-03-18T19:42:20.636Z",
+        "updatedAt": "2024-03-21T10:03:33.958Z",
+        "publishedAt": "2024-03-18T19:46:57.490Z",
+        "Title": "The Matrix",
+        "Url": "../../../assets/images/films_covers/matrix.jpg"
+      }
+    },
+    {
+      "id": 5,
+      "attributes": {
+        "createdAt": "2024-03-21T08:43:14.316Z",
+        "updatedAt": "2024-03-21T10:03:51.184Z",
+        "publishedAt": "2024-03-21T09:01:18.201Z",
+        "Title": "The Godfather",
+        "Url": "../../../assets/images/films_covers/the_godfather.jpg"
+      }
+    },
+    {
+      "id": 7,
+      "attributes": {
+        "createdAt": "2024-03-21T08:43:35.727Z",
+        "updatedAt": "2024-03-21T10:04:02.136Z",
+        "publishedAt": "2024-03-21T09:01:18.201Z",
+        "Title": "The Dark Knight",
+        "Url": "../../../assets/images/films_covers/the_dark_knight.jpg"
+      }
+    },
+    {
+      "id": 23,
+      "attributes": {
+        "createdAt": "2024-03-21T09:00:53.062Z",
+        "updatedAt": "2024-03-21T10:04:19.949Z",
+        "publishedAt": "2024-03-21T09:01:18.201Z",
+        "Title": "Breaking Bad",
+        "Url": "../../../assets/images/films_covers/breaking_bad.jpg"
+      }
+    }
+  ],
+  "meta": {
+    "pagination": {
+      "page": 1,
+      "pageSize": 25,
+      "pageCount": 1,
+      "total": 5
+    }
+  }
+}
