@@ -58,10 +58,11 @@ function changeImage(arrayImages) {
 
 window.onload = function() {
   let anchoPantalla = window.innerWidth;
-  if(anchoPantalla<400){
+  if(anchoPantalla<431){
     changeImage(imagesMobile);
 
   }else{
     changeImage(images);
   }
 }
+
