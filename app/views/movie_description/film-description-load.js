@@ -1,12 +1,18 @@
 var movie;
 var selectedMovie;
-
-
-fetch('movies.json')
+selectedMovie = sessionStorage.getItem("selectedMovie");
+fetch('/app/data/covers.json')
+    .then(response => response.json())
+    .then(data => {
+        const movieImage = document.querySelector(".movie-image");
+        const cover = data.data.find(movie => movie.id == selectedMovie);
+        let imageElement = document.createElement("img");
+        imageElement.src = cover.attributes.Url;
+        movieImage.prepend(imageElement);
+    });
+fetch('/app/data/movies.json')
 .then(response => response.json())
 .then(data => {
-
-    selectedMovie = sessionStorage.getItem("selectedMovie");
     movie = data.data.find(movie => movie.id == selectedMovie);
     const titleDescriptionContainer = document.getElementById("title-description");
     const directorRow = document.getElementById("movie-director");
@@ -49,4 +55,4 @@ fetch('movies.json')
 
     titleDescriptionContainer.prepend(movieText);
     titleDescriptionContainer.prepend(movieTitle);
-})
+});
