@@ -1,5 +1,12 @@
 var movie;
 var selectedMovie;
+
+function createAndAppendRowContent(row, elementContent) {
+    const element = document.createElement("td");
+    element.textContent = elementContent
+    row.appendChild(element);
+}
+
 selectedMovie = sessionStorage.getItem("selectedMovie");
 fetch('/app/data/covers.json')
     .then(response => response.json())
@@ -29,29 +36,12 @@ fetch('/app/data/movies.json')
     movieText.classList.add("movie-text");
     movieText.textContent = movie.attributes.Description;
 
-    var movieDirector = document.createElement("td");
-    movieDirector.textContent = movie.attributes.Director;
-    directorRow.appendChild(movieDirector);
-
-    var movieProducers = document.createElement("td");
-    movieProducers.textContent = movie.attributes.Producers;
-    producersRow.appendChild(movieProducers);
-
-    var movieCast = document.createElement("td");
-    movieCast.textContent = movie.attributes.Cast;
-    castRow.appendChild(movieCast);
-
-    var movieGenres = document.createElement("td");
-    movieGenres.textContent = movie.attributes.Genres;
-    genresRow.appendChild(movieGenres);
-
-    var movieLength = document.createElement("td");
-    movieLength.textContent = movie.attributes.Length;
-    lengthRow.appendChild(movieLength);
-
-    var movieStreamingPlatforms = document.createElement("td");
-    movieStreamingPlatforms.textContent = movie.attributes.StreamingPlatforms;
-    streamingPlatformsRow.appendChild(movieStreamingPlatforms);
+    createAndAppendRowContent(directorRow, movie.attributes.Director);
+    createAndAppendRowContent(producersRow, movie.attributes.Producers);
+    createAndAppendRowContent(castRow, movie.attributes.Cast);
+    createAndAppendRowContent(genresRow, movie.attributes.Genres);
+    createAndAppendRowContent(lengthRow, movie.attributes.Length);
+    createAndAppendRowContent(streamingPlatformsRow, movie.attributes.StreamingPlatforms);
 
     titleDescriptionContainer.prepend(movieText);
     titleDescriptionContainer.prepend(movieTitle);
