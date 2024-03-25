@@ -1,7 +1,21 @@
+var movie;
+var selectedMovie;
+const boton1 = document.getElementById('1');
+const boton2 = document.getElementById('2');
+const boton3 = document.getElementById('3');
+const boton4 = document.getElementById('4');
+const boton5 = document.getElementById('20');
+
+function obtenerIdBoton(boton) {
+    return boton.id;
+}
+
 fetch('movies.json')
 .then(response => response.json())
 .then(data => {
-    const movie = data.data.find(movie => movie.id === 1);
+
+    selectedMovie = sessionStorage.getItem("selectedMovie");
+    movie = data.data.find(movie => movie.id == selectedMovie);
     const titleDescriptionContainer = document.getElementById("title-description");
     const directorRow = document.getElementById("movie-director");
     const producersRow = document.getElementById("movie-producers");
