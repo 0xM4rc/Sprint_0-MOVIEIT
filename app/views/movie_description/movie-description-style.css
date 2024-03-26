@@ -110,6 +110,11 @@ td {
     max-width: 100%;
 }
 
+.movie-image img {
+    width: 22.125em;
+    height: 31.25em;
+}
+
 .movie-text{
     text-align: justify;
     line-height: 1.45em;
