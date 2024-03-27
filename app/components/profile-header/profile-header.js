@@ -47,32 +47,9 @@ document.getElementById("profile-header").innerHTML = generateProfileHeader(prof
 
 if(anchoPantalla < 431){
   document.getElementById("menu").innerHTML = generatePuntos();
-}else{
+}else {
   document.getElementById("menu").innerHTML = generateBotones();
-
 }
-
-if (window.location.pathname.includes('edit-profile.html')) {
-  editarBtn.remove();
-}
-
-function changeThree() {
-  var container = document.createElement("div");
-  container.className("container");
-  headerUser.appendChild(container);
-
-  let menu = document.createElement("div");
-  menu.className("group-menu");
-  container.appendChild(menu);
-
-  for(let i = 0;i<3;i++){
-    let dots = document.createElement("div");
-    dots.className("dot");
-    menu.appendChild(dots);
-  }
-}
-
-
 
 function generateBotones() {
   return '<a href="../edit-profile/edit-profile.html">\n' +
@@ -124,22 +101,27 @@ function hideMenu(e) {
 document.getElementById("more-btn").addEventListener("click", function() {
   var contenedor = document.getElementById("contenedorBotones");
   if(punto == 1){
-    boton1.textContent = "Editar perfil";
-    boton2.textContent = "Cerrar Sesión";
+    if (window.location.pathname.includes('/profile.html')) {
+      boton1.textContent = "Editar perfil";
+      boton1.classList.add("botones");
+      contenedor.appendChild(boton1);
+    }
 
-    boton1.classList.add("botones");
+    boton2.textContent = "Cerrar Sesión";
     boton2.classList.add("botones");
 
-    contenedor.appendChild(boton1);
     contenedor.appendChild(boton2);
     punto = 2;
   }else{
-    contenedor.removeChild(boton1);
+    if (window.location.pathname.includes('/profile.html')) {
+      contenedor.removeChild(boton1);
+    }
     contenedor.removeChild(boton2);
     punto = 1;
   }
 
 });
+
 
 boton1.addEventListener("click", function() {
   window.location.href = "../edit-profile/edit-profile.html";

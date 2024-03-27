@@ -197,6 +197,7 @@ h2{
 @media(max-width: 431px){
     body{
         background-color: black;
+        align-items: center;
     }
     .main-page{
         margin: 15px;
@@ -241,6 +242,28 @@ h2{
     .close {
         font-size: 0.7rem;
     }
-
-
+    .half-container{
+        display: inline-grid;
+    }
+    .carrusel{
+        display: flex;
+        flex-wrap: nowrap;
+        overflow: scroll;
+    }
+    .elemento{
+        flex: 1 0 auto;
+        margin: 0 50px;
+    }
+    .others{
+        width: 85vw;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        display: flex;
+        margin-right: 10px;
+        margin-left: 15px;
+        flex-wrap: initial;
+    }
+    .user-img3:hover{
+        transform: scale(1);
+    }
 }
