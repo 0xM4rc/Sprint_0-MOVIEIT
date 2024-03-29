@@ -37,7 +37,7 @@ function generateHeader(){
   return '<div id="profile-header"></div>';
 }
 
-if(anchoPantalla < 431) {
+if(anchoPantalla < 1025) {
   document.getElementById("header1").innerHTML = generateHeader();
 }else{
   document.getElementById('header2').innerHTML=generateHeader();
@@ -45,18 +45,29 @@ if(anchoPantalla < 431) {
 
 document.getElementById("profile-header").innerHTML = generateProfileHeader(profileData);
 
-if(anchoPantalla < 431){
+if(anchoPantalla < 1025){
   document.getElementById("menu").innerHTML = generatePuntos();
 }else {
-  document.getElementById("menu").innerHTML = generateBotones();
+  if (window.location.pathname.includes('/profile.html')){
+    document.getElementById("menu").innerHTML = generateBotonesEditar();
+  }else{
+    document.getElementById("menu").innerHTML= generateBotonesNoEditar();
+  }
 }
 
-function generateBotones() {
+function generateBotonesEditar() {
   return '<a href="../edit-profile/edit-profile.html">\n' +
       '<button class="btn edit" id="editar">Editar</button>\n' +
       '</a>\n' +
       '<button class="btn close" id="close">Cerrar Sesión</button>'
 }
+
+function generateBotonesNoEditar() {
+  return '<a href="../edit-profile/edit-profile.html">\n' +
+      '</a>\n' +
+      '<button class="btn close" id="close">Cerrar Sesión</button>'
+}
+
 
 function generatePuntos() {
   return '<div class="container">\n' +
@@ -71,10 +82,12 @@ function generatePuntos() {
       '</div>'
 }
 
-var el = document.querySelector('.more');
-var btn = el.querySelector('.more-btn');
-var menu = el.querySelector('.more-menu');
-var visible = false;
+if(anchoPantalla<1025){
+  var el = document.querySelector('.more');
+  var btn = el.querySelector('.more-btn');
+  var menu = el.querySelector('.more-menu');
+  var visible = false;
+}
 
 function showMenu(e) {
   e.preventDefault();
@@ -98,30 +111,30 @@ function hideMenu(e) {
   }
 }
 
-document.getElementById("more-btn").addEventListener("click", function() {
-  var contenedor = document.getElementById("contenedorBotones");
-  if(punto == 1){
-    if (window.location.pathname.includes('/profile.html')) {
-      boton1.textContent = "Editar perfil";
-      boton1.classList.add("botones");
-      contenedor.appendChild(boton1);
+if(anchoPantalla<1025) {
+  document.getElementById("more-btn").addEventListener("click", function () {
+    var contenedor = document.getElementById("contenedorBotones");
+    if (punto == 1) {
+      if (window.location.pathname.includes('/profile.html')) {
+        boton1.textContent = "Editar perfil";
+        boton1.classList.add("botones");
+        contenedor.appendChild(boton1);
+      }
+
+      boton2.textContent = "Cerrar Sesión";
+      boton2.classList.add("botones");
+
+      contenedor.appendChild(boton2);
+      punto = 2;
+    } else {
+      if (window.location.pathname.includes('/profile.html')) {
+        contenedor.removeChild(boton1);
+      }
+      contenedor.removeChild(boton2);
+      punto = 1;
     }
-
-    boton2.textContent = "Cerrar Sesión";
-    boton2.classList.add("botones");
-
-    contenedor.appendChild(boton2);
-    punto = 2;
-  }else{
-    if (window.location.pathname.includes('/profile.html')) {
-      contenedor.removeChild(boton1);
-    }
-    contenedor.removeChild(boton2);
-    punto = 1;
-  }
-
-});
-
+  });
+}
 
 boton1.addEventListener("click", function() {
   window.location.href = "../edit-profile/edit-profile.html";
@@ -129,4 +142,6 @@ boton1.addEventListener("click", function() {
 boton2.addEventListener("click", function() {
   window.location.href = "https://www.google.com";
 });
+
+
 

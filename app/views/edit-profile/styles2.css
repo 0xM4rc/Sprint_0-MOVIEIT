@@ -221,14 +221,15 @@ section {
 }
 
 .container {
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 5%;
     position: absolute;
-    top: 10%;
     right: 45%;
     align-items: center;
     margin-right: -50%;
-    transform: translate(-50%, -50%);
     text-align: center;
     z-index: 99999;
+
 }
 
 .more-menu {
@@ -413,5 +414,14 @@ section {
         font-size: 0.7rem;
         width: 100px;
     }
+}
 
+@media(max-width: 1025px){
+    .main-page{
+        margin: 30px;
+    }
+    .container{
+        right: 50%;
+        top:10%;
+    }
 }

@@ -78,7 +78,7 @@ h2{
 }
 
 .others{
-    width: 100%;
+    width: 95%;
     flex-wrap: wrap;
     display: flex;
     margin-right: 10px;
@@ -196,7 +196,6 @@ h2{
 
 @media(max-width: 431px){
     body{
-        background-color: black;
         align-items: center;
     }
     .main-page{
@@ -267,3 +266,5 @@ h2{
         transform: scale(1);
     }
 }
+
+
