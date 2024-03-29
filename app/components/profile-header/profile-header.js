@@ -1,6 +1,5 @@
 function generateProfileHeader(data) {
   return `
-    <header>
     <div class="header-user">
       <div class="header-img">
         <img src="" id="imageToChange" alt="header"/>
@@ -19,7 +18,6 @@ function generateProfileHeader(data) {
         <button class="btn close">${data.cerrarBtn}</button>
       </div>
     </div>
-  </header>
   `;
 }
 
