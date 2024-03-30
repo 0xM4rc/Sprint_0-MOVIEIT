@@ -75,14 +75,12 @@ body {
 .main-page{
   margin: 0 auto;
   max-width: 1200px;
-  margin-top: 20px;
 }
 
 /* Estilos para la cabecera */
 header {
   background-color: #000;
   color: white;
-  padding: 10px;
   position: sticky;
   top: 0;
   width: 100%;
