@@ -78,7 +78,7 @@ h2{
 }
 
 .others{
-    width: 100%;
+    width: 95%;
     flex-wrap: wrap;
     display: flex;
     margin-right: 10px;
@@ -193,3 +193,78 @@ h2{
 .load button:hover {
     box-shadow: 0 0 10px #efd997, 0 0 20px #fff200, 0 0 20px #f6eabb inset;
 }
+
+@media(max-width: 431px){
+    body{
+        align-items: center;
+    }
+    .main-page{
+        margin: 15px;
+    }
+    .scoreboard{
+        font-size: 1rem;
+    }
+    .header-img img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+    }
+    .header-user {
+        height: 150px;
+    }
+
+    .user-img img{
+        overflow: hidden;
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+        display: block;
+        z-index: 1;
+        top: 51px;
+        left: 38px;
+        position: absolute;
+    }
+    .user-name {
+        font-size: 18px;
+        font-weight: bold;
+        z-index: 1;
+        top: 35%;
+        left: 27%;
+    }
+    .edit {
+        font-size: 0.7rem;
+        height: 22px;
+        width: 80px;
+        top: 100px;
+        left: 30%;
+    }
+    .close {
+        font-size: 0.7rem;
+    }
+    .half-container{
+        display: inline-grid;
+    }
+    .carrusel{
+        display: flex;
+        flex-wrap: nowrap;
+        overflow: scroll;
+    }
+    .elemento{
+        flex: 1 0 auto;
+        margin: 0 50px;
+    }
+    .others{
+        width: 85vw;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        display: flex;
+        margin-right: 10px;
+        margin-left: 15px;
+        flex-wrap: initial;
+    }
+    .user-img3:hover{
+        transform: scale(1);
+    }
+}
+
+

@@ -64,6 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     imageElement.src = images[randomIndex];
 
+    //For themes
     //var b = document.getElementById("editar");
     //b.style.backgroundColor='#cb89b6';
     //var c = document.getElementsByClassName("etiqueta-bonita");
