@@ -2,15 +2,68 @@
     font-family: Arial, sans-serif;
 }
 
-.movie-description {
-    display: flex;
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    .movie-description {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin-bottom: 1.25em;
+    }
+    .movie-description h1 {
+        all: initial; /* Restablece todas las propiedades */
+        text-align: center;
+        color: #fff;
+        font-size: 1.5em;
+    }
+    table {
+        font-size: 1.075em;
+    }
+    .movie-text {
+        font-size: 1.075em;
+        margin-right: 0.935em;
+    }
+    .movie-trailer {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+    }
+    .comment-section {
+        flex-wrap: wrap;
+        width: 31em;
+    }
+    .comments {
+        margin: 0.9em;
+    }
 }
 
-.movie-description h1{
-    all: initial; /* Restablece todas las propiedades */
-    text-align: center;
-    color: #fff;
-    font-size: 34px;
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .movie-description h1 {
+        all: initial; /* Restablece todas las propiedades */
+        text-align: center;
+        color: #fff;
+        font-size: 2.15em;
+    }
+    .movie-text {
+        font-size: 1.075em;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .movie-description h1 {
+        all: initial; /* Restablece todas las propiedades */
+        text-align: center;
+        color: #fff;
+        font-size: 2.15em;
+    }
+    .comment-section {
+        flex-wrap: nowrap;
+    }
+    .comments{
+        margin: 0.625em;
+    }
+}
+
+.movie-description {
+    display: flex;
 }
 
 h2 {
@@ -55,6 +108,12 @@ td {
     float: left;
     margin-left: 25px;
     margin-right: 50px;
+    max-width: 100%;
+}
+
+.movie-image img {
+    width: 22.125em;
+    height: 31.25em;
 }
 
 .movie-image img {
@@ -64,7 +123,7 @@ td {
 
 .movie-text{
     text-align: justify;
-    line-height: 25px;
+    line-height: 1.45em;
     margin-bottom: 25px;
 }
 
@@ -78,19 +137,16 @@ p.movie-text {
 
 .comment-section{
     display: flex;
-    flex-wrap: nowrap; /* Evita que los elementos se envuelvan en varias filas */
     overflow-x: auto; /* Agrega una barra de desplazamiento horizontal si los elementos se desbordan */
     -webkit-overflow-scrolling: touch; /* Mejora el desplazamiento en dispositivos táctiles */
     margin-bottom: 50px;
 }
-.comments{
-    margin: 10px;
-}
+
 .film-image{
     overflow: hidden;
     border-radius: 50%;
-    width:100px; /* Ajusta el ancho según tus necesidades */
-    height: 100px; /* Ajusta el ancho de la imagen al 100% del contenedor */
+    width:7.25em; /* Ajusta el ancho según tus necesidades */
+    height: 7.25em; /* Ajusta el ancho de la imagen al 100% del contenedor */
     z-index: 1;
     position: absolute;
     float: left;
@@ -99,6 +155,8 @@ p.movie-text {
 }
 .comment-text {
     margin-left: 150px;
+    font-size: 1.075em;
+    line-height: 1.45em;
 }
 
 section {
