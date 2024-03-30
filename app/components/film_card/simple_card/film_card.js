@@ -1,7 +1,8 @@
 class SimpleFilmCard {
-  constructor(link, time) {
+  constructor(link, time, id) {
       this.link = link;
       this.time = time;
+      this.id = id
   }
 
   generateHTML() {
@@ -27,6 +28,9 @@ class SimpleFilmCard {
                                 <p class="card-footer">
                                 ${this.time} &nbsp;
                                 </p>
+                                <a href="../movie_description/movie-description.html">
+                                <button class="watch-more-button" id="${this.id}">Ir</button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -42,8 +46,15 @@ var containers = document.querySelectorAll(".simpleFilmCard");
 containers.forEach(function(container) {
   var link = container.getAttribute("data-link");
   var time = container.getAttribute("data-time");
+  var id = container.getAttribute("data-id")
 
-  var card = new SimpleFilmCard(link, time);
+  var card = new SimpleFilmCard(link, time, id);
   container.innerHTML = card.generateHTML();
 });
+const buttons = document.querySelectorAll(".watch-more-button");
 
+buttons.forEach(button => {
+    button.addEventListener('click', function () {
+        sessionStorage.setItem("selectedMovie", this.id);
+    })
+});

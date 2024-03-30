@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../../styles/global_styles.css">
     <link rel="stylesheet" href="../../views/movie_description/movie-description-style.css">
     <link rel="stylesheet" href="../../components/header/header.css" />
@@ -15,7 +16,7 @@
     <main class="movie-details-container">
         <div class="movie-description">
             <div class="movie-image">
-                <img src="../../../assets/images/films_covers/avatar.jpg" alt="Avatar" />
+
                 <div class="rating">
                     <span>★</span>
                     <span>★</span>
@@ -23,6 +24,26 @@
                     <span>★</span>
                     <span>★</span>
                 </div>
+                <table>
+                    <tbody style="color: white">
+                    <tr>
+                        <td>Lorem ipsum</td>
+                        <td>dolor sit amet, consectetur adipiscing elit</td>
+                    </tr>
+                    <tr>
+                        <td>Lorem ipsum</td>
+                        <td>dolor sit amet, consectetur adipiscing elit</td>
+                    </tr>
+                    <tr>
+                        <td>Lorem ipsum</td>
+                        <td>dolor sit amet, consectetur adipiscing elit</td>
+                    </tr>
+                    <tr>
+                        <td>Lorem ipsum</td>
+                        <td>dolor sit amet, consectetur adipiscing elit</td>
+                    </tr>
+                    </tbody>
+                </table>
             </div>
             <div>
                 <h1 style="color: white">Avatar</h1>
@@ -43,26 +64,6 @@
             </div>
         </div>
 
-        <table>
-            <tbody style="color: white">
-                <tr>
-                    <td>Lorem ipsum</td>
-                    <td>dolor sit amet, consectetur adipiscing elit</td>
-                </tr>
-                <tr>
-                    <td>Lorem ipsum</td>
-                    <td>dolor sit amet, consectetur adipiscing elit</td>
-                </tr>
-                <tr>
-                    <td>Lorem ipsum</td>
-                    <td>dolor sit amet, consectetur adipiscing elit</td>
-                </tr>
-                <tr>
-                    <td>Lorem ipsum</td>
-                    <td>dolor sit amet, consectetur adipiscing elit</td>
-                </tr>
-            </tbody>
-        </table>
         <h2>Comentarios</h2>
         <br>
         <section class="comment-section" style="color: white">
@@ -101,20 +102,27 @@
         <br>
         <section>
             <div class="movies-container">
-                <div class="simpleFilmCard" data-link="../../../assets/images/films_covers/avatar.jpg" data-time="30 Mins">
+                <div class="simpleFilmCard" data-link="../../../assets/images/films_covers/avatar.jpg"
+                     data-time="30 Mins"
+                     data-id=1>
                 </div>
 
-                <div class="simpleFilmCard" data-link="../../../assets/images/films_covers/matrix.jpg" data-time="30 Mins">
+                <div class="simpleFilmCard" data-link="../../../assets/images/films_covers/matrix.jpg"
+                     data-time="30 Mins"
+                     data-id=2>
                 </div>
 
                 <div class="simpleFilmCard" data-link="../../../assets/images/films_covers/the_dark_knight.jpg"
-                    data-time="30 Mins"></div>
+                     data-time="30 Mins"
+                     data-id=3></div>
 
                 <div class="simpleFilmCard" data-link="../../../assets/images/films_covers/the_godfather.jpg"
-                    data-time="30 Mins"></div>
+                     data-time="30 Mins"
+                     data-id=4></div>
 
                 <div class="simpleFilmCard" data-link="../../../assets/images/films_covers/breaking_bad.jpg"
-                    data-time="30 Mins"></div>
+                     data-time="30 Mins"
+                     data-id=20></div>
             </div>
         </section>
     </main>
@@ -126,6 +134,7 @@
     <script src="../../components/sidebar/sidebar.js"></script>
     <script src="../../components/search-menu/search-menu.js"></script>
     <script src="../../components/footer/footer.js"></script>
+    <script src="film-description-load.js"></script>
 </body>
 
 </html>

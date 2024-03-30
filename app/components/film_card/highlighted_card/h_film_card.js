@@ -1,7 +1,8 @@
 class HighlightedFilmCard {
-  constructor(link, time) {
+  constructor(link, time, id) {
       this.link = link;
       this.time = time;
+      this.id = id;
   }
 
   generateHTML() {
@@ -29,6 +30,9 @@ class HighlightedFilmCard {
                             <p class="card-footer">
                                 ${this.time} &nbsp;
                             </p>
+                            <a href="../movie_description/movie-description.html">
+                                <button class="watch-more-button" id="${this.id}">Ir</button>
+                                </a>
                         </div>
                     </div>
                 </div>
@@ -44,7 +48,8 @@ var containers = document.querySelectorAll(".highlightedFilmCard");
 containers.forEach(function(container) {
   var link = container.getAttribute("data-link");
   var time = container.getAttribute("data-time");
+  var id = container.getAttribute("data-id")
 
-  var card = new HighlightedFilmCard(link, time);
+  var card = new HighlightedFilmCard(link, time, id);
   container.innerHTML = card.generateHTML();
 });
