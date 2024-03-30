@@ -36,8 +36,7 @@ var containers = document.querySelectorAll(".listCard");
 containers.forEach(function(container) {
   var link = container.getAttribute("data-link");
   var number = container.getAttribute("data-number");
-  
+
   var card = new listCard(link, number);
   container.innerHTML = card.generateHTML();
 });
-

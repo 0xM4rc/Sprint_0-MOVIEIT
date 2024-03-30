@@ -50,15 +50,9 @@ function changeImage(arrayImages) {
   imageElement.src = arrayImages[randomIndex];
 }
 
-function changeImage(arrayImages) {
-  let imageElement = document.getElementById('imageToChange');
-  let randomIndex = Math.floor(Math.random() * arrayImages.length);
-  imageElement.src = arrayImages[randomIndex];
-}
-
 window.onload = function() {
   let anchoPantalla = window.innerWidth;
-  if(anchoPantalla<431){
+  if(anchoPantalla<450){
     changeImage(imagesMobile);
 
   }else{

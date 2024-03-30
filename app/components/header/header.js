@@ -1,40 +1,31 @@
-// Function to generate header HTML
-function generateHeader(data) {
-  return `
-    <header>
-      <div class="navbar">
-        <div class="navbar-left">
-          <span class="logo">${data.siteName}</span>
+function createStickyHeader() {
+    // Crea el elemento header y añade el HTML proporcionado
+    var header = document.createElement('header');
+    header.innerHTML = `
+        <div class="navbar">
+            <div class="navbar-left">
+                <span class="logo">MOVIEIT</span>
+            </div>
+            <div class="container"></div>
+            <div class="iconContainer">
+                <svg viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg" class="search_icon">
+                    <path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"></path>
+                </svg>
+            </div>
+            <label class="burger" for="burger">
+                <input type="checkbox" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
         </div>
-        <div class="navbar-center">
-          <button id="openBtn">${data.filterButtonText}</button>
-          <div class="search-bar">
-            <form action="${data.searchAction}" method="${data.searchMethod}">
-              <input type="text" name="${data.searchName}" placeholder="${data.searchPlaceholder}">
-              <button type="submit">${data.searchButtonText}</button>
-            </form>
-          </div>
-        </div>
-        <div class="navbar-right">
-          <a href="../register/register.html"><button>Registrarse</button></a>
-          <a href="../login/login.html"><button>Iniciar sesión</button></a>
-        </div>
-      </div>
-    </header>
-  `;
+    `;
+    header.style.position = 'sticky';
+
+
+    // Inserta el header en la página
+    document.body.insertBefore(header, document.body.firstChild);
 }
 
-let headerData = {
-  siteName: "MOVIEIT",
-  filterButtonText: "Filtrar",
-  searchAction: "../search-result-page/search-result-page.html",
-  searchMethod: "get",
-  searchName: "q",
-  searchPlaceholder: "Buscar...",
-  searchButtonText: "Buscar",
-  registerButtonText: "Registrarse",
-  loginButtonText: "Iniciar sesión",
-};
-
-// Generate header HTML and insert into the page
-document.getElementById("header").innerHTML = generateHeader(headerData);
+// Llama a la función cuando el contenido del DOM esté completamente cargado
+document.addEventListener('DOMContentLoaded', createStickyHeader);
