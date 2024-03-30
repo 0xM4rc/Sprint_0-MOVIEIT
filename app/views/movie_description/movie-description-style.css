@@ -34,6 +34,7 @@ table {
     border-collapse: collapse;
     margin-left: 25px;
     margin-bottom: 50px;
+    color: white;
 }
 
 table,
@@ -56,10 +57,19 @@ td {
     margin-right: 50px;
 }
 
+.movie-image img {
+    height: 500px;
+    width: 354px;
+}
+
 .movie-text{
     text-align: justify;
     line-height: 25px;
     margin-bottom: 25px;
+}
+
+p.movie-text {
+    color: white;
 }
 
 .movie-trailer{
