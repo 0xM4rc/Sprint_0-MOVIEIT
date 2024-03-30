@@ -1,6 +1,6 @@
 var boton1 = document.createElement("button");
 var boton2 = document.createElement("button");
-var punto = 1;
+var activado = false;
 
 function generateProfileHeader(data) {
   return `
@@ -114,7 +114,7 @@ function hideMenu(e) {
 if(anchoPantalla<1025) {
   document.getElementById("more-btn").addEventListener("click", function () {
     var contenedor = document.getElementById("contenedorBotones");
-    if (punto == 1) {
+    if (activado == false) {
       if (window.location.pathname.includes('/profile.html')) {
         boton1.textContent = "Editar perfil";
         boton1.classList.add("botones");
@@ -125,13 +125,13 @@ if(anchoPantalla<1025) {
       boton2.classList.add("botones");
 
       contenedor.appendChild(boton2);
-      punto = 2;
+      activado = true;
     } else {
       if (window.location.pathname.includes('/profile.html')) {
         contenedor.removeChild(boton1);
       }
       contenedor.removeChild(boton2);
-      punto = 1;
+      activado = false;
     }
   });
 }
