@@ -4,7 +4,6 @@ var activado = false;
 
 function generateProfileHeader(data) {
   return `
-    <header>
     <div class="header-user" id="header-user">
       <div class="header-img">
         <img src="" id="imageToChange" alt="header"/>
@@ -18,7 +17,6 @@ function generateProfileHeader(data) {
       </div>
       <div class="buttons-mode" id="menu"></div>
     </div>
-  </header>
   `;
 }
 
