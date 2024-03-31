@@ -75,6 +75,7 @@ body {
 .main-page{
   margin: 0 auto;
   max-width: 1200px;
+  margin-top: 20px;
 }
 
 /* Estilos para la cabecera */
@@ -87,7 +88,7 @@ header {
   z-index: 1000;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid white;
-  
+  padding: 10px;
 }
 
 /* Estilos para la barra de navegación */
