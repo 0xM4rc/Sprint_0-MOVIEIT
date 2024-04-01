@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MOVIEIT</title>
+    <link rel="stylesheet" href="../../../styles/global_styles.css" />
+  </head>
+
+  <body>
+    <div id="header"></div>
+
+    <main class="main-page">
+      <div id="sidebarTemplate"></div>
+
+      <div class="main-cover">
+        <img
+          src="../../../assets/images/films_main_covers/Screen-Shot-2018-01-31-at-5.55.24-AM.png"
+          alt=""
+        />
+      </div>
+
+      <section>
+        <h1>Tendencia</h1>
+        <div class="movies-container">
+          <div
+                  class="highlightedFilmCard"
+                  data-link="../../../assets/images/films_covers/avatar.jpg"
+                  data-time="30 Mins"
+                  data-id="1"
+          ></div>
+
+          <div
+                  class="highlightedFilmCard"
+                  data-link="../../../assets/images/films_covers/matrix.jpg"
+                  data-time="30 Mins"
+                  data-id="2"
+          ></div>
+
+          <div
+                  class="highlightedFilmCard"
+                  data-link="../../../assets/images/films_covers/the_dark_knight.jpg"
+                  data-time="30 Mins"
+                  data-id="3"
+          ></div>
+
+          <div
+                  class="highlightedFilmCard"
+                  data-link="../../../assets/images/films_covers/the_godfather.jpg"
+                  data-time="30 Mins"
+                  data-id="4"
+          ></div>
+
+          <div
+                  class="highlightedFilmCard"
+                  data-link="../../../assets/images/films_covers/breaking_bad.jpg"
+                  data-time="30 Mins"
+                  data-id="20"
+          ></div>
+        </div>
+      </section>
+
+      <section>
+        <h1>Recientemente vistas</h1>
+        <div class="movies-container">
+          <div
+            class="simpleFilmCard"
+            data-link="../../../assets/images/films_covers/avatar.jpg"
+            data-time="30 Mins"
+            data-id="1"
+          ></div>
+
+          <div
+            class="simpleFilmCard"
+            data-link="../../../assets/images/films_covers/matrix.jpg"
+            data-time="30 Mins"
+            data-id="2"
+          ></div>
+
+          <div
+            class="simpleFilmCard"
+            data-link="../../../assets/images/films_covers/the_dark_knight.jpg"
+            data-time="30 Mins"
+            data-id="3"
+          ></div>
+
+          <div
+            class="simpleFilmCard"
+            data-link="../../../assets/images/films_covers/the_godfather.jpg"
+            data-time="30 Mins"
+            data-id="4"
+          ></div>
+
+          <div
+            class="simpleFilmCard"
+            data-link="../../../assets/images/films_covers/breaking_bad.jpg"
+            data-time="30 Mins"
+            data-id="20"
+          ></div>
+        </div>
+      </section>
+    </main>
+
+  <div id="footer"></div>
+
+    <script src="../../components/film_card/highlighted_card/h_film_card.js"></script>
+    <script src="../../components/film_card/simple_card/film_card.js"></script>
+    <script src="../../components/header/header.js"></script>
+    <script src="../../components/sidebar/sidebar.js"></script>
+    <script src="../../components/footer/footer.js"></script>
+  </body>
+</html>

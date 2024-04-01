@@ -1,0 +1,121 @@
+* {
+    font-family: Arial, sans-serif;
+}
+
+.movie-description {
+    display: flex;
+}
+
+.movie-description h1{
+    all: initial; /* Restablece todas las propiedades */
+    text-align: center;
+    color: #fff;
+    font-size: 34px;
+}
+
+h2 {
+    display: inline-block; /* Hace que el título ocupe solo el ancho del texto */
+    background-color: yellow;
+    border: none;
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0 #fff;
+    box-shadow: 4px 4px 0 #000;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    border-radius: 10px; /* Redondea las esquinas */
+    margin-left: 25px;
+}
+table {
+    border-collapse: collapse;
+    margin-left: 25px;
+    margin-bottom: 50px;
+    color: white;
+}
+
+table,
+th,
+td {
+    border: 1px solid white;
+}
+
+th,
+td {
+    padding: 5px;
+}
+
+.movie-details-container{
+    margin: 20px;
+}
+.movie-image {
+    float: left;
+    margin-left: 25px;
+    margin-right: 50px;
+}
+
+.movie-image img {
+    height: 500px;
+    width: 354px;
+}
+
+.movie-text{
+    text-align: justify;
+    line-height: 25px;
+    margin-bottom: 25px;
+}
+
+p.movie-text {
+    color: white;
+}
+
+.movie-trailer{
+    text-align: center;
+}
+
+.comment-section{
+    display: flex;
+    flex-wrap: nowrap; /* Evita que los elementos se envuelvan en varias filas */
+    overflow-x: auto; /* Agrega una barra de desplazamiento horizontal si los elementos se desbordan */
+    -webkit-overflow-scrolling: touch; /* Mejora el desplazamiento en dispositivos táctiles */
+    margin-bottom: 50px;
+}
+.comments{
+    margin: 10px;
+}
+.film-image{
+    overflow: hidden;
+    border-radius: 50%;
+    width:100px; /* Ajusta el ancho según tus necesidades */
+    height: 100px; /* Ajusta el ancho de la imagen al 100% del contenedor */
+    z-index: 1;
+    position: absolute;
+    float: left;
+    margin-left: 25px;
+    margin-right: 50px;
+}
+.comment-text {
+    margin-left: 150px;
+}
+
+section {
+    margin-left: 25px;
+}
+
+.related-movies{
+    float: left;
+    margin-left: 25px;
+}
+
+.title p {
+    width: 50%;
+}
+
+.movie-card-footer {
+    color: #ffffff88;
+    margin-top: 5px;
+    font-size: 8px;
+}
