@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b7a777c-6bca-4f34-a3a8-527c17a56a35" name="Changes" comment="Vistas estáticas de login, register, movie description y search result añadidas.Estilos globales añadidos. Fotos de perfil y portada de Avatar agregados">
+    <list default="true" id="0b7a777c-6bca-4f34-a3a8-527c17a56a35" name="Changes" comment="Estilos de headings de login y register arreglados">
+      <change afterPath="$PROJECT_DIR$/sprint3-MOVIEIT/src/assets/images/films_covers/breaking_bad.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sprint3-MOVIEIT/src/assets/images/films_covers/matrix.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sprint3-MOVIEIT/src/assets/images/films_covers/the_dark_knight.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sprint3-MOVIEIT/src/assets/images/films_covers/the_godfather.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sprint3-MOVIEIT/src/app/login/login.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/sprint3-MOVIEIT/src/app/login/login.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint3-MOVIEIT/src/app/register/register.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/sprint3-MOVIEIT/src/app/register/register.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint3-MOVIEIT/src/app/register/register.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/sprint3-MOVIEIT/src/app/register/register.component.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,7 +203,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711968792112</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Estilos de headings de login y register arreglados">
+      <option name="closed" value="true" />
+      <created>1712219782652</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1712219782652</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,6 +242,7 @@
     <MESSAGE value="Mockups de diseño responsive añadidos" />
     <MESSAGE value="." />
     <MESSAGE value="Vistas estáticas de login, register, movie description y search result añadidas.Estilos globales añadidos. Fotos de perfil y portada de Avatar agregados" />
-    <option name="LAST_COMMIT_MESSAGE" value="Vistas estáticas de login, register, movie description y search result añadidas.Estilos globales añadidos. Fotos de perfil y portada de Avatar agregados" />
+    <MESSAGE value="Estilos de headings de login y register arreglados" />
+    <option name="LAST_COMMIT_MESSAGE" value="Estilos de headings de login y register arreglados" />
   </component>
 </project>

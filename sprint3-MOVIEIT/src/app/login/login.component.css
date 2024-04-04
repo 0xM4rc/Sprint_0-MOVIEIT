@@ -97,7 +97,7 @@ textarea {
 }
 
 @media only screen and (min-width: 320px) and (max-width: 768px) {
-  .login-container, .register-container, .form {
+  .login-container, .form {
     width: 20em;
   }
   .banner {
@@ -106,7 +106,7 @@ textarea {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){
-  .login-container, .register-container, .form {
+  .login-container, .form {
     width: 45em;
   }
   .banner {
@@ -115,7 +115,7 @@ textarea {
 }
 
 @media only screen and (min-width: 1024px){
-  .login-container, .register-container {
+  .login-container {
     width: 50em;
   }
   .banner {
@@ -201,7 +201,7 @@ body {
   align-content: center;
 }
 
-.login-container,.register-container {
+.login-container {
   position: relative;
   height: 65vh;
   display: grid;
@@ -285,20 +285,10 @@ body {
   color: black;
 }
 
-.register-input {
-  border: none;
-  outline: none;
-  border-radius: 15px;
-  padding: 1em;
-  background-color: #ccc;
-  box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
-  transition: 300ms ease-in-out;
-  margin-top: 10px;
-  color: black;
-}
 
 
-.input:focus, .register-input:focus {
+
+.input:focus {
   background-color: white;
   transform: scale(1.05);
   box-shadow: 13px 13px 100px #969696,
