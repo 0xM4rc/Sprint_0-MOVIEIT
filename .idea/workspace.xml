@@ -4,30 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b7a777c-6bca-4f34-a3a8-527c17a56a35" name="Changes" comment=".">
-      <change afterPath="$PROJECT_DIR$/sprint3-MOVIEIT/src/app/login/login.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sprint3-MOVIEIT/src/app/login/login.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sprint3-MOVIEIT/src/app/login/login.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sprint3-MOVIEIT/src/app/login/login.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sprint3-MOVIEIT/src/app/movie-description/movie-description.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sprint3-MOVIEIT/src/app/movie-description/movie-description.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sprint3-MOVIEIT/src/app/movie-description/movie-description.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sprint3-MOVIEIT/src/app/movie-description/movie-description.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sprint3-MOVIEIT/src/app/register/register.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sprint3-MOVIEIT/src/app/register/register.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sprint3-MOVIEIT/src/app/register/register.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sprint3-MOVIEIT/src/app/register/register.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sprint3-MOVIEIT/src/app/search-result-page/search-result-page.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sprint3-MOVIEIT/src/app/search-result-page/search-result-page.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sprint3-MOVIEIT/src/app/search-result-page/search-result-page.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sprint3-MOVIEIT/src/app/search-result-page/search-result-page.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sprint3-MOVIEIT/src/assets/images/films_covers/avatar.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sprint3-MOVIEIT/src/assets/images/profile_photos/Profile-photo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sprint3-MOVIEIT/src/assets/images/profile_photos/Profile-photo1.jpg" afterDir="false" />
+    <list default="true" id="0b7a777c-6bca-4f34-a3a8-527c17a56a35" name="Changes" comment="Vistas estáticas de login, register, movie description y search result añadidas.Estilos globales añadidos. Fotos de perfil y portada de Avatar agregados">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint3-MOVIEIT/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/sprint3-MOVIEIT/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint3-MOVIEIT/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/sprint3-MOVIEIT/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint3-MOVIEIT/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/sprint3-MOVIEIT/src/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint3-MOVIEIT/src/app/login/login.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/sprint3-MOVIEIT/src/app/login/login.component.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -248,6 +227,7 @@
     <MESSAGE value="Películas de página profile añadidas a lo JSON" />
     <MESSAGE value="Mockups de diseño responsive añadidos" />
     <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <MESSAGE value="Vistas estáticas de login, register, movie description y search result añadidas.Estilos globales añadidos. Fotos de perfil y portada de Avatar agregados" />
+    <option name="LAST_COMMIT_MESSAGE" value="Vistas estáticas de login, register, movie description y search result añadidas.Estilos globales añadidos. Fotos de perfil y portada de Avatar agregados" />
   </component>
 </project>

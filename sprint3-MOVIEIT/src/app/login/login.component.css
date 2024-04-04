@@ -6,6 +6,9 @@ html {
 
 h1 {
   background-color: transparent;
+  text-transform: none;
+  text-shadow: none;
+  box-shadow: none;
 }
 
 ::-moz-selection {
