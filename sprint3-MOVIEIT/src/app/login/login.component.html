@@ -19,7 +19,7 @@
         </button>
         <p class="footer">
             Don't have an account?
-            <a href="../register/register.html" class="link">Register here</a>
+            <a [routerLink]="['/register']" (click)="navigateToRegister()" class="link">Register here</a>
         </p>
 
     </form>
