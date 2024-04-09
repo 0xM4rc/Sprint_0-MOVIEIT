@@ -1,9 +1,12 @@
 import {Component, Input} from '@angular/core';
+import {Router, RouterLink} from "@angular/router";
 
 @Component({
   selector: 'app-highlighted-film-card',
   standalone: true,
-  imports: [],
+  imports: [
+    RouterLink
+  ],
   templateUrl: './highlighted-film-card.component.html',
   styleUrl: './highlighted-film-card.component.css'
 })
@@ -12,5 +15,9 @@ export class HighlightedFilmCardComponent {
   @Input() fileUrl: string = '';
   @Input() time: number = 0;
 
-  constructor() { }
+  constructor(private router: Router) { }
+
+  navigateToMovieDescription() {
+    this.router.navigate(['/movie-description'])
+  }
 }
