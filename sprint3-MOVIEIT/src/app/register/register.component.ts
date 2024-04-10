@@ -11,9 +11,5 @@ import {Router, RouterLink} from "@angular/router";
   styleUrl: './register.component.css'
 })
 export class RegisterComponent {
-  constructor(private router: Router) {
-  }
-  navigateToLogin() {
-    this.router.navigate(['/login'])
-  }
+
 }

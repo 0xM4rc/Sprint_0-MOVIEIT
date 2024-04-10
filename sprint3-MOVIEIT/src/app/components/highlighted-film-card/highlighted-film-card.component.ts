@@ -15,9 +15,4 @@ export class HighlightedFilmCardComponent {
   @Input() fileUrl: string = '';
   @Input() time: number = 0;
 
-  constructor(private router: Router) { }
-
-  navigateToMovieDescription() {
-    this.router.navigate(['/movie-description'])
-  }
 }
