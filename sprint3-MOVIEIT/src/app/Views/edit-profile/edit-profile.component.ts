@@ -4,16 +4,16 @@ import {HeaderComponent} from "../../components/header/header.component";
 import {ProfileHeaderComponent} from "../../components/profile-header/profile-header.component";
 
 @Component({
-  selector: 'app-profile',
+  selector: 'app-edit-profile',
   standalone: true,
-  imports: [
-    FooterComponent,
-    HeaderComponent,
-    ProfileHeaderComponent,
-  ],
-  templateUrl: './profile.component.html',
-  styleUrl: './profile.component.css'
+    imports: [
+        FooterComponent,
+        HeaderComponent,
+        ProfileHeaderComponent,
+    ],
+  templateUrl: './edit-profile.component.html',
+  styleUrl: './edit-profile.component.css'
 })
-export class ProfileComponent {
+export class EditProfileComponent {
 
 }
