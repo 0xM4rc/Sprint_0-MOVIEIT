@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
 
 @Component({
   selector: 'app-movie-description',
@@ -8,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrl: './movie-description.component.css'
 })
 export class MovieDescriptionComponent {
-
+  constructor() {
+  }
+  ngOnInit() {
+    window.scrollTo(0, 0);
+  }
 }
