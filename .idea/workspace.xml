@@ -4,6 +4,254 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+    <list default="true" id="0b7a777c-6bca-4f34-a3a8-527c17a56a35" name="Changes" comment="Estilos de headings de login y register arreglados">
+      <change afterPath="$PROJECT_DIR$/sprint3-MOVIEIT/src/assets/images/films_covers/breaking_bad.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sprint3-MOVIEIT/src/assets/images/films_covers/matrix.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sprint3-MOVIEIT/src/assets/images/films_covers/the_dark_knight.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sprint3-MOVIEIT/src/assets/images/films_covers/the_godfather.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint3-MOVIEIT/src/app/login/login.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/sprint3-MOVIEIT/src/app/login/login.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint3-MOVIEIT/src/app/register/register.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/sprint3-MOVIEIT/src/app/register/register.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint3-MOVIEIT/src/app/register/register.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/sprint3-MOVIEIT/src/app/register/register.component.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="origin/search-result-sprint2" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="sprint-0" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2drN1rlVN7ZkYpO9w6WR1L9vB2n" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Node.js.covers-load.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.description-load.js.executor&quot;: &quot;Debug&quot;,
+    &quot;Node.js.film_card.js.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;sprint3&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ncdv2/WebstormProjects/El-Nexo-PS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\ncdv2\\WebstormProjects\\Sprint_0-MOVIEIT\\sprint3-MOVIEIT\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ncdv2\WebstormProjects\Sprint_0-MOVIEIT\sprint3-MOVIEIT\src\assets\images\films_covers" />
+      <recent name="C:\Users\ncdv2\WebstormProjects\Sprint_0-MOVIEIT\sprint3-MOVIEIT\src\assets\images\profile_photos" />
+      <recent name="C:\Users\ncdv2\WebstormProjects\Sprint_0-MOVIEIT\app\data" />
+      <recent name="C:\Users\ncdv2\WebstormProjects\Sprint_0-MOVIEIT\app\views\home" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task id="LOCAL-00001" summary="Alert en caso de contraseñas iguales eliminado">
+      <option name="closed" value="true" />
+      <created>1710760818037</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1710760818037</updated>
+    </task>
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0b7a777c-6bca-4f34-a3a8-527c17a56a35" name="Changes" comment="Alert en caso de contraseñas iguales eliminado" />
+      <created>1710762025421</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1710762025421</updated>
+      <workItem from="1710762027310" duration="1217000" />
+      <workItem from="1710789702472" duration="1677000" />
+      <workItem from="1710961603652" duration="1248000" />
+      <workItem from="1711010943153" duration="5884000" />
+      <workItem from="1711044604043" duration="42000" />
+      <workItem from="1711046033369" duration="7996000" />
+      <workItem from="1711219892649" duration="13716000" />
+      <workItem from="1711391333837" duration="5892000" />
+      <workItem from="1711398718612" duration="1892000" />
+      <workItem from="1711484566666" duration="512000" />
+      <workItem from="1711485106608" duration="21000" />
+      <workItem from="1711560280818" duration="1309000" />
+      <workItem from="1711650110357" duration="4955000" />
+      <workItem from="1711736447921" duration="5911000" />
+      <workItem from="1711819162155" duration="6789000" />
+      <workItem from="1711885241320" duration="1447000" />
+      <workItem from="1711888496496" duration="48000" />
+      <workItem from="1711902569015" duration="4972000" />
+      <workItem from="1711921511108" duration="1671000" />
+      <workItem from="1711968162548" duration="476000" />
+      <workItem from="1711968649956" duration="2217000" />
+      <workItem from="1711994792860" duration="601000" />
+      <workItem from="1711995554675" duration="828000" />
+      <workItem from="1712045837260" duration="604000" />
+      <workItem from="1712161327381" duration="50000" />
+      <workItem from="1712216279354" duration="2413000" />
+    </task>
+    <task id="LOCAL-00002" summary="Json de portadas y películas añadidos. Carga de detalles reales de la película Avatar">
+      <option name="closed" value="true" />
+      <created>1711223161915</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1711223161915</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Carga de título, sinopsis y tabla dependiente de la película a la que se accede">
+      <option name="closed" value="true" />
+      <created>1711392808463</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1711392808463</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Funciones y variables sin usar removidas">
+      <option name="closed" value="true" />
+      <created>1711392934848</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1711392934848</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Archivos json movidos a nueva carpeta data. Carga de portada de película dependiendo de película seleccionada">
+      <option name="closed" value="true" />
+      <created>1711398215334</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1711398215334</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Creada función para añadir contenido de la segunda columna de la tabla de detalles">
+      <option name="closed" value="true" />
+      <created>1711400133146</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1711400133146</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Portada de película ajustada">
+      <option name="closed" value="true" />
+      <created>1711485038712</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1711485038712</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Botones añadidos a highlightedFilmCards. Arreglado error de carga al acceder por primera vez a movie-description.">
+      <option name="closed" value="true" />
+      <created>1711738019504</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1711738019504</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Películas de página profile añadidas a lo JSON">
+      <option name="closed" value="true" />
+      <created>1711743439236</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1711743439236</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Mockups de diseño responsive añadidos">
+      <option name="closed" value="true" />
+      <created>1711922310180</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1711922310180</updated>
+    </task>
+    <task id="LOCAL-00011" summary=".">
+      <option name="closed" value="true" />
+      <created>1711968792111</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1711968792112</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Estilos de headings de login y register arreglados">
+      <option name="closed" value="true" />
+      <created>1712219782652</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1712219782652</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Alert en caso de contraseñas iguales eliminado" />
+    <MESSAGE value="Json de portadas y películas añadidos. Carga de detalles reales de la película Avatar" />
+    <MESSAGE value="Carga de título, sinopsis y tabla dependiente de la película a la que se accede" />
+    <MESSAGE value="Funciones y variables sin usar removidas" />
+    <MESSAGE value="Archivos json movidos a nueva carpeta data. Carga de portada de película dependiendo de película seleccionada" />
+    <MESSAGE value="Creada función para añadir contenido de la segunda columna de la tabla de detalles" />
+    <MESSAGE value="Portada de película ajustada" />
+    <MESSAGE value="Botones añadidos a highlightedFilmCards. Arreglado error de carga al acceder por primera vez a movie-description." />
+    <MESSAGE value="Películas de página profile añadidas a lo JSON" />
+    <MESSAGE value="Mockups de diseño responsive añadidos" />
+    <MESSAGE value="." />
+    <MESSAGE value="Vistas estáticas de login, register, movie description y search result añadidas.Estilos globales añadidos. Fotos de perfil y portada de Avatar agregados" />
+    <MESSAGE value="Estilos de headings de login y register arreglados" />
+    <option name="LAST_COMMIT_MESSAGE" value="Estilos de headings de login y register arreglados" />
+  </component>
+</project>
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
     <list default="true" id="4801d4ba-a9b7-414b-89d5-b72e1c59e3f4" name="Changes" comment="Añadido componetes cartas peliculas" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
