@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "sprint3-MOVIEIT": {
+    "sprint3-movieit": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -93,6 +93,23 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "version": 2
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "sprint3-movieit:build:production",
+              "serveTarget": "sprint3-movieit:serve:production"
+            },
+            "development": {
+              "buildTarget": "sprint3-movieit:build:development",
+              "serveTarget": "sprint3-movieit:serve:development"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }
