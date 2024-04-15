@@ -2,6 +2,7 @@ import { Component} from '@angular/core';
 import {HighlightedFilmCardComponent} from "../../components/highlighted-film-card/highlighted-film-card.component";
 import {NgForOf} from "@angular/common";
 import {HeaderComponent} from "../../components/header/header.component";
+import {FooterComponent} from "../../components/footer/footer.component";
 
 @Component({
   selector: 'app-movie-description',
@@ -9,7 +10,8 @@ import {HeaderComponent} from "../../components/header/header.component";
   imports: [
     HighlightedFilmCardComponent,
     NgForOf,
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent
   ],
   templateUrl: './movie-description.component.html',
   styleUrl: './movie-description.component.css'
