@@ -8,5 +8,5 @@ import { getAuth, provideAuth } from '@angular/fire/auth';
 import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 
 export const appConfig: ApplicationConfig = {
-    providers: []
+  providers: [provideRouter(routes), provideClientHydration()]
 };
