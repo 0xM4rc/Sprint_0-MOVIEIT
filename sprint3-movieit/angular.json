@@ -62,10 +62,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "sprint3-MOVIEIT:build:production"
+              "buildTarget": "sprint3-movieit:build:production"
             },
             "development": {
-              "buildTarget": "sprint3-MOVIEIT:build:development"
+              "buildTarget": "sprint3-movieit:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -73,7 +73,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "sprint3-MOVIEIT:build"
+            "buildTarget": "sprint3-movieit:build"
           }
         },
         "test": {
@@ -113,5 +113,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
