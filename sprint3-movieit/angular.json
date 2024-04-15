@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "sprint3-MOVIEIT": {
+    "sprint3-movieit": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -62,10 +62,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "sprint3-MOVIEIT:build:production"
+              "buildTarget": "sprint3-movieit:build:production"
             },
             "development": {
-              "buildTarget": "sprint3-MOVIEIT:build:development"
+              "buildTarget": "sprint3-movieit:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -73,7 +73,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "sprint3-MOVIEIT:build"
+            "buildTarget": "sprint3-movieit:build"
           }
         },
         "test": {
@@ -93,8 +93,28 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "version": 2
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "sprint3-movieit:build:production",
+              "serveTarget": "sprint3-movieit:serve:production"
+            },
+            "development": {
+              "buildTarget": "sprint3-movieit:build:development",
+              "serveTarget": "sprint3-movieit:serve:development"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
