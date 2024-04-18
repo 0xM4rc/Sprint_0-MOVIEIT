@@ -1,0 +1,23 @@
+main{
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+.scoreboard{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  font-size: 2rem;
+}
+
+.scoreboard__name{
+  font-weight: bold;
+  border-bottom: 1px solid #ddd;
+
+}
+.scoreboard__name,
+.scoreboard__score{
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
