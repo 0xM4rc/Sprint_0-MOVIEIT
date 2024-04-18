@@ -8,76 +8,49 @@
     <div class="scoreboard__score">0</div>
   </div>
 
-  <section id="favorites-films">
+  <section id="favotite-films">
     <div class="sections">
-      <div class="etiqueta-bonita">Peliculas favoritas</div>
-      <a href="../search-result-page/search-result-page.html">
-        <div class="round">
-          <div id="cta-favorites">
-            <span class="arrow primera next "></span>
-            <span class="arrow segunda next "></span>
-          </div>
+      <h1>Peliculas favoritas</h1>
+      <div class="movies-container">
+        <div *ngFor="let item of items">
+          <app-simple-film-card [id]="item.id" [fileUrl]="item.fileUrl"
+                                     [time]="item.time"></app-simple-film-card >
         </div>
-      </a>
+      </div>
+
     </div>
-    <div class="simpleFilmsContainerG movies-container" data-ids="5, 6, 7, 8, 9,10"></div>
   </section>
   <section id="watched-films">
     <div class="sections">
-      <div class="etiqueta-bonita">Peliculas vistas</div>
-      <a href="../search-result-page/search-result-page.html">
-        <div class="round">
-          <div id="cta-watched">
-            <span class="arrow primera next "></span>
-            <span class="arrow segunda next "></span>
-          </div>
+      <h1>Peliculas vistas</h1>
+      <div class="movies-container">
+        <div *ngFor="let item of items">
+          <app-simple-film-card [id]="item.id" [fileUrl]="item.fileUrl"
+                                     [time]="item.time"></app-simple-film-card>
         </div>
-      </a>
+      </div>
+
     </div>
-    <div class="simpleFilmsContainerG movies-container" data-ids="11, 12, 13, 14, 15,16"></div>
   </section>
   <section id="waiting-to-see-films">
     <div class="sections">
-      <div class="etiqueta-bonita">Peliculas pendientes</div>
-      <a href="../../views/search-result-page/search-result-page.html">
-        <div class="round">
-          <div id="cta-toSee">
-            <span class="arrow primera next "></span>
-            <span class="arrow segunda next "></span>
-          </div>
+      <h1>Peliculas vistas</h1>
+      <div class="movies-container">
+        <div *ngFor="let item of items">
+          <app-simple-film-card [id]="item.id" [fileUrl]="item.fileUrl"
+                                     [time]="item.time"></app-simple-film-card>
         </div>
-      </a>
+      </div>
+
     </div>
-    <div class="simpleFilmsContainerG movies-container" data-ids="17, 18, 19, 21,22,23"></div>
   </section>
   <section id="lists">
     <div class="sections">
       <div class="etiqueta-bonita">Listas</div>
-      <a href="#">
-        <div class="round">
-          <div id="cta-lists">
-            <span class="arrow primera next "></span>
-            <span class="arrow segunda next "></span>
-          </div>
-        </div>
-      </a>
+
     </div>
     <div class="movies-container">
-      <div class="listCard" data-link="../../../assets/images/films_profile_covers/WarnerBros.jpg"
-           data-number="Número de peliculas">
-      </div>
-      <div class="listCard" data-link="../../../assets/images/films_profile_covers/Universal.jpg"
-           data-number="Número de peliculas">
-      </div>
-      <div class="listCard" data-link="../../../assets/images/films_profile_covers/johnWick.jpg"
-           data-number="Número de peliculas">
-      </div>
-      <div class="listCard" data-link="../../../assets/images/films_profile_covers/Disney.jpg"
-           data-number="Número de peliculas">
-      </div>
-      <div class="listCard" data-link="../../../assets/images/films_profile_covers/marvel.jpg"
-           data-number="Número de peliculas">
-      </div>
+
     </div>
   </section>
 
