@@ -3,7 +3,7 @@
   <div id="sidebarTemplate"></div>
   <div class="movie-description">
     <div class="movie-image">
-      <img src="../../../assets/images/films_covers/avatar.jpg">
+      <img src="{{film?.Cover}}">
       <div class="rating">
         <span>★</span>
         <span>★</span>
@@ -14,34 +14,35 @@
       <table>
         <tbody style="color: white">
         <tr>
-          <td>Lorem ipsum</td>
-          <td>dolor sit amet, consectetur adipiscing elit</td>
+          <td>Director</td>
+          <td>{{ film?.Director }}</td>
         </tr>
         <tr>
-          <td>Lorem ipsum</td>
-          <td>dolor sit amet, consectetur adipiscing elit</td>
+          <td>Producers</td>
+          <td>{{ film?.Producers }}</td>
         </tr>
         <tr>
-          <td>Lorem ipsum</td>
-          <td>dolor sit amet, consectetur adipiscing elit</td>
+          <td>Cast</td>
+          <td>{{ film?.Cast }}</td>
         </tr>
         <tr>
-          <td>Lorem ipsum</td>
-          <td>dolor sit amet, consectetur adipiscing elit</td>
+          <td>Genres</td>
+          <td>{{ film?.Genres }}</td>
+        </tr>
+        <tr>
+          <td>Length</td>
+          <td>{{ film?.Length }}</td>
+        </tr>
+        <tr>
+          <td>Streaming platforms</td>
+          <td>{{ film?.StreamingPlatforms }}</td>
         </tr>
         </tbody>
       </table>
     </div>
     <div>
-      <h1 style="color: white">Avatar</h1>
-      <p class="movie-text" style="color: white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum cursus
-        erat. Aliquam dolor nibh, convallis in massa nec, pellentesque ultricies velit. Nam interdum
-        efficitur felis eget tincidunt. Mauris et odio sed ex pharetra vestibulum quis sit amet tellus.
-        Praesent non consectetur felis. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
-        per inceptos himenaeos. Morbi volutpat tortor nec ligula semper rutrum. Sed egestas risus quam, quis
-        facilisis mi feugiat eget. Integer id scelerisque massa. In in enim eu dolor ultricies efficitur.
-        Nam fermentum luctus luctus. Nulla sed lacus et dolor iaculis posuere eu sed massa. Phasellus ipsum
-        leo, elementum eget pretium eget, tempor egestas elit.</p>
+      <h1 style="color: white">{{ film?.Title }}</h1>
+      <p class="movie-text" style="color: white">{{ film?.Description }}</p>
       <div class="movie-trailer" style="color: white">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/CpXJHWSXJW0?si=VEC6oNjDwqpNKK68"
                 title="YouTube video player" frameborder="0"
@@ -89,8 +90,8 @@
   <br>
   <section>
     <div class="movies-container">
-      <div *ngFor="let item of items">
-        <app-highlighted-film-card [id]="item.id" [fileUrl]="item.fileUrl" [time]="item.time"></app-highlighted-film-card>
+      <div *ngFor="let film of films">
+        <app-highlighted-film-card [id]="film.id" [fileUrl]="film.Cover"></app-highlighted-film-card>
       </div>
     </div>
   </section>
