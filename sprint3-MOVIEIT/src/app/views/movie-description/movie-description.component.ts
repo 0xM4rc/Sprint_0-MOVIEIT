@@ -19,7 +19,6 @@ import {FilmService} from "../../services/film.service";
   styleUrl: './movie-description.component.css'
 })
 export class MovieDescriptionComponent implements OnInit{
-  films: Film[] = [];
   film: Film | null = null;
 
   constructor(private filmService: FilmService) {
@@ -27,7 +26,6 @@ export class MovieDescriptionComponent implements OnInit{
 
   ngOnInit() {
     this.film = this.filmService.getFilm();
-    this.filmService.getFilms().subscribe(films => this.films = films);
     window.scrollTo(0, 0);
   }
 }

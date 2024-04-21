@@ -89,11 +89,7 @@
   <h2>Películas relacionadas</h2>
   <br>
   <section>
-    <div class="movies-container">
-      <div *ngFor="let film of films">
-        <app-highlighted-film-card [id]="film.id" [fileUrl]="film.Cover"></app-highlighted-film-card>
-      </div>
-    </div>
+    <app-highlighted-film-card></app-highlighted-film-card>
   </section>
 </main>
 <app-footer></app-footer>
