@@ -17,7 +17,6 @@ import {MovieDescriptionComponent} from "../movie-description/movie-description.
 })
 export class HomeComponent implements OnInit{
   films: Film[] = [];
-  selectedFilm: Film | null = null;
 
   constructor(private filmService: FilmService) {
   }

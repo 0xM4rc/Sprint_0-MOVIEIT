@@ -10,52 +10,12 @@
 
     <section>
         <h1>Tendencia</h1>
-        <div class="movies-container">
-            <div *ngFor="let film of films">
-              <div class="movie">
-                <div class="movie-card">
-                  <div class="movie-card-content">
-                    <div class="movie-card-back">
-                      <div class="movie-card-back-content">
-                        <img src="{{ film.Cover }}" alt="">
-                      </div>
-                    </div>
-                    <div class="movie-card-front">
-                      <div class="movie-card-front-content">
-                        <small class="badge">Categoría</small>
-                        <div class="description">
-                          <div class="title">
-                            <div class="rating">
-                              <span>★</span>
-                              <span>★</span>
-                              <span>★</span>
-                              <span>★</span><span>★</span>
-                            </div>
-                          </div>
-                          <p class="card-footer">
-                            30
-                          </p>
-                          <a [routerLink]="['/movie-description']">
-                            <button class="watch-more-button" data-id="{{ film.id }}" (click)="selectFilm(film)">Ir</button>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-        </div>
+        <app-highlighted-film-card></app-highlighted-film-card>
     </section>
 
     <section>
         <h1>Recientemente vistas</h1>
-        <div class="movies-container">
-          <div *ngFor="let film of films">
-            <app-highlighted-film-card [id]="film.id" [fileUrl]="film.Cover"></app-highlighted-film-card>
-          </div>
-        </div>
+        <app-highlighted-film-card></app-highlighted-film-card>
     </section>
 </main>
 
