@@ -1,4 +1,5 @@
 export default interface Movie {
+  id?: string;
   cast: string;
   cover: string;
   description: string;

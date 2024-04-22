@@ -1,1 +1,4 @@
-
+<h1>Peliculas Disponibles</h1>
+<ul>
+  <li *ngFor="let item of items | async">{{ item.Title }}</li>
+</ul>

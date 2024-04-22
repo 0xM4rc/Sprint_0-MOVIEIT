@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
-import Movie from '../interfaces/movie';
-import {AngularFirestore} from "@angular/fire/compat/firestore"; // Asegúrate de especificar la ruta correcta a tu interfaz Pelicula
+import {catchError, Observable, of} from 'rxjs';
+import {AngularFirestore} from "@angular/fire/compat/firestore";
 
 @Component({
   selector: 'app-film-loader',
@@ -9,12 +8,12 @@ import {AngularFirestore} from "@angular/fire/compat/firestore"; // Asegúrate d
   styleUrls: ['./film-loader.component.css'] // Usa styleUrls en lugar de styleUrl
 })
 export class FilmLoaderComponent implements OnInit {
-  movies$: Observable<Movie[]> = new Observable<Movie[]>();
+  items!: Observable<any[]>;
 
-  constructor(private firestore: AngularFirestore) { }
+  constructor(private firestore: AngularFirestore) {}
 
-  ngOnInit(): void {
-    // Cargar las películas desde Firebase Firestore
-    this.movies$ = this.firestore.collection<Movie>('peliculas').valueChanges();
+  ngOnInit() {
+    // Asegúrate de que la colección se llame 'items' en tu Firestore
+    this.items = this.firestore.collection('peliculas').valueChanges();
   }
 }
