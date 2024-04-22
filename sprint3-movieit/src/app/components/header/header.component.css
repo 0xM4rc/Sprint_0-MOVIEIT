@@ -15,48 +15,6 @@
     margin: 5px;
 }
 
-/* Estilos para el sidebar */
-#sidebar {
-    position: fixed;
-    top: 55px;
-    right: -300px;
-    width: 300px;
-    height: 100%;
-    background-color: yellow;
-    transition: right 0.3s ease-in-out;
-}
-
-#sidebar ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-#sidebar ul li {
-    padding: 10px;
-}
-
-#sidebar ul li a {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-}
-
-#sidebar ul li button {
-    display: inline-block;
-    font-size: 1rem;
-    padding: 0.4em 0.4em;
-    margin-right: 5px;
-    background-color: #000;
-    border-radius: 1em;
-    color: #fff;
-    font-weight: bolder;
-    transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.4s;
-    box-shadow: -5px 5px 0px 0px yellow;
-    cursor: pointer;
-}
-
 /* Estilos para el contenido principal */
 #content {
     margin-right: 250px;
@@ -67,72 +25,6 @@
 #sidebar {
     z-index: 100;
 }
-
-#sidebar.open {
-    right: 0;
-}
-
-/* barra 2 */
-.burger {
-    position: relative;
-    width: 40px;
-    height: 30px;
-    background: transparent;
-    cursor: pointer;
-    display: block;
-}
-
-.burger input {
-    display: none;
-}
-
-.burger span {
-    display: block;
-    position: absolute;
-    height: 4px;
-    width: 100%;
-    background: yellow;
-    border-radius: 9px;
-    opacity: 1;
-    left: 0;
-    transform: rotate(0deg);
-    transition: .25s ease-in-out;
-}
-
-.burger span:nth-of-type(1) {
-    top: 0px;
-    transform-origin: left center;
-}
-
-.burger span:nth-of-type(2) {
-    top: 50%;
-    transform: translateY(-50%);
-    transform-origin: left center;
-}
-
-.burger span:nth-of-type(3) {
-    top: 100%;
-    transform-origin: left center;
-    transform: translateY(-100%);
-}
-
-.burger input:checked~span:nth-of-type(1) {
-    transform: rotate(45deg);
-    top: 0px;
-    left: 5px;
-}
-
-.burger input:checked~span:nth-of-type(2) {
-    width: 0%;
-    opacity: 0;
-}
-
-.burger input:checked~span:nth-of-type(3) {
-    transform: rotate(-45deg);
-    top: 28px;
-    left: 5px;
-}
-
 
 /* Estilos para el contenedor del ícono */
 .iconContainer {
