@@ -15,17 +15,6 @@ import {MovieDescriptionComponent} from "../movie-description/movie-description.
     styleUrl: './home.component.css',
   imports: [HeaderComponent, FooterComponent, HighlightedFilmCardComponent, NgForOf, NgIf, RouterLink]
 })
-export class HomeComponent implements OnInit{
-  films: Film[] = [];
+export class HomeComponent {
 
-  constructor(private filmService: FilmService) {
-  }
-
-  ngOnInit() {
-    this.filmService.getFilms().subscribe(films => this.films = films);
-  }
-
-  selectFilm(film: Film) {
-    this.filmService.setFilm(film);
-  }
 }
