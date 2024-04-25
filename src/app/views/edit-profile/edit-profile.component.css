@@ -1,0 +1,200 @@
+main{
+  margin-right: 5vw;
+  margin-left: 5vw;
+  background-color: black;
+}
+h2{
+  text-align:center;
+  margin: 0px auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: yellow;
+  border: none;
+  color: #000;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0 #fff;
+  box-shadow: 4px 4px 0 #000;
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  border-radius: 10px;
+}
+.options{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: inline;
+}
+.etiqueta-bonita {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: yellow;
+  border: none;
+  color: #000;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0 #fff;
+  box-shadow: 4px 4px 0 #000;
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  border-radius: 10px; /* Redondea las esquinas */
+}
+
+.half-container {
+  display: flex;
+  width: 100%;
+}
+
+.half {
+  flex: 1;
+}
+
+.left-part{
+  width: 50%;
+}
+
+.right-part{
+  width: 50%;
+}
+
+.tipo{
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  display: flex;
+  width: 100%;
+}
+
+.photos{
+  width: 100%;
+}
+
+.photos2{
+  display:grid;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  display: flex;
+  width: 100%;
+}
+
+.others{
+  width: 95%;
+  flex-wrap: wrap;
+  display: flex;
+  margin-right: 10px;
+  margin-left: 20px;
+}
+
+.user-img2 img {
+  overflow: hidden;
+  border-radius: 50%;
+  width: 90px; /* Ajusta el ancho según tus necesidades */
+  height: 90px; /* Ajusta el ancho de la imagen al 100% del contenedor */
+  z-index: 1;
+}
+
+.user-img3 img{
+  margin-right: 10px;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  border-radius: 50%;
+  width: 80px; /* Ajusta el ancho según tus necesidades */
+  height: 80px; /* Ajusta el ancho de la imagen al 100% del contenedor */
+  z-index: 1;
+  display: inline-block;
+  transition: .2s ease-in-out;
+  cursor: pointer;
+}
+
+.user-img3:hover{
+  transform: scale(1.3);
+}
+
+/* Estilos para la parte central de la barra de navegación */
+.formulario1 {
+  flex: 2;
+  text-align: left;
+}
+.formulario2 {
+  display:grid;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+}
+
+.formulario2 input[type="text"] {
+  padding: 8px;
+  width: 300px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+.formulario2 button {
+  padding: 8px 16px;
+  background-color: yellow;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.formulario3{
+  display:grid;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+}
+.formulario3 input[type="password"]{
+  padding: 8px;
+  width: 300px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  margin: 5px;
+}
+
+.formulario3 input[type="text"]{
+  padding: 8px;
+  width: 300px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+}
+
+
+.load button{
+  display: inline-block;
+  font-size: 1rem;
+  padding: 0.4em 0.4em;
+  margin-right: 2px; /* Espacio entre los botones */
+  background-color: #000;
+  border: 3px solid yellow;
+  border-radius: 1em;
+  color: #fff;
+  font-weight: bolder;
+  transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.4s;
+  box-shadow: 0px 0px 0px 0px yellow;
+  cursor: pointer;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.botones{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  margin-bottom: 35px;
+}
+
+.load button:hover {
+  box-shadow: 0 0 10px #efd997, 0 0 20px #fff200, 0 0 20px #f6eabb inset;
+}
