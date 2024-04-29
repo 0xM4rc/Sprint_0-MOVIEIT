@@ -1,5 +1,4 @@
 <app-header></app-header>
-<main>
   <app-profile-header></app-profile-header>
   <div class="scoreboard">
     <div class="scoreboard__name">Seguidores</div>
@@ -36,10 +35,10 @@
     <div class="sections">
       <h1>Peliculas vistas</h1>
       <div class="movies-container">
-        <div *ngFor="let item of items">
+        <!--<div *ngFor="let item of items">
           <app-simple-film-card [id]="item.id" [fileUrl]="item.fileUrl"
                                 [time]="item.time"></app-simple-film-card>
-        </div>
+        </div>-->
       </div>
 
     </div>
@@ -55,5 +54,4 @@
   </section>
 
   <div id="footer"></div>
-</main>
 <app-footer></app-footer>

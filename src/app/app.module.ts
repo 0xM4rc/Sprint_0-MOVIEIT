@@ -18,9 +18,9 @@ import { MovieDescriptionComponent } from './views/movie-description/movie-descr
 import { ProfileComponent } from './views/profile/profile.component';
 import { ProfileHeaderComponent } from './components/profile-header/profile-header.component';
 import { SimpleFilmCardComponent } from './components/simple-film-card/simple-film-card.component';
-import { EditProfileComponent } from './views/edit-profile/edit-profile.component';
 import { NotfoundComponent } from './views/notfound/notfound.component';
 import { SearchMenuComponent } from './components/search-menu/search-menu.component';
+import { EditProfileComponent } from './views/edit-profile/edit-profile.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +40,7 @@ import { SearchMenuComponent } from './components/search-menu/search-menu.compon
     SimpleFilmCardComponent,
     EditProfileComponent,
     NotfoundComponent,
-    SearchMenuComponent
+    SearchMenuComponent,
   ],
   imports: [
     BrowserModule,
