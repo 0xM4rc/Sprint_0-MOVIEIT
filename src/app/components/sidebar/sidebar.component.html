@@ -5,8 +5,8 @@
   <span></span>
   <div [ngClass]="{'closed': closed, 'open': !closed}" id="sidebar">
     <ul>
-      <li><a href="../register/register.html"><button>Registrarse</button></a></li>
-      <li><a href="../login/login.html"><button>Iniciar sesión</button></a></li>
+      <li><a [routerLink]="['/register']"><button>Registrarse</button></a></li>
+      <li><a [routerLink]="['/login']"><button>Iniciar sesión</button></a></li>
     </ul>
   </div>
 </label>

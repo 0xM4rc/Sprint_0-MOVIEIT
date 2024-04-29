@@ -11,7 +11,7 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { HomeComponent } from './views/home/home.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HighlightedFilmCardComponent } from './components/highlighted-film-card/highlighted-film-card.component';
-import {RouterLink, RouterOutlet} from "@angular/router";
+import {RouterLink, RouterModule, RouterOutlet} from "@angular/router";
 import { LoginComponent } from './views/login/login.component';
 import { RegisterComponent } from './views/register/register.component';
 import { MovieDescriptionComponent } from './views/movie-description/movie-description.component';
@@ -21,6 +21,7 @@ import { SimpleFilmCardComponent } from './components/simple-film-card/simple-fi
 import { NotfoundComponent } from './views/notfound/notfound.component';
 import { SearchMenuComponent } from './components/search-menu/search-menu.component';
 import { EditProfileComponent } from './views/edit-profile/edit-profile.component';
+import {AppRoutingModule} from "./app-routing.module";
 
 @NgModule({
   declarations: [
@@ -46,8 +47,10 @@ import { EditProfileComponent } from './views/edit-profile/edit-profile.componen
     BrowserModule,
     AngularFireModule.initializeApp(environment.firebase),
     FormsModule,
+    RouterModule,
     RouterLink,
     RouterOutlet,
+    AppRoutingModule
     // Inicializa Firebase
   ],
   providers: [],
