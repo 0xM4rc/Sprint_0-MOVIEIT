@@ -1,0 +1,41 @@
+/* Estilos para el contenedor del ícono */
+.iconContainer {
+  cursor: pointer;
+  box-sizing: border-box;
+  padding-top: 5px;
+  width: fit-content;
+  transition: all 0.3s ease;
+  margin-right: 10px;
+}
+
+/* Estilos para el ícono de búsqueda */
+.search_icon {
+  box-sizing: border-box;
+  fill: yellow;
+  font-size: 2em;
+  /* Tamaño del ícono, ajusta según sea necesario */
+}
+
+.search-container {
+  color: yellow;
+  left: 0px;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 100;
+}
+.input__container--variant {
+  display: flex;
+  position: relative;
+  /* Cambiado a relative para no tener que usar z-index */
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to bottom, black, black);
+  border-radius: 1.5em;
+  padding: 1em;
+  box-shadow: 0em 1em 3em yellow;
+  margin: 20px auto;
+  /* Espacio entre los contenedores */
+}

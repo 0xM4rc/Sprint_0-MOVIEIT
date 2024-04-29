@@ -20,6 +20,7 @@ import { ProfileHeaderComponent } from './components/profile-header/profile-head
 import { SimpleFilmCardComponent } from './components/simple-film-card/simple-film-card.component';
 import { EditProfileComponent } from './views/edit-profile/edit-profile.component';
 import { NotfoundComponent } from './views/notfound/notfound.component';
+import { SearchMenuComponent } from './components/search-menu/search-menu.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { NotfoundComponent } from './views/notfound/notfound.component';
     ProfileHeaderComponent,
     SimpleFilmCardComponent,
     EditProfileComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    SearchMenuComponent
   ],
   imports: [
     BrowserModule,
