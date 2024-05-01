@@ -4,7 +4,7 @@ import { AppComponent } from './app.component';
 import { AngularFireModule } from '@angular/fire/compat';
 import { environment } from '../environments/environment';
 import { TestComponent } from './test/test.component';
-import {FormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { FilmLoaderComponent } from './film-loader/film-loader.component';
 import { HeaderComponent } from './templates/header/header.component';
 import { SidebarComponent } from './templates/sidebar/sidebar.component';
@@ -50,7 +50,8 @@ import {AppRoutingModule} from "./app-routing.module";
     RouterModule,
     RouterLink,
     RouterOutlet,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
     // Inicializa Firebase
   ],
   providers: [],

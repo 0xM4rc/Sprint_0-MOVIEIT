@@ -8,18 +8,40 @@
 </head>
 <body>
 <div class="register-container">
-  <form action="" class="form" id="form">
+  <form action="" class="form" id="form" [formGroup]="this.reactiveForm">
     <h1 class="title">Register</h1>
-    <input type="text" placeholder="User Name" class="register-input" required/>
-    <input type="email" placeholder="Email" class="register-input" required/>
-    <input type="password" placeholder="Password" class="register-input" id="password1" required/>
+    <input type="text"  class="register-input" formControlName="username" placeholder="User Name"/>
+    <div *ngIf="this.reactiveForm.controls['username'].touched && this.reactiveForm.controls['username'].errors?.['required']"
+    class="error-container">
+      <span class="error-message">
+        Debe rellenar este campo
+      </span>
+    </div>
+    <input type="email" placeholder="Email" class="register-input" formControlName="email"/>
+    <div *ngIf="this.reactiveForm.controls['email'].touched && this.reactiveForm.controls['email'].errors?.['required']"
+    class="error-container">
+      <span class="error-message">
+        Debe rellenar este campo
+      </span>
+    </div>
+    <input type="password" placeholder="Password" class="register-input" formControlName="password"/>
+    <div *ngIf="this.reactiveForm.controls['password'].touched && this.reactiveForm.controls['password'].errors?.['required']"
+    class="error-container">
+      <span class="error-message">
+        Debe rellenar este campo
+      </span>
+    </div>
     <input
       type="password"
       placeholder="Confirm Password"
       class="register-input"
-      id="password2"
-      required
+      formControlName="repassword"
     />
+    <div *ngIf="this.reactiveForm.get('repassword')?.touched && this.reactiveForm.errors?.['notSame']" class="error-message">
+      <span class="error-message">
+        Las contraseñas no coinciden
+      </span>
+    </div>
     <button type="submit" class="submit">
           <span>
             <span>Register</span>

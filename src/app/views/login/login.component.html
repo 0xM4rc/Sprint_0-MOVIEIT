@@ -7,10 +7,22 @@
 </head>
 <body>
 <div class="login-container">
-  <form action="" class="form">
+  <form action="" class="form" [formGroup]="this.reactiveForm">
     <h1 class="title">Log In</h1>
-    <input type="email" placeholder="Email" class="input" required/>
-    <input type="password" placeholder="Password" class="input" required/>
+    <input type="email" placeholder="Email" class="input" formControlName="email"/>
+    <div *ngIf="this.reactiveForm.controls['email'].touched && this.reactiveForm.controls['email'].errors?.['required']"
+         class="error-container">
+      <span class="error-message">
+        Debe rellenar este campo
+      </span>
+    </div>
+    <input type="password" placeholder="Password" class="input" formControlName="password"/>
+    <div *ngIf="this.reactiveForm.controls['password'].touched && this.reactiveForm.controls['password'].errors?.['required']"
+         class="error-container">
+      <span class="error-message">
+        Debe rellenar este campo
+      </span>
+    </div>
     <button type="submit" class="submit">
       <span>
         <span>Log In</span>
