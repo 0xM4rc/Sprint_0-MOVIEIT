@@ -19,7 +19,7 @@ export class HomeComponent implements OnInit {
   }
 
   loadUrls() {
-    const ids = [1, 2, 1, 1, 1, 1, 2, 1];
+    const ids = [1, 2, 3, 4, 1, 2, 3, 4];
     ids.forEach(id => {
       this.firebaseService.getCoverUrlById(id.toString()).subscribe(url => {
         this.items.push({

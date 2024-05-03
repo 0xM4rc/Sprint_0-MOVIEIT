@@ -1,0 +1,53 @@
+import { Injectable } from '@angular/core';
+import { AngularFireDatabase } from '@angular/fire/compat/database';
+import { AngularFireStorage } from '@angular/fire/compat/storage';
+import { finalize, map } from 'rxjs/operators';
+import { Observable } from 'rxjs';
+
+export class FileUpload {
+  key: string = '';
+  name: string = '';
+  url: string = '';
+  file: File;
+
+  constructor(file: File) {
+    this.file = file;
+  }
+}
+
+@Injectable({
+  providedIn: 'root'
+})
+
+export class FileUploadService {
+  private basePath = '/uploads';
+
+  constructor(
+    private db: AngularFireDatabase, 
+    private storage: AngularFireStorage
+  ) {}
+
+  pushFileToStorage(fileUpload: FileUpload): Observable<number> {
+    const filePath = `${this.basePath}/${fileUpload.file.name}`;
+    const storageRef = this.storage.ref(filePath);
+    const uploadTask = this.storage.upload(filePath, fileUpload.file);
+
+    uploadTask.snapshotChanges().pipe(
+      finalize(() => {
+        storageRef.getDownloadURL().subscribe(downloadURL => {
+          fileUpload.url = downloadURL;
+          fileUpload.name = fileUpload.file.name;
+          this.saveFileData(fileUpload);
+        });
+      })
+    ).subscribe();
+
+    return uploadTask.percentageChanges().pipe(
+      map(percentage => percentage ?? 0)
+    );
+  }
+
+  private saveFileData(fileUpload: FileUpload): void {
+    this.db.list(this.basePath).push(fileUpload);
+  }
+}

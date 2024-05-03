@@ -22,6 +22,11 @@ import { NotfoundComponent } from './views/notfound/notfound.component';
 import { SearchMenuComponent } from './templates/search-menu/search-menu.component';
 import { EditProfileComponent } from './views/edit-profile/edit-profile.component';
 import {AppRoutingModule} from "./app-routing.module";
+import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
+import { getFirestore, provideFirestore } from '@angular/fire/firestore';
+import { getDatabase, provideDatabase } from '@angular/fire/database';
+import { getStorage, provideStorage } from '@angular/fire/storage';
+import { FileUploaderComponent } from './file-uploader/file-uploader.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +47,7 @@ import {AppRoutingModule} from "./app-routing.module";
     EditProfileComponent,
     NotfoundComponent,
     SearchMenuComponent,
+    FileUploaderComponent,
   ],
   imports: [
     BrowserModule,
@@ -52,6 +58,10 @@ import {AppRoutingModule} from "./app-routing.module";
     RouterOutlet,
     AppRoutingModule,
     ReactiveFormsModule,
+    provideFirebaseApp(() => initializeApp({"projectId":"movieit-6c6aa","appId":"1:141094514069:web:8fb6b28b99d868db281a9c","databaseURL":"https://movieit-6c6aa-default-rtdb.europe-west1.firebasedatabase.app","storageBucket":"movieit-6c6aa.appspot.com","apiKey":"AIzaSyCW6AtugYaPgWI4GXjo5j9fJS-UOzdaGPQ","authDomain":"movieit-6c6aa.firebaseapp.com","messagingSenderId":"141094514069","measurementId":"G-ES6BQYGQMR"})),
+    provideFirestore(() => getFirestore()),
+    provideDatabase(() => getDatabase()),
+    provideStorage(() => getStorage()),
     // Inicializa Firebase
   ],
   providers: [],
