@@ -4,9 +4,17 @@
   <span></span>
   <span></span>
   <div [ngClass]="{'closed': closed, 'open': !closed}" id="sidebar">
-    <ul>
-      <li><a [routerLink]="['/register']"><button>Registrarse</button></a></li>
-      <li><a [routerLink]="['/login']"><button>Iniciar sesión</button></a></li>
-    </ul>
+    <div *ngIf="!authenticationService.currentUserSignedIn()">
+      <ul>
+        <li><a [routerLink]="['/register']"><button>Registrarse</button></a></li>
+        <li><a [routerLink]="['/login']"><button>Iniciar sesión</button></a></li>
+      </ul>
+    </div>
+    <div *ngIf="authenticationService.currentUserSignedIn()">
+      <ul>
+        <li>{{authenticationService.currentUserSignedIn()?.email }}</li>
+        <li>{{authenticationService.currentUserSignedIn()?.username }}</li>
+      </ul>
+    </div>
   </div>
 </label>

@@ -16,7 +16,7 @@ import {from, Observable} from "rxjs";
 export class AuthenticationService {
   firebaseAuth = inject(Auth);
   user$ = user(this.firebaseAuth);
-  currentUserSig = signal<User |null | undefined>(undefined)
+  currentUserSignedIn = signal<User |null | undefined>(undefined)
 
   register(email: string, username:string, password:string): Observable<void>{
     const promise = createUserWithEmailAndPassword(
