@@ -27,6 +27,7 @@ import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 import { getDatabase, provideDatabase } from '@angular/fire/database';
 import { getStorage, provideStorage } from '@angular/fire/storage';
 import { FileUploaderComponent } from './file-uploader/file-uploader.component';
+import {getAuth, provideAuth} from "@angular/fire/auth";
 
 @NgModule({
   declarations: [
@@ -62,6 +63,7 @@ import { FileUploaderComponent } from './file-uploader/file-uploader.component';
     provideFirestore(() => getFirestore()),
     provideDatabase(() => getDatabase()),
     provideStorage(() => getStorage()),
+    provideAuth(() => getAuth())
     // Inicializa Firebase
   ],
   providers: [],
