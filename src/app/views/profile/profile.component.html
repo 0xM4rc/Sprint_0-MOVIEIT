@@ -12,7 +12,7 @@
     <div class="sections">
       <h1>Peliculas favoritas</h1>
       <div class="movies-container">
-        <div *ngFor="let item of items">
+        <div *ngFor="let item of favorites">
           <app-simple-film-card [id]="item.id" [fileUrl]="item.fileUrl"
                                 [time]="item.time"></app-simple-film-card >
         </div>
@@ -22,9 +22,9 @@
   </section>
   <section id="watched-films">
     <div class="sections">
-      <h1>Peliculas vistas</h1>
+      <h1>Peliculas pendientes</h1>
       <div class="movies-container">
-        <div *ngFor="let item of items">
+        <div *ngFor="let item of pending">
           <app-simple-film-card [id]="item.id" [fileUrl]="item.fileUrl"
                                 [time]="item.time"></app-simple-film-card>
         </div>
@@ -36,10 +36,10 @@
     <div class="sections">
       <h1>Peliculas vistas</h1>
       <div class="movies-container">
-        <!--<div *ngFor="let item of items">
+        <div *ngFor="let item of watched">
           <app-simple-film-card [id]="item.id" [fileUrl]="item.fileUrl"
                                 [time]="item.time"></app-simple-film-card>
-        </div>-->
+        </div>
       </div>
 
     </div>
