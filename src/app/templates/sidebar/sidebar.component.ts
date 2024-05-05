@@ -1,7 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
 import { AuthenticationService } from '../../services/authentication.service';
 import { FileUpload, FileUploadService } from '../../services/file-upload.service';
-import { map } from 'rxjs';
+import { Observable, map } from 'rxjs';
 
 @Component({
   selector: 'app-sidebar',
@@ -9,13 +9,15 @@ import { map } from 'rxjs';
   styleUrl: './sidebar.component.css'
 })
 export class SidebarComponent{
-fileUploads?: FileUpload[];
 @Input() isOpen = false;
 
-constructor(protected authService: AuthenticationService,
-  private uploadService: FileUploadService
-) {}
+imageURL: Observable<string | null>;
 
+  constructor(private imageService: FileUploadService,
+    public authService: AuthenticationService
+  ) {
+    this.imageURL = this.imageService.getFirstImage();
+  }
 logout() {
   this.authService.SignOut();
 }

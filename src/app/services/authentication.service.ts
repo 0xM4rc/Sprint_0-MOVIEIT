@@ -2,9 +2,10 @@ import { Injectable, NgZone, inject } from '@angular/core';
 import { Auth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut, updateProfile, authState } from '@angular/fire/auth';
 import { AngularFireAuth } from '@angular/fire/compat/auth';
 import { AngularFirestore, AngularFirestoreDocument } from '@angular/fire/compat/firestore';
+import { AngularFireStorage } from '@angular/fire/compat/storage';
 import { Router } from '@angular/router';
-import { BehaviorSubject, from, Observable, throwError } from 'rxjs';
-import { catchError, map } from 'rxjs/operators';
+import { BehaviorSubject, from, Observable, of, throwError } from 'rxjs';
+import { catchError, map, switchMap } from 'rxjs/operators';
 
 interface User {
   uid: string;
@@ -20,6 +21,7 @@ interface User {
 export class AuthenticationService {
   userData: any; // Save logged in user data
   constructor(
+    private storage: AngularFireStorage,
     public afs: AngularFirestore, // Inject Firestore service
     public afAuth: AngularFireAuth, // Inject Firebase auth service
     public router: Router,
@@ -121,6 +123,4 @@ export class AuthenticationService {
       this.router.navigate(['home']);
     });
   }
-
-
 }

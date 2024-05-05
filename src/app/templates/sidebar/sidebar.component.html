@@ -1,18 +1,19 @@
-
-
-  <div id="sidebar" [class.open]="isOpen">
-    <div *ngIf="!authService.isLoggedIn">
-      <ul>
-        <li><a [routerLink]="['/register']"><button>Registrarse</button></a></li>
-        <li><a [routerLink]="['/login']"><button>Iniciar sesión</button></a></li>
-      </ul>
-    </div>
-    <div *ngIf="authService.isLoggedIn">
-      <div *ngFor="let file of fileUploads">
-        <img [src]="file.url" [alt]="file.name">
-      </div>
-      <ul>
-        <li><button (click)="logout()">Cerrar sesión</button></li>
-      </ul>
-    </div>
+<div id="sidebar" [class.open]="isOpen">
+  <div *ngIf="!authService.isLoggedIn">
+    <ul>
+      <li><a [routerLink]="['/register']"><button>Registrarse</button></a></li>
+      <li><a [routerLink]="['/login']"><button>Iniciar sesión</button></a></li>
+    </ul>
   </div>
+  <div *ngIf="authService.isLoggedIn" style="display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center;     /* Centra verticalmente */
+  ">
+    <img *ngIf="imageURL | async as url" [src]="url" alt="Imagen cargada" style="width: 100px;border-radius: 50%; border: 3px solid #000;">
+    <p *ngIf="(imageURL | async) === null">No image available.</p>
+
+    <ul>
+      <li><button (click)="logout()">Cerrar sesión</button></li>
+    </ul>
+  </div>
+</div>s

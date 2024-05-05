@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import { AngularFireDatabase, AngularFireList } from '@angular/fire/compat/database';
 import { AngularFireStorage } from '@angular/fire/compat/storage';
-import { finalize, map } from 'rxjs/operators';
-import { Observable } from 'rxjs';
+import { catchError, finalize, map, switchMap } from 'rxjs/operators';
+import { Observable, from, of } from 'rxjs';
 
 export class FileUpload {
   key: string | null = '';
@@ -56,5 +56,24 @@ getFiles(numberItems: number): AngularFireList<FileUpload> {
     ref.limitToLast(numberItems));
 }
 
+getFirstImage(): Observable<string | null> {
+  const ref = this.storage.ref('uploads');
+  return from(ref.listAll()).pipe(
+    switchMap(result => {
+      if (result.items.length > 0) {
+        // Explicitamente declarar el tipo de retorno como Observable<string>
+        return from(result.items[0].getDownloadURL() as Promise<string>);
+      } else {
+        // Retorna un Observable que emite null si no hay imágenes
+        return of(null);
+      }
+    }),
+    catchError(err => {
+      // Manejo de errores en caso de fallar la obtención de la URL
+      console.error('Error fetching image URL:', err);
+      return of(null);  // Proporciona un retorno seguro en caso de error
+    })
+  );
+}
   
 }
