@@ -6,10 +6,11 @@ import {Router} from "@angular/router";
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrl: './login.component.css'
+  styleUrls: ['./login.component.css']
 })
-export class LoginComponent implements OnInit{
+export class LoginComponent implements OnInit {
   reactiveForm: FormGroup = new FormGroup({});
+
 
   constructor(private auth: AuthenticationService, private router: Router) {}
 
@@ -21,20 +22,18 @@ export class LoginComponent implements OnInit{
   }
 
   login_user(): void {
-    const rawForm = this.reactiveForm.value;
     if (this.reactiveForm.invalid) {
       window.alert('Please fill out the form correctly.');
       return;
     }
-    // Usa el método SignIn del servicio que retorna una promesa
+    const rawForm = this.reactiveForm.value;
     this.auth.SignIn(rawForm.email, rawForm.password)
       .then(() => {
-        // Navega a 'dashboard' o la página que desees después del login exitoso
-        this.router.navigate(['dashboard']);
+        this.router.navigate(['home']);
       })
       .catch(error => {
-        // Manejo de errores en caso de fallo en el inicio de sesión
         window.alert(error.message);
       });
   }
 }
+

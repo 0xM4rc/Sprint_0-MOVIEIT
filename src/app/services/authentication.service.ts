@@ -44,6 +44,7 @@ export class AuthenticationService {
       .signInWithEmailAndPassword(email, password)
       .then((result) => {
         this.SetUserData(result.user);
+        console.log(this.isLoggedIn)
         this.afAuth.authState.subscribe((user) => {
           if (user) {
             this.router.navigate(['dashboard']);
@@ -54,6 +55,9 @@ export class AuthenticationService {
         window.alert(error.message);
       });
   }
+  
+
+  
   // Sign up with email/password
   SignUp(email: string, password: string) {
     return this.afAuth
@@ -90,7 +94,7 @@ export class AuthenticationService {
   // Returns true when user is looged in and email is verified
   get isLoggedIn(): boolean {
     const user = JSON.parse(localStorage.getItem('user')!);
-    return user !== null && user.emailVerified !== false ? true : false;
+    return user !== null !== false ? true : false;
   }
   /* Setting up user data when sign in with username/password, 
   sign up with username/password and sign in with social auth  
