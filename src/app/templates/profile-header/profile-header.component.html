@@ -3,8 +3,8 @@
     <img src="../../../assets/images/films_header/BladeRunner.jpeg"
          id="imageToChange" alt="header"/>
   </div>
-  <div class="user-img">
-    <img src="../../../assets/images/films_header/Avatar2.jpeg">
+  <div class="user-img" *ngIf="authService.isLoggedIn">
+    <img *ngIf="imageURL | async as url" [src]="url">
   </div>
   <div class="user-name">
     <div class="etiqueta-bonita" id="name">Nombre de Usuario</div>
