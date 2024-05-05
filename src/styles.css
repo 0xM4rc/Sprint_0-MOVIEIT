@@ -386,16 +386,12 @@ button:hover {
 .file-select input[type="file"] {
   opacity: 0;
   width: 200px;
-  height: 32px;
+  height: 200px;
   display: inline-block;
 }
 
 #src-file1::before {
   content: 'Añadir foto';
-}
-
-#src-file2::before {
-  content: 'Seleccionar Archivo 2';
 }
 
 
