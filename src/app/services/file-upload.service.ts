@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
-import { AngularFireDatabase } from '@angular/fire/compat/database';
+import { AngularFireDatabase, AngularFireList } from '@angular/fire/compat/database';
 import { AngularFireStorage } from '@angular/fire/compat/storage';
 import { finalize, map } from 'rxjs/operators';
 import { Observable } from 'rxjs';
 
 export class FileUpload {
-  key: string = '';
+  key: string | null = '';
   name: string = '';
   url: string = '';
   file: File;
@@ -18,7 +18,6 @@ export class FileUpload {
 @Injectable({
   providedIn: 'root'
 })
-
 export class FileUploadService {
   private basePath = '/uploads';
 
@@ -50,4 +49,12 @@ export class FileUploadService {
   private saveFileData(fileUpload: FileUpload): void {
     this.db.list(this.basePath).push(fileUpload);
   }
+
+
+getFiles(numberItems: number): AngularFireList<FileUpload> {
+  return this.db.list(this.basePath, ref =>
+    ref.limitToLast(numberItems));
+}
+
+  
 }
