@@ -9,7 +9,7 @@
   justify-content: center; /* Centra horizontalmente */
   align-items: center;     /* Centra verticalmente */
   ">
-    <img *ngIf="imageURL | async as url" [src]="url" alt="Imagen cargada" style="width: 100px;border-radius: 50%; border: 3px solid #000;">
+    <img *ngIf="imageURL | async as url" [src]="url" alt="Imagen cargada" style="width: 100px;border-radius: 50%; border: 3px solid #000;" [routerLink]="['/profile']">
     <p *ngIf="(imageURL | async) === null">No image available.</p>
 
     <ul>
