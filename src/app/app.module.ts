@@ -28,6 +28,7 @@ import { getDatabase, provideDatabase } from '@angular/fire/database';
 import { getStorage, provideStorage } from '@angular/fire/storage';
 import { FileUploaderComponent } from './file-uploader/file-uploader.component';
 import {getAuth, provideAuth} from "@angular/fire/auth";
+import { GetphotosComponent } from './templates/getphotos/getphotos.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import {getAuth, provideAuth} from "@angular/fire/auth";
     NotfoundComponent,
     SearchMenuComponent,
     FileUploaderComponent,
+    GetphotosComponent
   ],
   imports: [
     BrowserModule,
