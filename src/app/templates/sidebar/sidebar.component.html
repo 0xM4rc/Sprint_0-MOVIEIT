@@ -15,6 +15,7 @@
       <ul>
         <li>{{authenticationService.currentUserSignedIn()?.email }}</li>
         <li>{{authenticationService.currentUserSignedIn()?.username }}</li>
+        <li><button (click)="logout()">Cerrar sesión</button></li>
       </ul>
     </div>
   </div>
