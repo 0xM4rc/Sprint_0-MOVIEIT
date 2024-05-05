@@ -56,72 +56,25 @@
         <div class="photos">
           <div class="photos2">
             <div class="user-img2">
-              <img src="https://i.pinimg.com/236x/d6/1d/db/d61ddb6fd990e630bd61ec149ca6fca2.jpg" alt="Descripción de la imagen">
+              <img src="https://i.pinimg.com/236x/d6/1d/db/d61ddb6fd990e630bd61ec149ca6fca2.jpg"
+                   alt="Descripción de la imagen">
             </div>
           </div>
           <div class="others">
-            <div class="user-img3">
-              <img src="https://i.pinimg.com/236x/d6/1d/db/d61ddb6fd990e630bd61ec149ca6fca2.jpg" alt="Descripción de la imagen">
+            <div *ngFor="let item of avatars">
+              <div class="user-img3">
+                <img class="user-img3" [src]="item.url">
+              </div>
             </div>
-            <div class="user-img3">
-              <img src="https://i.pinimg.com/236x/d6/1d/db/d61ddb6fd990e630bd61ec149ca6fca2.jpg" alt="Descripción de la imagen">
-            </div>
-            <div class="user-img3">
-              <img src="https://i.pinimg.com/236x/d6/1d/db/d61ddb6fd990e630bd61ec149ca6fca2.jpg" alt="Descripción de la imagen">
-            </div>
-            <div class="user-img3">
-              <img src="https://i.pinimg.com/236x/d6/1d/db/d61ddb6fd990e630bd61ec149ca6fca2.jpg" alt="Descripción de la imagen">
-            </div>
-            <div class="user-img3">
-              <img src="https://i.pinimg.com/236x/d6/1d/db/d61ddb6fd990e630bd61ec149ca6fca2.jpg" alt="Descripción de la imagen">
-            </div>
-            <div class="user-img3">
-              <img src="https://i.pinimg.com/236x/d6/1d/db/d61ddb6fd990e630bd61ec149ca6fca2.jpg" alt="Descripción de la imagen">
-            </div>
-            <div class="user-img3">
-              <img src="https://i.pinimg.com/236x/d6/1d/db/d61ddb6fd990e630bd61ec149ca6fca2.jpg" alt="Descripción de la imagen">
-            </div>
-            <div class="user-img3">
-              <img src="https://i.pinimg.com/236x/d6/1d/db/d61ddb6fd990e630bd61ec149ca6fca2.jpg" alt="Descripción de la imagen">
-            </div>
-            <div class="user-img3">
-              <img src="https://i.pinimg.com/236x/d6/1d/db/d61ddb6fd990e630bd61ec149ca6fca2.jpg" alt="Descripción de la imagen">
-            </div>
-            <div class="user-img3">
-              <img src="https://i.pinimg.com/236x/d6/1d/db/d61ddb6fd990e630bd61ec149ca6fca2.jpg" alt="Descripción de la imagen">
-            </div>
-            <div class="user-img3">
-              <img src="https://i.pinimg.com/236x/d6/1d/db/d61ddb6fd990e630bd61ec149ca6fca2.jpg" alt="Descripción de la imagen">
-            </div>
-            <div class="user-img3">
-              <img src="https://i.pinimg.com/236x/d6/1d/db/d61ddb6fd990e630bd61ec149ca6fca2.jpg" alt="Descripción de la imagen">
-            </div>
-            <div class="user-img3">
-              <img src="https://i.pinimg.com/236x/d6/1d/db/d61ddb6fd990e630bd61ec149ca6fca2.jpg" alt="Descripción de la imagen">
-            </div>
-            <div class="user-img3">
-              <img src="https://i.pinimg.com/236x/d6/1d/db/d61ddb6fd990e630bd61ec149ca6fca2.jpg" alt="Descripción de la imagen">
-            </div>
-            <div class="user-img3">
-              <img src="https://i.pinimg.com/236x/d6/1d/db/d61ddb6fd990e630bd61ec149ca6fca2.jpg" alt="Descripción de la imagen">
-            </div>
-            <div class="user-img3">
-              <img src="https://i.pinimg.com/236x/d6/1d/db/d61ddb6fd990e630bd61ec149ca6fca2.jpg" alt="Descripción de la imagen">
-            </div>
-            <div class="user-img3">
-              <img src="https://i.pinimg.com/236x/d6/1d/db/d61ddb6fd990e630bd61ec149ca6fca2.jpg" alt="Descripción de la imagen">
-            </div>
-            <div class="user-img3">
-              <img src="https://i.pinimg.com/236x/d6/1d/db/d61ddb6fd990e630bd61ec149ca6fca2.jpg" alt="Descripción de la imagen">
-            </div>
+            <app-file-uploader></app-file-uploader>
           </div>
         </div>
       </div>
     </div>
   </section>
   <div class="botones load">
-      <button [routerLink]="['/profile']">Guardar Cambios</button>
-      <button [routerLink]="['/profile']">Cancelar Cambios</button>
+    <button [routerLink]="['/profile']">Guardar Cambios</button>
+    <button [routerLink]="['/profile']">Cancelar Cambios</button>
   </div>
 
 </main>
