@@ -11,6 +11,7 @@ import Cover from '../../interfaces/cover';
 
 export class HomeComponent implements OnInit {
   items: Cover[] = [];
+  showSidebar = false;
 
   constructor(private firebaseService: FirebaseService) {}
 
@@ -29,5 +30,9 @@ export class HomeComponent implements OnInit {
         });
       });
     });
+  }
+
+  handleSidebar(status: boolean) {
+    this.showSidebar = status;
   }
 }

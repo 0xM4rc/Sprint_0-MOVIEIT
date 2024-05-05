@@ -1,9 +1,10 @@
+<!--
 <label class="burger" for="burger">
   <input type="checkbox" id="burger" (click)="toggleSidebar()">
   <span></span>
   <span></span>
   <span></span>
-  <div [ngClass]="{'closed': closed, 'open': !closed}" id="sidebar">
+  <div id="sidebar" [class.open]="isOpen">
     <div *ngIf="!authenticationService.currentUserSignedIn()">
       <ul>
         <li><a [routerLink]="['/register']"><button>Registrarse</button></a></li>
@@ -17,4 +18,14 @@
       </ul>
     </div>
   </div>
+
 </label>
+-->
+
+<div id="sidebar" [class.open]="isOpen">
+  <ul>
+    <li><a href="#">Link 1</a></li>
+    <li><a href="#">Link 2</a></li>
+    <li><a href="#">Link 3</a></li>
+  </ul>
+</div>

@@ -1,4 +1,5 @@
-<app-header></app-header>
+<app-header (sidebarStatus)="handleSidebar($event)"></app-header>
+<app-sidebar [isOpen]="showSidebar"></app-sidebar>
 
 <main class="main-page">
   <div id="sidebar_component"></div>

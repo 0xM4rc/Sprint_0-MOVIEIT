@@ -1,5 +1,4 @@
-import { Component } from '@angular/core';
-import {AuthenticationService} from "../../services/authentication.service";
+import {Component, Input} from '@angular/core';
 
 @Component({
   selector: 'app-sidebar',
@@ -7,12 +6,5 @@ import {AuthenticationService} from "../../services/authentication.service";
   styleUrl: './sidebar.component.css'
 })
 export class SidebarComponent {
-  closed: boolean = true;
-
-  constructor(public authenticationService: AuthenticationService) {
-  }
-
-  toggleSidebar(): void {
-    this.closed = !this.closed;
-  }
+  @Input() isOpen = false;
 }
