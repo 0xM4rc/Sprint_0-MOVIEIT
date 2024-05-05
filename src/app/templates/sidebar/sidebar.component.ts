@@ -1,4 +1,5 @@
 import {Component, Input} from '@angular/core';
+import { AuthenticationService } from '../../services/authentication.service';
 
 @Component({
   selector: 'app-sidebar',
@@ -6,5 +7,10 @@ import {Component, Input} from '@angular/core';
   styleUrl: './sidebar.component.css'
 })
 export class SidebarComponent {
-  @Input() isOpen = false;
+
+@Input() isOpen = false;
+constructor(protected authService: AuthenticationService) {}
+logout() {
+  // ?¿?¿
+}
 }

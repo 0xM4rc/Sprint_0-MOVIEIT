@@ -15,21 +15,26 @@ export class LoginComponent implements OnInit{
 
   ngOnInit() {
     this.reactiveForm = new FormGroup({
-      email: new FormControl('', Validators.required),
-      password: new FormControl('', Validators.required)
+      email: new FormControl('', [Validators.required, Validators.email]),
+      password: new FormControl('', [Validators.required])
     });
   }
 
   login_user(): void {
-    const rawForm = this.reactiveForm.getRawValue()
-    if (!rawForm.email || !rawForm.email) {
+    const rawForm = this.reactiveForm.value;
+    if (this.reactiveForm.invalid) {
+      window.alert('Please fill out the form correctly.');
       return;
     }
-    this.auth.login(rawForm.email, rawForm.password).subscribe({
-      next:()=>{
-        this.router.navigateByUrl('')
-      },
-      error: (err) => {}
-    })
+    // Usa el método SignIn del servicio que retorna una promesa
+    this.auth.SignIn(rawForm.email, rawForm.password)
+      .then(() => {
+        // Navega a 'dashboard' o la página que desees después del login exitoso
+        this.router.navigate(['dashboard']);
+      })
+      .catch(error => {
+        // Manejo de errores en caso de fallo en el inicio de sesión
+        window.alert(error.message);
+      });
   }
 }

@@ -1,65 +1,55 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="register.component.css" />
-  <title>Register</title>
-</head>
+
 <body>
 <div class="register-container">
-  <form action="" class="form" id="form" [formGroup]="this.reactiveForm">
+  <form (ngSubmit)="register()" class="form" id="form" [formGroup]="reactiveForm">
     <h1 class="title">Register</h1>
-    <input type="text"  class="register-input" formControlName="username" placeholder="User Name"/>
-    <div *ngIf="this.reactiveForm.controls['username'].touched && this.reactiveForm.controls['username'].errors?.['required']"
-    class="error-container">
-      <span class="error-message">
-        Debe rellenar este campo
-      </span>
+    
+    <!-- User Name Input -->
+    <input type="text" class="register-input" formControlName="username" placeholder="User Name"/>
+    <div *ngIf="reactiveForm.controls['username'].touched && reactiveForm.controls['username'].errors?.['required']" class="error-container">
+      <span class="error-message">Debe rellenar este campo</span>
     </div>
+
+    <!-- Email Input -->
     <input type="email" placeholder="Email" class="register-input" formControlName="email"/>
-    <div *ngIf="this.reactiveForm.controls['email'].touched && this.reactiveForm.controls['email'].errors?.['required']"
-    class="error-container">
-      <span class="error-message">
-        Debe rellenar este campo
-      </span>
+    <div *ngIf="reactiveForm.controls['email'].touched && reactiveForm.controls['email'].errors?.['required']" class="error-container">
+      <span class="error-message">Debe rellenar este campo</span>
     </div>
+    <div *ngIf="reactiveForm.controls['email'].touched && reactiveForm.controls['email'].errors?.['email']" class="error-container">
+      <span class="error-message">Debe ser un correo válido</span>
+    </div>
+
+    <!-- Password Input -->
     <input type="password" placeholder="Password" class="register-input" formControlName="password"/>
-    <div *ngIf="this.reactiveForm.controls['password'].touched && this.reactiveForm.controls['password'].errors?.['required']"
-    class="error-container">
-      <span class="error-message">
-        Debe rellenar este campo
-      </span>
+    <div *ngIf="reactiveForm.controls['password'].touched && reactiveForm.controls['password'].errors?.['required']" class="error-container">
+      <span class="error-message">Debe rellenar este campo</span>
     </div>
-    <input
-      type="password"
-      placeholder="Confirm Password"
-      class="register-input"
-      formControlName="repassword"
-    />
-    <div *ngIf="this.reactiveForm.get('repassword')?.touched && this.reactiveForm.errors?.['notSame']" class="error-message">
-      <span class="error-message">
-        Las contraseñas no coinciden
-      </span>
+    <div *ngIf="reactiveForm.controls['password'].touched && reactiveForm.controls['password'].errors?.['minLength']" class="error-container">
+      <span class="error-message">La contraseña debe tener al menos 6 caracteres</span>
     </div>
-    <button type="submit" class="submit">
-          <span>
-            <span>Register</span>
-            <br />
-          </span>
-    </button>
+
+    <!-- Confirm Password Input -->
+    <input type="password" placeholder="Confirm Password" class="register-input" formControlName="repassword"/>
+    <div *ngIf="reactiveForm.get('repassword')?.touched && reactiveForm.errors?.['notSame']" class="error-container">
+      <span class="error-message">Las contraseñas no coinciden</span>
+    </div>
+
+    <!-- Submit Button -->
+    <button type="submit" class="submit">Register</button>
+
+    <!-- Login Link -->
     <p class="footer">
       Already have an account?
       <a [routerLink]="['/login']" class="link">Log in here</a>
     </p>
   </form>
+
+  <!-- Banner Section -->
   <div class="banner">
     <h1 class="welcome-text">Welcome!!</h1>
     <p class="banner-text">
-      Lorem ipsum<br />dolor <br />
-      register
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent interdum, justo in dignissim commodo, eros neque gravida augue, id ullamcorper enim lorem non purus.
     </p>
   </div>
 </div>
 </body>
-</html>

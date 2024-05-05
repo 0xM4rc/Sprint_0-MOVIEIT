@@ -1,27 +1,63 @@
-import {Component, OnInit} from '@angular/core';
-import {FormControl, FormGroup, ValidatorFn, Validators} from "@angular/forms";
+import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms';
+
+import { Router } from '@angular/router';
+import { AuthenticationService } from '../../services/authentication.service';
 
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
-  styleUrl: './register.component.css'
+  styleUrls: ['./register.component.css']
 })
-export class RegisterComponent implements OnInit{
-  reactiveForm: FormGroup = new FormGroup({});
+export class RegisterComponent implements OnInit {
+  reactiveForm: FormGroup;
 
-  ngOnInit() {
-    this.reactiveForm = new FormGroup({
-      username: new FormControl('', Validators.required),
-      email: new FormControl('', Validators.required),
-      password: new FormControl('', Validators.required),
-      repassword: new FormControl('', Validators.required)
-    }, {validators: this.equalPasswords});
+  constructor(
+    private auth: AuthenticationService,
+    private router: Router,
+    private fb: FormBuilder
+  ) {
+    this.reactiveForm = this.fb.group({
+      username: ['', [Validators.required]],
+      email: ['', [Validators.required, Validators.email]],
+      password: ['', [Validators.required, Validators.minLength(6)]],
+      repassword: ['', [Validators.required]]
+    }, {
+      validator: this.mustMatch('password', 'repassword')
+    });
   }
 
-  equalPasswords: ValidatorFn = (control): {[key: string]: any} | null => {
-    const group = control as FormGroup;
-    let password = group.controls['password'].value;
-    let repassword = group.controls['repassword'].value;
-    return password === repassword ? null : {notSame: true};
+  ngOnInit(): void {
+  }
+
+  register(): void {
+    if (this.reactiveForm.invalid) {
+      return;  // Mostrar mensaje de error o manejar la visualización de errores
+    }
+    const { email, password } = this.reactiveForm.value;
+    this.auth.SignUp(email, password)
+      .then(() => {
+        this.router.navigate(['/dashboard']); // o cualquier ruta que desees después del registro
+      })
+      .catch(error => {
+        window.alert(error.message); // Manejo de errores
+      });
+  }
+
+  mustMatch(password: string, confirmPassword: string) {
+    return (formGroup: FormGroup) => {
+      const passwordControl = formGroup.controls[password];
+      const confirmPasswordControl = formGroup.controls[confirmPassword];
+
+      if (confirmPasswordControl.errors && !confirmPasswordControl.errors['mustMatch']) {
+        return;  // Retorna si otro validador ya encontró un error en el ConfirmPassword
+      }
+
+      if (passwordControl.value !== confirmPasswordControl.value) {
+        confirmPasswordControl.setErrors({ mustMatch: true });
+      } else {
+        confirmPasswordControl.setErrors(null);
+      }
+    };
   }
 }

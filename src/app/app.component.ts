@@ -13,6 +13,7 @@ export class AppComponent implements OnInit{
   }
 
   ngOnInit() {
+    /* 
     console.log(this.authenticationService);
     this.authenticationService.user$.subscribe((user) => {
       if (user) {
@@ -24,6 +25,6 @@ export class AppComponent implements OnInit{
         this.authenticationService.currentUserSignedIn.set(null);
       }
       console.log(this.authenticationService.currentUserSignedIn());
-    });
+    });*/
   }
 }

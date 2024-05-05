@@ -1,32 +1,17 @@
-<!--
-<label class="burger" for="burger">
-  <input type="checkbox" id="burger" (click)="toggleSidebar()">
-  <span></span>
-  <span></span>
-  <span></span>
+
+
   <div id="sidebar" [class.open]="isOpen">
-    <div *ngIf="!authenticationService.currentUserSignedIn()">
+    <div *ngIf="!authService.isLoggedIn">
       <ul>
         <li><a [routerLink]="['/register']"><button>Registrarse</button></a></li>
         <li><a [routerLink]="['/login']"><button>Iniciar sesión</button></a></li>
       </ul>
     </div>
-    <div *ngIf="authenticationService.currentUserSignedIn()">
+    <div *ngIf="authService.isLoggedIn">
       <ul>
-        <li>{{authenticationService.currentUserSignedIn()?.email }}</li>
-        <li>{{authenticationService.currentUserSignedIn()?.username }}</li>
+        <li>{{ authService.isLoggedIn }}</li>
+        <li>{{ "a" }}</li>
         <li><button (click)="logout()">Cerrar sesión</button></li>
       </ul>
     </div>
   </div>
-
-</label>
--->
-
-<div id="sidebar" [class.open]="isOpen">
-  <ul>
-    <li><a href="#">Link 1</a></li>
-    <li><a href="#">Link 2</a></li>
-    <li><a href="#">Link 3</a></li>
-  </ul>
-</div>
