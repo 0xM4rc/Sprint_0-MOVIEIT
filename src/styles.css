@@ -362,6 +362,8 @@ button:hover {
 }
 .file-select {
   position: relative;
+  margin-left: 20px;
+  margin-top: 10px;
   display: inline-block;
   border-radius: 50%; /* Forma redonda */
   width: 80px; /* Ancho deseado */
@@ -375,7 +377,6 @@ button:hover {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  content: 'Seleccionar'; /* testo por defecto */
   position: absolute;
   left: 0;
   right: 0;
@@ -392,6 +393,12 @@ button:hover {
 
 #src-file1::before {
   content: 'Añadir foto';
+}
+
+.subir button{
+  position: absolute;
+  margin-top:-60px;
+  margin-left: 125px;
 }
 
 

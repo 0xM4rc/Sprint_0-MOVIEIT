@@ -5,10 +5,12 @@ import { FileUpload, FileUploadService } from '../services/file-upload.service';
 @Component({
   selector: 'app-file-uploader',
   template: `
-    <div class="file-select" id="src-file1" >
+    <div class="file-select" id="src-file1">
       <input type="file" (change)="selectFile($event)">
     </div>
-    <button (click)="upload()">Upload</button>
+    <div class="subir">
+      <button (click)="upload()">Upload</button>
+    </div>
   `
 })
 export class FileUploaderComponent {
