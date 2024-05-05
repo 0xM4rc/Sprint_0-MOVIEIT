@@ -1,0 +1,41 @@
+.user-img3 img{
+  margin-right: 10px;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  border-radius: 50%;
+  width: 80px; /* Ajusta el ancho según tus necesidades */
+  height: 80px; /* Ajusta el ancho de la imagen al 100% del contenedor */
+  z-index: 1;
+  display: inline-block;
+  transition: .2s ease-in-out;
+  cursor: pointer;
+}
+.user-img3:hover{
+  transform: scale(1.3);
+}
+
+.etiqueta-bonita {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: yellow;
+  border: none;
+  color: #000;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0 #fff;
+  box-shadow: 4px 4px 0 #000;
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  border-radius: 10px; /* Redondea las esquinas */
+}
+.others{
+  width: 95%;
+  flex-wrap: wrap;
+  display: flex;
+  margin-right: 10px;
+  margin-left: 20px;
+}

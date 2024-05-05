@@ -8,9 +8,10 @@ type ImageStorage = {
 @Component({
   selector: 'app-getphotos',
   template: `
-    <div class="w-full max-w-[600px] mx-auto px-5 pt-[100px]">
+    <div class="etiqueta-bonita">Mis fotos</div>
+    <div class="others">
       @for (image of images(); track image) {
-        <div class="mb-4">
+        <div class="user-img3">
           <p class="mb-4">{{ image.name }}</p>
           <picture
             class="border-2 border-green-500 rounded-lg overflow-hidden block"
