@@ -1,0 +1,7 @@
+{
+  "name": "movieit",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
