@@ -8,7 +8,7 @@ import {Router} from "@angular/router";
   templateUrl: './register.page.html',
   styleUrls: ['./register.page.scss'],
 })
-export class RegisterPage implements OnInit {
+export class RegisterPage {
   reactiveForm: FormGroup;
 
   constructor(
@@ -24,9 +24,6 @@ export class RegisterPage implements OnInit {
     }, {
       validator: this.mustMatch('password', 'repassword')
     });
-  }
-
-  ngOnInit(): void {
   }
 
   register(): void {

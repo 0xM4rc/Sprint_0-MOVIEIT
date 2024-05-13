@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import {NgModule, OnInit} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
@@ -23,7 +23,7 @@ import {SearchMenuComponent} from "../components/search-menu/search-menu.compone
   ],
   declarations: [HomePage, HighlightedFilmCardComponent, HeaderComponent, FooterComponent, SidebarComponent, SearchMenuComponent]
 })
-export class HomePageModule {
+export class HomePageModule implements OnInit{
   items: Cover[] = [];
   showSidebar = false;
 
