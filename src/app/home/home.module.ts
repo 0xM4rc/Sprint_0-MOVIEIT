@@ -23,30 +23,6 @@ import {SearchMenuComponent} from "../components/search-menu/search-menu.compone
   ],
   declarations: [HomePage, HighlightedFilmCardComponent, HeaderComponent, FooterComponent, SidebarComponent, SearchMenuComponent]
 })
-export class HomePageModule implements OnInit{
-  items: Cover[] = [];
-  showSidebar = false;
+export class HomePageModule {
 
-  constructor(private firebaseService: FirebaseService) {}
-
-  ngOnInit() {
-    this.loadUrls();
-  }
-
-  loadUrls() {
-    const ids = [1, 2, 3, 4, 1, 2, 3, 4];
-    ids.forEach(id => {
-      this.firebaseService.getCoverUrlById(id.toString()).subscribe(url => {
-        this.items.push({
-          id: id,
-          fileUrl: url,
-          time: 30
-        });
-      });
-    });
-  }
-
-  handleSidebar(status: boolean) {
-    this.showSidebar = status;
-  }
 }
