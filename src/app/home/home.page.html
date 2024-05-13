@@ -1,20 +1,31 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-header (sidebarStatus)="handleSidebar($event)"></app-header>
+<app-sidebar [isOpen]="showSidebar"></app-sidebar>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<main class="main-page">
+  <div id="sidebar_component"></div>
+  <div id="search-menu"></div>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div class="main-cover">
+    <img src="../../assets/images/films_main_covers/Screen-Shot-2018-01-31-at-5.55.24-AM.png" alt="" />
   </div>
-</ion-content>
+
+  <section>
+    <h1>Tendencia</h1>
+    <div class="movies-container">
+      <div *ngFor="let item of items">
+        <app-highlighted-film-card [id]="item.id" [fileUrl]="item.fileUrl" [time]="item.time"></app-highlighted-film-card>
+      </div>
+    </div>
+</section>
+
+<section>
+    <h1>Recientemente vistas</h1>
+    <div class="movies-container">
+      <div *ngFor="let item of items">
+        <app-highlighted-film-card [id]="item.id" [fileUrl]="item.fileUrl" [time]="item.time"></app-highlighted-film-card>
+      </div>
+    </div>
+</section>
+</main>
+
+<app-footer></app-footer>
