@@ -1,0 +1,54 @@
+<body>
+<div class="register-container">
+  <form (ngSubmit)="register()" class="form" id="form" [formGroup]="reactiveForm">
+    <h1 class="title">Register</h1>
+
+    <!-- User Name Input -->
+    <input type="text" class="register-input" formControlName="username" placeholder="User Name"/>
+    <div *ngIf="reactiveForm.controls['username'].touched && reactiveForm.controls['username'].errors?.['required']" class="error-container">
+      <span class="error-message">Debe rellenar este campo</span>
+    </div>
+
+    <!-- Email Input -->
+    <input type="email" placeholder="Email" class="register-input" formControlName="email"/>
+    <div *ngIf="reactiveForm.controls['email'].touched && reactiveForm.controls['email'].errors?.['required']" class="error-container">
+      <span class="error-message">Debe rellenar este campo</span>
+    </div>
+    <div *ngIf="reactiveForm.controls['email'].touched && reactiveForm.controls['email'].errors?.['email']" class="error-container">
+      <span class="error-message">Debe ser un correo válido</span>
+    </div>
+
+    <!-- Password Input -->
+    <input type="password" placeholder="Password" class="register-input" formControlName="password"/>
+    <div *ngIf="reactiveForm.controls['password'].touched && reactiveForm.controls['password'].errors?.['required']" class="error-container">
+      <span class="error-message">Debe rellenar este campo</span>
+    </div>
+    <div *ngIf="reactiveForm.controls['password'].touched && reactiveForm.controls['password'].errors?.['minLength']" class="error-container">
+      <span class="error-message">La contraseña debe tener al menos 6 caracteres</span>
+    </div>
+
+    <!-- Confirm Password Input -->
+    <input type="password" placeholder="Confirm Password" class="register-input" formControlName="repassword"/>
+    <div *ngIf="reactiveForm.get('repassword')?.touched && reactiveForm.errors?.['notSame']" class="error-container">
+      <span class="error-message">Las contraseñas no coinciden</span>
+    </div>
+
+    <!-- Submit Button -->
+    <button type="submit" class="submit">Register</button>
+
+    <!-- Login Link -->
+    <p class="footer">
+      Already have an account?
+      <a [routerLink]="['/login']" class="link">Log in here</a>
+    </p>
+  </form>
+
+  <!-- Banner Section -->
+  <div class="banner">
+    <h1 class="welcome-text">Welcome!!</h1>
+    <p class="banner-text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent interdum, justo in dignissim commodo, eros neque gravida augue, id ullamcorper enim lorem non purus.
+    </p>
+  </div>
+</div>
+</body>

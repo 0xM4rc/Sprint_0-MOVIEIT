@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, EventEmitter, Output} from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
+  @Output() sidebarStatus = new EventEmitter<boolean>();
 
+  emitEvent(event: Event) {
+    const checked = (event.target as HTMLInputElement).checked;
+    this.sidebarStatus.emit(checked);
+  }
 }

@@ -11,6 +11,7 @@ import { FooterComponent } from '../components/footer/footer.component';
 import { FirebaseService } from '../services/firebase.service';
 import Cover from '../interfaces/cover';
 import {SidebarComponent} from "../components/sidebar/sidebar.component";
+import {SearchMenuComponent} from "../components/search-menu/search-menu.component";
 
 
 @NgModule({
@@ -20,7 +21,7 @@ import {SidebarComponent} from "../components/sidebar/sidebar.component";
     IonicModule,
     HomePageRoutingModule,
   ],
-  declarations: [HomePage, HighlightedFilmCardComponent, HeaderComponent, FooterComponent, SidebarComponent]
+  declarations: [HomePage, HighlightedFilmCardComponent, HeaderComponent, FooterComponent, SidebarComponent, SearchMenuComponent]
 })
 export class HomePageModule {
   items: Cover[] = [];
