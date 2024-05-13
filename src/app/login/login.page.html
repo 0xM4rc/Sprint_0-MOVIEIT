@@ -1,6 +1,6 @@
 <body>
 <div class="login-container">
-  <form class="form">
+  <form [formGroup]="reactiveForm" class="form" (ngSubmit)="login_user()">
     <h1 class="title">Log In</h1>
     <input type="email" placeholder="Email" class="input" formControlName="email"/>
     <input type="password" placeholder="Password" class="input" formControlName="password"/>
@@ -8,7 +8,7 @@
     <button type="submit" class="submit">Log In</button>
     <p class="footer">
       Don't have an account?
-      <a [routerLink]="['/register']" class="link">Register here</a>
+      <a class="link">Register here</a>
     </p>
   </form>
 </div>
