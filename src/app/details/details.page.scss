@@ -1,0 +1,176 @@
+* {
+  font-family: Arial, sans-serif;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .movie-description {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 1.25em;
+  }
+  .movie-description h1 {
+    all: initial; /* Restablece todas las propiedades */
+    text-align: center;
+    color: #fff;
+    font-size: 1.5em;
+  }
+  table {
+    font-size: 1.075em;
+  }
+  .movie-text {
+    font-size: 1.075em;
+    margin-right: 0.935em;
+  }
+  .movie-trailer {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+  .comment-section {
+    flex-wrap: wrap;
+    width: 31em;
+  }
+  .comments {
+    margin: 0.9em;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .movie-description h1 {
+    all: initial; /* Restablece todas las propiedades */
+    text-align: center;
+    color: #fff;
+    font-size: 2.15em;
+  }
+  .movie-text {
+    font-size: 1.075em;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .movie-description h1 {
+    all: initial; /* Restablece todas las propiedades */
+    text-align: center;
+    color: #fff;
+    font-size: 2.15em;
+  }
+  .comment-section {
+    flex-wrap: nowrap;
+  }
+  .comments{
+    margin: 0.625em;
+  }
+}
+
+.movie-description {
+  display: flex;
+}
+
+h2 {
+  display: inline-block; /* Hace que el título ocupe solo el ancho del texto */
+  background-color: yellow;
+  border: none;
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0 #fff;
+  box-shadow: 4px 4px 0 #000;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  border-radius: 10px; /* Redondea las esquinas */
+  margin-left: 25px;
+}
+table {
+  border-collapse: collapse;
+  margin-left: 25px;
+  margin-bottom: 50px;
+  color: white;
+}
+
+table,
+th,
+td {
+  border: 1px solid white;
+}
+
+th,
+td {
+  padding: 5px;
+}
+
+.movie-details-container{
+  margin: 20px;
+}
+.movie-image {
+  float: left;
+  margin-left: 25px;
+  margin-right: 50px;
+  max-width: 100%;
+}
+
+.movie-image img {
+  width: 37.125vw;
+  height: 41.25vh;
+}
+
+
+
+.movie-text{
+  text-align: justify;
+  line-height: 1.45em;
+  margin-bottom: 25px;
+}
+
+p.movie-text {
+  color: white;
+}
+
+.movie-trailer{
+  text-align: center;
+}
+
+.comment-section{
+  display: flex;
+  overflow-x: auto; /* Agrega una barra de desplazamiento horizontal si los elementos se desbordan */
+  -webkit-overflow-scrolling: touch; /* Mejora el desplazamiento en dispositivos táctiles */
+  margin-bottom: 50px;
+}
+
+.film-image{
+  overflow: hidden;
+  border-radius: 50%;
+  width:7.25em; /* Ajusta el ancho según tus necesidades */
+  height: 7.25em; /* Ajusta el ancho de la imagen al 100% del contenedor */
+  z-index: 1;
+  position: absolute;
+  float: left;
+  margin-left: 25px;
+  margin-right: 50px;
+}
+.comment-text {
+  margin-left: 150px;
+  font-size: 1.075em;
+  line-height: 1.45em;
+}
+
+section {
+  margin-left: 25px;
+}
+
+.related-movies{
+  float: left;
+  margin-left: 25px;
+}
+
+.title p {
+  width: 50%;
+}
+
+.movie-card-footer {
+  color: #ffffff88;
+  margin-top: 5px;
+  font-size: 8px;
+}
