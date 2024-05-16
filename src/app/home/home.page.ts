@@ -18,7 +18,7 @@ export class HomePage {
   }
 
   loadUrls() {
-    const ids = [1, 2, 3, 4, 1, 2, 3, 4];
+    const ids = [2, 24, 5, 26, 1, 25];
     ids.forEach(id => {
       this.firebaseService.getCoverUrlById(id.toString()).subscribe(url => {
         this.items.push({

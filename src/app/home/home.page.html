@@ -1,5 +1,8 @@
-<app-header (sidebarStatus)="handleSidebar($event)"></app-header>
+<ion-header>
+  <app-header (sidebarStatus)="handleSidebar($event)"></app-header>
+</ion-header>
 
+<ion-content>
 <main class="main-page">
   <div id="sidebar_component"></div>
   <div id="search-menu"></div>
@@ -26,5 +29,8 @@
     </div>
 </section>
 </main>
+  <!-- <app-footer></app-footer> -->
+</ion-content>
 
-<app-footer></app-footer>
+<ion-footer>
+</ion-footer>

@@ -35,4 +35,9 @@ export class FirebaseService {
       })
     );
   }
+
+  getMovieById(id: string): Observable<any> {
+    return this.firestore.collection('peliculas').doc(id).valueChanges();
+  }
+  
 }
