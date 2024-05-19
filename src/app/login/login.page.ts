@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import {FormControl, FormGroup, Validators} from "@angular/forms";
 import {AuthenticationService} from "../services/authentication.service";
 import {Router} from "@angular/router";
+import {ModalController} from "@ionic/angular";
+import {SuccessModalComponent} from "../components/success-modal/success-modal.component";
 
 @Component({
   selector: 'app-login',
@@ -12,7 +14,9 @@ export class LoginPage implements OnInit {
   reactiveForm: FormGroup = new FormGroup({});
 
 
-  constructor(private auth: AuthenticationService, private router: Router) {}
+  constructor(private auth: AuthenticationService,
+              private router: Router,
+              private modalController: ModalController) {}
 
   ngOnInit() {
     this.reactiveForm = new FormGroup({
@@ -29,6 +33,8 @@ export class LoginPage implements OnInit {
     const rawForm = this.reactiveForm.value;
     this.auth.SignIn(rawForm.email, rawForm.password)
       .then(() => {
+        this.loginSuccess()
+        console.log(rawForm);
         this.router.navigate(['home']);
       })
       .catch(error => {
@@ -36,4 +42,15 @@ export class LoginPage implements OnInit {
       });
   }
 
+  async presentModal() {
+    const modal = await this.modalController.create({
+      component: SuccessModalComponent,
+      // Otras opciones para tu modal
+    });
+    return await modal.present();
+  }
+
+  loginSuccess() {
+    this.presentModal();
+  }
 }

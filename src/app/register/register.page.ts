@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import {AuthenticationService} from "../services/authentication.service";
 import {Router} from "@angular/router";
+import {ModalController} from "@ionic/angular";
+import {SuccessModalComponent} from "../components/success-modal/success-modal.component";
 
 @Component({
   selector: 'app-register',
@@ -14,7 +16,8 @@ export class RegisterPage {
   constructor(
     private auth: AuthenticationService,
     private router: Router,
-    private fb: FormBuilder
+    private fb: FormBuilder,
+    private modalController: ModalController
   ) {
     this.reactiveForm = this.fb.group({
       username: ['', [Validators.required]],
@@ -33,7 +36,7 @@ export class RegisterPage {
     const { email, password } = this.reactiveForm.value;
     this.auth.SignUp(email, password)
       .then(() => {
-        console.log("Register successfully");
+        this.loginSuccess()
         this.router.navigate(['/home']); // o cualquier ruta que desees después del registro
       })
       .catch(error => {
@@ -56,5 +59,16 @@ export class RegisterPage {
         confirmPasswordControl.setErrors(null);
       }
     };
+  }
+  async presentModal() {
+    const modal = await this.modalController.create({
+      component: SuccessModalComponent,
+      // Otras opciones para tu modal
+    });
+    return await modal.present();
+  }
+
+  loginSuccess() {
+    this.presentModal();
   }
 }
