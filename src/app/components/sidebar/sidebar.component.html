@@ -1,8 +1,10 @@
-<label class="burger" for="burger">
-  <input type="checkbox" id="burger" (click)="toggleSidebar()">
-  <span></span>
-  <span></span>
-  <span></span>
+<label for="burger">
+  <label class="burger" for="burger">
+    <input type="checkbox" id="burger" (click)="toggleSidebar()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
   <div [ngClass]="{'closed': closed, 'open': !closed}" id="sidebar">
     <ul>
       <li><a [routerLink]="['/register']"><button>Registrarse</button></a></li>
