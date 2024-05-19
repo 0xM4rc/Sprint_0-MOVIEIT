@@ -1,5 +1,8 @@
 <ion-content>
   <app-header></app-header>
+  <ion-button color="warning" (click)="goBack()" >
+    <ion-icon name="arrow-back"></ion-icon>
+  </ion-button>
   <main class="movie-details-container" *ngIf="movie">
     <div id="sidebarTemplate"></div>
     <div class="movie-description">

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { FirebaseService } from '../services/firebase.service';
+import { NavController } from '@ionic/angular';
 
 
 @Component({
@@ -14,7 +15,8 @@ export class DetailsPage implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
-    private movieService : FirebaseService
+    private movieService : FirebaseService,
+    private navCtrl: NavController
   ) { }
 
   ngOnInit() {
@@ -27,6 +29,10 @@ export class DetailsPage implements OnInit {
         });
       }
     });
+  }
+
+  goBack() {
+    this.navCtrl.back();
   }
 
 }

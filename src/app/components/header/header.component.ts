@@ -9,14 +9,12 @@ import {NavController} from "@ionic/angular";
 export class HeaderComponent {
   @Output() sidebarStatus = new EventEmitter<boolean>();
 
-  constructor(private navCtrl: NavController) {
+  constructor() {
   }
   emitEvent(event: Event) {
     const checked = (event.target as HTMLInputElement).checked;
     this.sidebarStatus.emit(checked);
   }
 
-  goBack() {
-    this.navCtrl.back();
-  }
+  
 }
