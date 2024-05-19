@@ -54,7 +54,7 @@ export class LoginPage implements OnInit {
   }
 
   loginSuccess() {
-    if(this.auth.isLoggedIn) {
+    if(this.auth.isLoggedIn()) {
       this.presentModal();
       console.log("registered")
     }

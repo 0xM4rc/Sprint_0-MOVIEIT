@@ -7,8 +7,9 @@
   </label>
   <div [ngClass]="{'closed': closed, 'open': !closed}" id="sidebar">
     <ul>
-      <li><a [routerLink]="['/register']"><button>Registrarse</button></a></li>
-      <li><a [routerLink]="['/login']"><button>Iniciar sesión</button></a></li>
+      <li *ngIf="!(isLoggedIn$ | async)"><a [routerLink]="['/register']"><button>Registrarse</button></a></li>
+      <li *ngIf="!(isLoggedIn$ | async)"><a [routerLink]="['/login']"><button>Iniciar sesión</button></a></li>
+      <li *ngIf="isLoggedIn$ | async"><button (click)="SignOut()">Cerrar sesión</button></li>
     </ul>
   </div>
 </label>
