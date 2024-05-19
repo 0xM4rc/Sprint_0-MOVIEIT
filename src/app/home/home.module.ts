@@ -15,13 +15,16 @@ import {SearchMenuComponent} from "../components/search-menu/search-menu.compone
 
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    HomePageRoutingModule,
-  ],
-  declarations: [HomePage, HighlightedFilmCardComponent, HeaderComponent, FooterComponent, SidebarComponent, SearchMenuComponent]
+    imports: [
+        CommonModule,
+        FormsModule,
+        IonicModule,
+        HomePageRoutingModule,
+    ],
+    exports: [
+        HeaderComponent
+    ],
+    declarations: [HomePage, HighlightedFilmCardComponent, HeaderComponent, FooterComponent, SidebarComponent, SearchMenuComponent]
 })
 export class HomePageModule {
 

@@ -6,11 +6,9 @@ import {ModalController} from "@ionic/angular";
   templateUrl: './success-modal.component.html',
   styleUrls: ['./success-modal.component.scss'],
 })
-export class SuccessModalComponent  implements OnInit {
+export class SuccessModalComponent {
 
   constructor(private modalController: ModalController) { }
-
-  ngOnInit() {}
 
   async closeModal() {
     await this.modalController.dismiss();
