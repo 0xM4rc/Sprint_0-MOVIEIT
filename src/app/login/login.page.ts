@@ -33,6 +33,9 @@ export class LoginPage implements OnInit {
     const rawForm = this.reactiveForm.value;
     this.auth.SignIn(rawForm.email, rawForm.password)
       .then(() => {
+        if (this.reactiveForm.invalid) {
+          return
+        }
         this.loginSuccess()
         console.log(rawForm);
         this.router.navigate(['home']);
